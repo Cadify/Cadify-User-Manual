@@ -1,0 +1,8 @@
+site_name: Cadify Light User Manual
+nav:
+  - Home: index.md
+  - Overview: sketcher-overview.md
+  - Docs:
+      - Cadify Line: cadifyline.md
+theme:
+  name: material
