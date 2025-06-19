@@ -3,9 +3,8 @@ nav:
   - Home: index.md
   - Getting Started: getting_started.md
   - Docs:
-      - Task Pane & Menu: task_pane.md
-      - Product Management: product_management.md
-      - Task Pane Deep Dive: taskpaneview_deepdive.md
+      - Menu: menu_elements.md
+      - Task Pane Deep Dive: task_pane.md
       - Sketcher Overview: sketcher-overview.md
       - Cadify Line: cadifyline.md
 theme:

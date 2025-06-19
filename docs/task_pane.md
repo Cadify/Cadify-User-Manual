@@ -1,15 +1,13 @@
 # taskpaneview_deepdive.md
 
-# TaskPaneView Deep Dive
+# Task Pane Deep Dive
 
 This section provides a detailed, technical look at what a user can do on the **Task Pane** in the Cadify Light Excel Add-in.
 
 ---
 
-## TaskPaneView Structure
+## Task Pane Structure
 
-- **TaskPaneView** is a WPF UserControl that hosts the CadifyLightMenuView.
-- The `TaskPaneViewModel` is the main data context, managing user state, product state, and all menu commands.
 - The menu is always visible at the top of the pane, and adapts to user/product state.
 
 ---

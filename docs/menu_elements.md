@@ -1,6 +1,6 @@
 # menu_elements.md
 
-# Task Pane & CadifyLightMenu
+# Task Pane & Menu
 
 The Task Pane is the main user interface for the Cadify Light Excel Add-in.  
 
