@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../getting_started/">
+        <link rel="prev" href="../menu_elements/">
       
       
         <link rel="next" href="../sketcher-overview/">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Task Pane & Menu - Cadify Light User Manual</title>
+        <title>Task Pane Deep Dive - Cadify Light User Manual</title>
       
     
     
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Task Pane & Menu
+              Task Pane Deep Dive
             
           </span>
         </div>
@@ -275,6 +275,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../menu_elements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Menu
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -292,59 +315,13 @@
   
   
   <span class="md-ellipsis">
-    Task Pane & Menu
-    
-  </span>
-  
-
-      </a>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../product_management.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Product Management
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../taskpaneview_deepdive.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
     Task Pane Deep Dive
     
   </span>
   
 
       </a>
+      
     </li>
   
 
@@ -438,13 +415,11 @@
 
 
 <h1 id="taskpaneview_deepdivemd">taskpaneview_deepdive.md</h1>
-<h1 id="taskpaneview-deep-dive">TaskPaneView Deep Dive</h1>
+<h1 id="task-pane-deep-dive">Task Pane Deep Dive</h1>
 <p>This section provides a detailed, technical look at what a user can do on the <strong>Task Pane</strong> in the Cadify Light Excel Add-in.</p>
 <hr />
-<h2 id="taskpaneview-structure">TaskPaneView Structure</h2>
+<h2 id="task-pane-structure">Task Pane Structure</h2>
 <ul>
-<li><strong>TaskPaneView</strong> is a WPF UserControl that hosts the CadifyLightMenuView.</li>
-<li>The <code>TaskPaneViewModel</code> is the main data context, managing user state, product state, and all menu commands.</li>
 <li>The menu is always visible at the top of the pane, and adapts to user/product state.</li>
 </ul>
 <hr />
