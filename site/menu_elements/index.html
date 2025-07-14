@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#menu_elementsmd" class="md-skip">
+        <a href="#task-pane-menu" class="md-skip">
           Skip to content
         </a>
       
@@ -287,6 +287,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Menu
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -298,6 +311,76 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#main-menu-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main Menu Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Main Menu Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Menu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools Menu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-profile" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Profile
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-and-interactive-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual and Interactive Features
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -676,6 +759,65 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#main-menu-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main Menu Structure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Main Menu Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Menu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tools-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tools Menu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-profile" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Profile
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visual-and-interactive-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual and Interactive Features
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -690,12 +832,16 @@
 
 
 
-<h1 id="menu_elementsmd">menu_elements.md</h1>
 <h1 id="task-pane-menu">Task Pane &amp; Menu</h1>
 <p>The Task Pane is the main user interface for the Cadify Light Excel Add-in.  </p>
 <h2 id="main-menu-structure">Main Menu Structure</h2>
 <h3 id="file-menu">File Menu</h3>
 <ul>
+<li>
+<p><strong>Create Raw</strong>
+  Creates a new raw product as either a blank Cadify table or, if you have already opened your existing XLSX file, it will be converted into a Cadify table by adding the necessary sheets.
+  <em>Enabled only if a user is logged in and no product is currently open.</em></p>
+</li>
 <li>
 <p><strong>Open Raw</strong><br />
   Open a raw product from Dropbox.<br />
@@ -713,7 +859,7 @@
 </li>
 <li>
 <p><strong>Save as (Raw)</strong><br />
-  Create first raw if no product is currently open. Save a copy of the current product as a new raw product.</p>
+  Save a copy of the current product as a new raw product.</p>
 </li>
 <li>
 <p><strong>Publish</strong><br />
