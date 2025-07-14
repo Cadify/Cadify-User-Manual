@@ -1,5 +1,3 @@
-# menu_elements.md
-
 # Task Pane & Menu
 
 The Task Pane is the main user interface for the Cadify Light Excel Add-in.  
@@ -7,6 +5,10 @@ The Task Pane is the main user interface for the Cadify Light Excel Add-in.
 ## Main Menu Structure
 
 ### File Menu
+
+- **Create Raw**
+  Creates a new raw product as either a blank Cadify table or, if you have already opened your existing XLSX file, it will be converted into a Cadify table by adding the necessary sheets.
+  *Enabled only if a user is logged in and no product is currently open.*
 
 - **Open Raw**  
   Open a raw product from Dropbox.  
@@ -21,7 +23,7 @@ The Task Pane is the main user interface for the Cadify Light Excel Add-in.
   *Enabled only if a product is open.*
 
 - **Save as (Raw)**  
-  Create first raw if no product is currently open. Save a copy of the current product as a new raw product.
+  Save a copy of the current product as a new raw product.
 
 - **Publish**  
   Publish or republish the current product to the cloud.  

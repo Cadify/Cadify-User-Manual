@@ -1,5 +1,3 @@
-# taskpaneview_deepdive.md
-
 # Task Pane Deep Dive
 
 This section provides a detailed, technical look at what a user can do on the **Task Pane** in the Cadify Light Excel Add-in.
