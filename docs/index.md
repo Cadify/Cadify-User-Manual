@@ -8,6 +8,9 @@ Welcome to the Cadify Light documentation.
 - [Task Pane & Menu](menu_elements.md)
 - [Task Pane Deep Dive](task_pane.md)
 
+## Controls
+- [Cadify Controls](controls/cadifycontrols.md)
+
 ## Sketcher
 
 - [Overview](sketcher/sketcher-overview.md)

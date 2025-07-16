@@ -5,6 +5,7 @@ nav:
   - Docs:
       - Menu: menu_elements.md
       - Task Pane Deep Dive: task_pane.md
+      - Controls: controls/cadifycontrols.md
       - Sketcher:
         - Sketcher Overview: sketcher/sketcher-overview.md
         - CadifySheet: sketcher/cadifysheet.md
