@@ -2,7 +2,7 @@
 
 This document provides an overview of the various **Cadify Control** types that you can create to manipulate your product. Each control includes a preview that will be shown both in the Task Pane and on the published product in nopCommerce. Once you've created a control, you can set up references to dynamically update your Excel formulas.
 
-You can download sample products from the [samples folder](https://github.com/Cadify/Cadify-Light-User-Manual/files/samples).
+You can download sample products from the [samples folder](https://github.com/Cadify/Cadify-Light-User-Manual/tree/main/samples).
 
 ---
 
