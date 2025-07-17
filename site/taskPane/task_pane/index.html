@@ -9,22 +9,22 @@
       
       
       
-        <link rel="prev" href="../menu_elements/">
+        <link rel="prev" href="../../menu_elements/">
       
       
-        <link rel="next" href="../controls/cadifycontrols/">
+        <link rel="next" href="../../controls/cadifycontrols/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
-        <title>Task Pane Deep Dive - Cadify Light User Manual</title>
+        <title>Task Pane Overview - Cadify Light User Manual</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -43,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#task-pane-deep-dive" class="md-skip">
+        <a href="#task-pane-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Cadify Light User Manual" class="md-header__button md-logo" aria-label="Cadify Light User Manual" data-md-component="logo">
+    <a href="../.." title="Cadify Light User Manual" class="md-header__button md-logo" aria-label="Cadify Light User Manual" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Task Pane Deep Dive
+              Task Pane Overview
             
           </span>
         </div>
@@ -176,7 +176,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Cadify Light User Manual" class="md-nav__button md-logo" aria-label="Cadify Light User Manual" data-md-component="logo">
+    <a href="../.." title="Cadify Light User Manual" class="md-nav__button md-logo" aria-label="Cadify Light User Manual" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -194,7 +194,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -216,7 +216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting_started/" class="md-nav__link">
+      <a href="../../getting_started/" class="md-nav__link">
         
   
   
@@ -278,12 +278,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../menu_elements/" class="md-nav__link">
+      <a href="../../menu_elements/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Menu
+    Menu Elements
     
   </span>
   
@@ -315,7 +315,7 @@
   
   
   <span class="md-ellipsis">
-    Task Pane Deep Dive
+    Task Pane Overview
     
   </span>
   
@@ -328,7 +328,7 @@
   
   
   <span class="md-ellipsis">
-    Task Pane Deep Dive
+    Task Pane Overview
     
   </span>
   
@@ -351,28 +351,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#task-pane-structure" class="md-nav__link">
+  <a href="#1-menu-bar-top" class="md-nav__link">
     <span class="md-ellipsis">
-      Task Pane Structure
+      1. Menu Bar (Top)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#user-capabilities-in-taskpaneview" class="md-nav__link">
+  <a href="#2-icon-buttons-below-menu" class="md-nav__link">
     <span class="md-ellipsis">
-      User Capabilities in TaskPaneView
+      2. Icon Buttons (Below Menu)
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="User Capabilities in TaskPaneView">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-scrollable-product-controls-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Scrollable Product Controls Area
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-status-bar-bottom-with-4-icons" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Status Bar (Bottom, with 4 icons)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Status Bar (Bottom, with 4 icons)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-parameter-and-control-management" class="md-nav__link">
+  <a href="#quick-reference" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Parameter and Control Management
+      Quick Reference
     </span>
   </a>
   
@@ -399,12 +417,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../controls/cadifycontrols/" class="md-nav__link">
+      <a href="../../controls/cadifycontrols/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Controls
+    Web Controls
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mediaManager/MediaManager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Media Manager
     
   </span>
   
@@ -430,10 +471,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
         
           
-          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
             
   
   
@@ -446,8 +487,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_4">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             Sketcher
           </label>
@@ -460,7 +501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sketcher/sketcher-overview/" class="md-nav__link">
+      <a href="../../sketcher/sketcher-overview/" class="md-nav__link">
         
   
   
@@ -483,7 +524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sketcher/cadifysheet/" class="md-nav__link">
+      <a href="../../sketcher/cadifysheet/" class="md-nav__link">
         
   
   
@@ -506,7 +547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sketcher/cadifyline/" class="md-nav__link">
+      <a href="../../sketcher/cadifyline/" class="md-nav__link">
         
   
   
@@ -529,7 +570,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sketcher/cadifyrectangle/" class="md-nav__link">
+      <a href="../../sketcher/cadifyrectangle/" class="md-nav__link">
         
   
   
@@ -552,7 +593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sketcher/cadifyellipse/" class="md-nav__link">
+      <a href="../../sketcher/cadifyellipse/" class="md-nav__link">
         
   
   
@@ -575,7 +616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sketcher/cadifyholes/" class="md-nav__link">
+      <a href="../../sketcher/cadifyholes/" class="md-nav__link">
         
   
   
@@ -598,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sketcher/cadifyimage/" class="md-nav__link">
+      <a href="../../sketcher/cadifyimage/" class="md-nav__link">
         
   
   
@@ -621,7 +662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sketcher/cadifydim/" class="md-nav__link">
+      <a href="../../sketcher/cadifydim/" class="md-nav__link">
         
   
   
@@ -644,7 +685,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sketcher/cadifytext/" class="md-nav__link">
+      <a href="../../sketcher/cadifytext/" class="md-nav__link">
         
   
   
@@ -667,7 +708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sketcher/cadifybezier/" class="md-nav__link">
+      <a href="../../sketcher/cadifybezier/" class="md-nav__link">
         
   
   
@@ -690,7 +731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sketcher/cadifysvg/" class="md-nav__link">
+      <a href="../../sketcher/cadifysvg/" class="md-nav__link">
         
   
   
@@ -713,7 +754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sketcher/cadifyjson/" class="md-nav__link">
+      <a href="../../sketcher/cadifyjson/" class="md-nav__link">
         
   
   
@@ -771,28 +812,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#task-pane-structure" class="md-nav__link">
+  <a href="#1-menu-bar-top" class="md-nav__link">
     <span class="md-ellipsis">
-      Task Pane Structure
+      1. Menu Bar (Top)
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#user-capabilities-in-taskpaneview" class="md-nav__link">
+  <a href="#2-icon-buttons-below-menu" class="md-nav__link">
     <span class="md-ellipsis">
-      User Capabilities in TaskPaneView
+      2. Icon Buttons (Below Menu)
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="User Capabilities in TaskPaneView">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-scrollable-product-controls-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Scrollable Product Controls Area
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-status-bar-bottom-with-4-icons" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Status Bar (Bottom, with 4 icons)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Status Bar (Bottom, with 4 icons)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-parameter-and-control-management" class="md-nav__link">
+  <a href="#quick-reference" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Parameter and Control Management
+      Quick Reference
     </span>
   </a>
   
@@ -819,29 +878,62 @@
 
 
 
-<h1 id="task-pane-deep-dive">Task Pane Deep Dive</h1>
-<p>This section provides a detailed, technical look at what a user can do on the <strong>Task Pane</strong> in the Cadify Light Excel Add-in.</p>
+<h1 id="task-pane-overview">Task Pane Overview</h1>
+<p>The Cadify Light Task Pane is your central workspace for configuring product controls, managing media, and monitoring integration status. The layout is intuitive and visually aligned with how controls will appear on your nopCommerce product page.</p>
 <hr />
-<h2 id="task-pane-structure">Task Pane Structure</h2>
+<h2 id="1-menu-bar-top">1. Menu Bar (Top)</h2>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/taskPane/images/MenuBar.png" alt="Menu"></p>
 <ul>
-<li>The menu is always visible at the top of the pane, and adapts to user/product state.</li>
+<li>Located at the very top.</li>
+<li>Main menu (<code>File</code>, <code>Tools</code>), shows your login state (e.g., your email).</li>
+<li>See <a href="menu_elements.md">Menu Elements</a> for a breakdown.</li>
 </ul>
 <hr />
-<h2 id="user-capabilities-in-taskpaneview">User Capabilities in TaskPaneView</h2>
-<h3 id="1-parameter-and-control-management">1. Parameter and Control Management</h3>
+<h2 id="2-icon-buttons-below-menu">2. Icon Buttons (Below Menu)</h2>
 <ul>
-<li><strong>Visualize Cadify Controls</strong>:  </li>
 <li>
-<p>On the Task Pane the Cadify Controls are shown same as it will be display in the web shop after publishing the product.</p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/taskPane/images/AddWebControl.png" alt="AddWebControl" style="vertical-align: middle;"> <strong>Add Control</strong>: Lets you create a new Web Control.<br />
+  See <a href="controls/cadifycontrols.md">Control creation details</a>.</p>
 </li>
 <li>
-<p><strong>Add/Edit/Delete Cadify Controls</strong>:  </p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/taskPane/images/mediaManager.png" alt="MediaManager" style="vertical-align: middle;"> <strong>Open Media Manager</strong>: Opens the Media Manager for product media configuration.<br />
+  See <a href="mediaManager/MediaManager.md">Media Manager details</a>.</p>
 </li>
-<li>Context menus and dialogs allow adding, editing, or deleting product parameters (Cadify Controls).</li>
-<li>Editing opens a modal dialog for parameter details.</li>
-<li>Deleting removes the control from the product and updates Excel.</li>
 </ul>
 <hr />
+<h2 id="3-scrollable-product-controls-area">3. Scrollable Product Controls Area</h2>
+<ul>
+<li>Main area, scrollable.</li>
+<li>Displays all controls as they will appear on nopCommerce.</li>
+<li>Each control has a vertical dot icon for context menu:  </li>
+<li><strong>Edit</strong>: Modify the control.  </li>
+<li><strong>Delete</strong>: Remove the control.
+  <br>
+  <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/taskPane/images/ControlContextMenu.png" alt="ContextMenu"></li>
+</ul>
+<hr />
+<h2 id="4-status-bar-bottom-with-4-icons">4. Status Bar (Bottom, with 4 icons)</h2>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/taskPane/images/StatusBar.png" alt="Status Bar"></p>
+<ul>
+<li><img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/taskPane/images/excel.png" alt="Excel status" style="vertical-align: middle;"> <strong>Excel Table</strong> integrity. Turns red if issues detected (best practice: reopen product).</li>
+<li><img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/taskPane/images/library.png" alt="Library status" style="vertical-align: middle;"> <strong>Library</strong> sync status. Spinner shows syncing; hover for file count.</li>
+<li><img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/taskPane/images/dropbox.png" alt="Dropbox status" style="vertical-align: middle;"> <strong>Dropbox</strong> connection: Blue (stable), Yellow (slow), Red (unavailable).</li>
+<li><img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/taskPane/images/nopC.png" alt="NopC status" style="vertical-align: middle;"> <strong>NopCommerce</strong> connection: Blue (available), yellow (slow), red (unreachable).</li>
+</ul>
+<hr />
+<h3 id="quick-reference">Quick Reference</h3>
+<ul>
+<li><strong>Menu Bar</strong>: Access main functions and see your login.</li>
+<li><strong>Icon Buttons</strong>: Add new controls or open the media manager.</li>
+<li><strong>Scrollable Controls</strong>: See and manage product controls, just as users will on your nopCommerce site.</li>
+<li><strong>Context Menus</strong>: Edit or delete controls via the vertical dots.</li>
+<li><strong>Status Bar</strong>: Always know the health of your integrations.</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/taskPane/images/TaskPaneOverview.png" alt="TaskPaneOverview"></p>
+<p>For details, see:<br />
+- <a href="menu_elements.md">Menu Elements</a><br />
+- <a href="controls/cadifycontrols.md">Web Controls</a><br />
+- <a href="mediaManager/MediaManager.md">Media Manager</a></p>
 
 
 
@@ -890,10 +982,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
     
   </body>
