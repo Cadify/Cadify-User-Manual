@@ -3,9 +3,10 @@ nav:
   - Home: index.md
   - Getting Started: getting_started.md
   - Docs:
-      - Menu: menu_elements.md
-      - Task Pane Deep Dive: task_pane.md
-      - Controls: controls/cadifycontrols.md
+      - Menu Elements: menu_elements.md
+      - Task Pane Overview: taskPane/task_pane.md
+      - Web Controls: controls/cadifycontrols.md
+      - Media Manager: mediaManager/MediaManager.md
       - Sketcher:
         - Sketcher Overview: sketcher/sketcher-overview.md
         - CadifySheet: sketcher/cadifysheet.md

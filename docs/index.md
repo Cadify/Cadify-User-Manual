@@ -5,11 +5,14 @@ Welcome to the Cadify Light documentation.
 ## Sections
 
 - [Getting Started](getting_started.md)
-- [Task Pane & Menu](menu_elements.md)
-- [Task Pane Deep Dive](task_pane.md)
+- [Menu Elements](menu_elements.md)
+- [Task Pane Overview](taskPane/task_pane.md)
 
 ## Controls
-- [Cadify Controls](controls/cadifycontrols.md)
+- [Web Controls](controls/cadifycontrols.md)
+
+## Media Manager
+- [Media Manager](mediaManager/MediaManager.md)
 
 ## Sketcher
 
