@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sketcher-overview" class="md-skip">
+        <a href="#creating-default-udfs-via-the-cadify-tab" class="md-skip">
           Skip to content
         </a>
       
@@ -460,9 +460,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
+  <a href="#to-create-defaults-from-udfs-follow-these-steps" class="md-nav__link">
     <span class="md-ellipsis">
-      Features:
+      To create defaults from UDFs, follow these steps:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#with-the-sketcher-you-can-quickly-build-a-new-sheet-and-insert-default-udfs-by" class="md-nav__link">
+    <span class="md-ellipsis">
+      With the Sketcher, you can quickly build a new sheet and insert default UDFs by:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-output-to-show-on-nopcommerce-product-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Output to Show on NopCommerce Product Page
     </span>
   </a>
   
@@ -772,9 +790,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
+  <a href="#to-create-defaults-from-udfs-follow-these-steps" class="md-nav__link">
     <span class="md-ellipsis">
-      Features:
+      To create defaults from UDFs, follow these steps:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#with-the-sketcher-you-can-quickly-build-a-new-sheet-and-insert-default-udfs-by" class="md-nav__link">
+    <span class="md-ellipsis">
+      With the Sketcher, you can quickly build a new sheet and insert default UDFs by:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-output-to-show-on-nopcommerce-product-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Output to Show on NopCommerce Product Page
     </span>
   </a>
   
@@ -796,15 +832,90 @@
 
 
 
-<h1 id="sketcher-overview">✨ Sketcher Overview</h1>
-<p>Cadify Light allows you to draw precise geometry in Excel using formulas.</p>
-<p>You enter values into a Sketcher input table, and Excel shapes are created automatically. All coordinates are in millimeters, measured from the lower-left corner of the defined Sketcher area.</p>
-<h3 id="features">Features:</h3>
+<h1 id="creating-default-udfs-via-the-cadify-tab">Creating Default UDFs via the Cadify Tab</h1>
+<h2 id="to-create-defaults-from-udfs-follow-these-steps">To create defaults from UDFs, follow these steps:</h2>
+<ol>
+<li>
+<p><strong>Open the Cadify Tab in Excel</strong><br />
+   Select the <strong>Cadify</strong> tab on the Excel ribbon.</p>
+</li>
+<li>
+<p><strong>Find the Sketcher Region</strong><br />
+   Within the Cadify tab, locate the <strong>Sketcher</strong> section and click the <strong>New Sheet</strong> button.</p>
+</li>
+<li>
+<p><strong>Select and Validate a Range</strong><br />
+   Select the desired cell range in your worksheet.</p>
+</li>
+<li>
+<p>When you click <strong>New Sheet</strong>, Cadify validates your selection, checking that:</p>
 <ul>
-<li>Live shape updates</li>
-<li>Line styles and color selection</li>
-<li>Excel-friendly table interface</li>
+<li>All cells in the active area are empty,</li>
+<li>The left column is empty,</li>
+<li>A 12-column wide range is empty,</li>
+<li>Rows below for functions are empty.</li>
 </ul>
+</li>
+<li>
+<p>The UI provides visual feedback for each validation step.</p>
+</li>
+<li>
+<p><strong>Configure Default Functions</strong><br />
+   After successful validation, you can select which default functions (UDFs) to create: <strong>Cadify Line</strong>, <strong>Cadify Rectangle</strong>, <strong>Cadify Holes</strong>, etc.</p>
+</li>
+<li>
+<p>Each function shows a preview of its parameters and default values for the selected range.</p>
+</li>
+<li>
+<p><strong>Create UDFs</strong><br />
+   Click <strong>Ok</strong> to insert the selected UDFs in the validated sheet area.</p>
+</li>
+<li>
+<p>Cadify will generate the corresponding formulas and data layouts automatically.</p>
+</li>
+</ol>
+<hr />
+<p><strong>Example Screenshot</strong><br />
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/sketcher/images/image.png" alt="Example"></p>
+<hr />
+<h2 id="with-the-sketcher-you-can-quickly-build-a-new-sheet-and-insert-default-udfs-by">With the Sketcher, you can quickly build a new sheet and insert default UDFs by:</h2>
+<ul>
+<li>Using the <strong>Cadify</strong> ribbon tab and <strong>New Sheet</strong> menu item.</li>
+<li>Validating the selected range.</li>
+<li>Choosing which UDFs to add through a user-friendly interface.</li>
+<li>Automatically generating formulas and layouts for engineering tasks.</li>
+<li>Check out each UDF documentation:<ul>
+<li><a href="/sketcher/cadifysheet">CadifySheet</a>.</li>
+<li><a href="/sketcher/cadifyline">CadifyLine</a>.</li>
+<li><a href="/sketcher/cadifyrectangle">CadifyRectangle</a>.</li>
+<li><a href="/sketcher/cadifyellipse">CadifyEllipse</a>.</li>
+<li><a href="/sketcher/cadifyholes">CadifyHoles</a>.</li>
+<li><a href="/sketcher/cadifyimage">CadifyImage</a>.</li>
+<li><a href="/sketcher/cadifydim">CadifyDim</a>.</li>
+<li><a href="/sketcher/cadifytext">CadifyText</a>.</li>
+<li><a href="/sketcher/cadifybezier">CadifyBezier</a>.</li>
+<li><a href="/sketcher/cadifysvg">CadifySvg</a>.</li>
+<li><a href="/sketcher/cadifyjson">CadifyJsone</a>.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="create-output-to-show-on-nopcommerce-product-page">Create Output to Show on NopCommerce Product Page</h2>
+<ol>
+<li>
+<p><strong>Add a New Web Control</strong><br />
+   Click the 'Add' button on the Task Pane to create a new Web Control. This will create a tab container to show the SVG output generated by your Sketcher.<br />
+   <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/sketcher/images/addControl.png" alt="AddControl"></p>
+</li>
+<li>
+<p><strong>Creation Example</strong><br />
+   <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/sketcher/images/createSvg.png" alt="CreationExample"></p>
+</li>
+<li>
+<p><strong>Product Preview in NopCommerce</strong><br />
+   <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/sketcher/images/nopCpreview.png" alt="ProductPreview"></p>
+</li>
+</ol>
 
 
 
