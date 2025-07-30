@@ -20,7 +20,7 @@ To configure scroll-by rules, follow these steps in the Control Editor:
 - **Available Sketcher Sheet(s):** Select the Sketcher tab (sheet) you want this rule to affect.
 - **Display Order:** Set the display order if needed.
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/controls/images/addsketcherscrollby.png" alt="AddSketcher">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/sketcher/images/addsketcherscrollby.png" alt="AddSketcher">
 
 ### 2. Define Scroll-By Parameters
 
@@ -32,7 +32,7 @@ On the right side of the Control Editor, you will find the section for scroll-by
 
 The screenshot below shows a parameter ("Select your favorite color") added as a scroll-by parameter:
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/controls/images/addedscrollby.png" alt="AddedScrollBy">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/sketcher/images/addedscrollby.png" alt="AddedScrollBy">
 
 #### Tip:
 Once a parameter is added, it will be highlighted in the **Selected Scroll-by parameters**. The **Available values for condition** section will display all possible values for this parameter (e.g., Red, Green, Blue).
@@ -48,13 +48,17 @@ You can further refine the rule by selecting which parameter values should trigg
 
 ## Example Use Case
 
+You can download a sample product from the [sample folder](https://github.com/Cadify/Cadify-Light-User-Manual/tree/main/samples/ScrollBy).
+
 Suppose you have a control for "Select your favorite color" and three Sketcher tabs (Sheet A, Sheet B, Sheet C). You can configure:
 
-- If the user selects "Red", show Sheet A.
-- If "Green", show Sheet B.
-- If "Blue", show Sheet C.
+- If the user scrolls the "Select your favorite color" control to the middle, show Sheet C.
+- If "Choose a Letter", show Sheet D.
+- If "Selector", show Sheet B.
 
 This setup enables a tailored experience where the visible Sketcher tab responds directly to the user's input.
+
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/sketcher/images/ScrollByActivation.png" alt="ScrollByActivation">
 
 ---
 
@@ -62,4 +66,3 @@ This setup enables a tailored experience where the visible Sketcher tab responds
 
 By leveraging scroll-by rules in Cadify Sketcher, you can create sophisticated, responsive forms that adapt to user choices. This is particularly valuable in complex products with multiple controls and Sketcher tabs.
 
-You can download a sample product from the [sample folder](https://github.com/Cadify/Cadify-Light-User-Manual/tree/main/samples/ScrollBy).

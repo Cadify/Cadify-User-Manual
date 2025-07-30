@@ -28,3 +28,5 @@ Welcome to the Cadify Light documentation.
 - [CadifyBezier](sketcher/cadifybezier.md)
 - [CadifySvg](sketcher/cadifysvg.md)
 - [CadifyJson](sketcher/cadifyjson.md)
+- ### Advanced
+    - [Sketcher Scroll-By](sketcher/advanced-sketcher-scrollby.md)

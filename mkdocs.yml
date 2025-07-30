@@ -9,6 +9,8 @@ nav:
       - Media Manager: mediaManager/MediaManager.md
       - Sketcher:
         - Sketcher Overview: sketcher/sketcher-overview.md
+        - Advanced:
+          - Sketcher Sroll-By: sketcher/advanced-sketcher-scrollby.md        
         - CadifySheet: sketcher/cadifysheet.md
         - CadifyLine: sketcher/cadifyline.md
         - CadifyRectangle: sketcher/cadifyrectangle.md
