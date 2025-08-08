@@ -22,5 +22,7 @@ nav:
         - CadifyBezier: sketcher/cadifybezier.md
         - CadifySvg: sketcher/cadifysvg.md
         - CadifyJson: sketcher/cadifyjson.md
+        - CadifyDartJson: sketcher/cadifydartjson.md
+        - CadifyDartImage: sketcher/cadifydartimage.md
 theme:
   name: material
