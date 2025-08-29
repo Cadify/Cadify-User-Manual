@@ -4,8 +4,8 @@ Welcome to the Cadify Light documentation.
 
 ## Sections
 
-- [Getting Started](getting_started.md)
-- [Menu Elements](menu_elements.md)
+- [Getting Started](light/getting_started.md)
+- [Menu Elements](light/menu_elements.md)
 - [Task Pane Overview](taskPane/task_pane.md)
 
 ## Controls
