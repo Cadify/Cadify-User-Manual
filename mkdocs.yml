@@ -28,7 +28,7 @@ nav:
           - Export Drawings: cadify/product/exportDrawings.md
     - Common:
       - Web Controls:
-        - Overview: controls/cadifycontrols.md
+        - Available Controls: controls/cadifycontrols.md
         - Advanced: controls/cadifycontrols-advanced.md
       - Media Manager: mediaManager/MediaManager.md
       - Sketcher:
@@ -56,3 +56,5 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - tables
+  - attr_list
+  - md_in_html
