@@ -9,7 +9,7 @@ The Cadify Light Task Pane is your central workspace for configuring product con
 
 - Located at the very top.
 - Main menu (`File`, `Tools`), shows your login state (e.g., your email).
-- See [Menu Elements](/menu_elements) for a breakdown.
+- See [Menu Elements](/light/menu_elements) for a breakdown.
 
 ---
 
@@ -57,6 +57,6 @@ The Cadify Light Task Pane is your central workspace for configuring product con
 <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/taskPane/images/TaskPaneOverview.png" alt="TaskPaneOverview">
 
 For details, see:  
-- [Menu Elements](menu_elements.md)  
-- [Web Controls](controls/cadifycontrols.md)  
-- [Media Manager](mediaManager/MediaManager.md)
+- [Menu Elements](/light/menu_elements)  
+- [Web Controls](/controls/cadifycontrols)  
+- [Media Manager](/mediaManager/MediaManager)
