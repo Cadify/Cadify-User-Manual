@@ -48,9 +48,9 @@ To determine the available thicknesses based on the selected material, you will 
 
 💡 *Always select a range large enough to cover all possible values. Cadify will automatically remove any empty elements from the control, so you don’t need to worry about blanks.*
 
-💡 *Call Build Control Hierarchy so dynamically change elements will be picked up by Cadify Calculation Engine.* 
+💡 *Call Build Control Hierarchy so dynamically changing elements will be picked up by the Cadify Calculation Engine.* 
 
-*Tools -> Build Cadify Control Hierarchy. It will generate the references list in Cadify MASTER 'P' column.*
+*Tools -> Build Cadify Control Hierarchy. It will generate the references list in the Cadify MASTER 'P' column.*
 
 <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/controls/images/firstHierarchyBuilt.png" alt="FirstHierarchy" style="vertical-align: middle;">
 
@@ -58,12 +58,11 @@ To determine the available thicknesses based on the selected material, you will 
 
 ## Practise a little bit more
 
-To practise dynamic lists a little bit more, lets add some more static elements into the Table Top Database.
+To practise dynamic lists a little bit more, let’s add some more static elements into the Table Top Database.
+
 <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/controls/images/moreStaticForLists.png" alt="MoreStaticContent" style="vertical-align: middle;">
 
-
-
-- Fill 'Q' column with calculations:
+- Fill the 'Q' column with calculations:
 
 `=IF(P65='Cadify MASTER'!G$15;'Table Top Database'!O65;"")`
 
@@ -71,7 +70,7 @@ This will provide an element of a list or an empty string if the selected materi
 
 <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/controls/images/listElementOrEmpty.png" alt="ListElementOrEmpty" style="vertical-align: middle;">
 
-- Create a Unique Filter function combination to generate the proper available values:
+- Create a UNIQUE/FILTER function combination to generate the proper available values:
 
 | Target Cell        | Value       |
 |------------------|-------------|
@@ -79,7 +78,7 @@ This will provide an element of a list or an empty string if the selected materi
 
 <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/controls/images/UniqueFilter.png" alt="UniqueFilter" style="vertical-align: middle;">
 
-- Now everything is ready to create a control to select from stock sized Table Tops
+- Now everything is ready to create a control to select from stock-sized Table Tops:
 
 | Parameter        | Value       |
 |------------------|-------------|
@@ -89,13 +88,13 @@ This will provide an element of a list or an empty string if the selected materi
 
 <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/controls/images/customSizes.png" alt="CustomSizes" style="vertical-align: middle;">
 
-💡 *Remember to call Build Control Hierarchy so dynamically change elements will be picked up by Cadify Calculation Engine.* 
+💡 *Remember to call Build Control Hierarchy so dynamically changing elements will be picked up by the Cadify Calculation Engine.* 
 
-*Tools -> Build Cadify Control Hierarchy. It will generate the references list in Cadify MASTER 'P' column.*
+*Tools -> Build Cadify Control Hierarchy. It will generate the references list in the Cadify MASTER 'P' column.*
 
 <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/controls/images/secondHierarchy.png" alt="BuildHierarchySecondTime" style="vertical-align: middle;">
 
-- Create two Slider control as well to let the users control the width and depth of the Table Top manually.
+- Create two Slider controls as well to let the users control the width and depth of the Table Top manually.
 
 | Parameter        | Value       |
 |------------------|-------------|
@@ -117,9 +116,9 @@ This will provide an element of a list or an empty string if the selected materi
 
 ## Display only relevant Controls
 
-After creating two different options to determine the size of the Table Top you may question yourself "Okay, but I would like to show only the reasonable controls to determine size" How to do so?
+After creating two different options to determine the size of the Table Top, you may ask yourself: "Okay, but I would like to show only the reasonable controls to determine size. How do I do so?"
 
-- First create a control to determine which option is prefered:
+- First create a control to determine which option is preferred:
 
 <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/controls/images/sizeMode.png" alt="SizeMode" style="vertical-align: middle;">
 
@@ -129,11 +128,11 @@ After creating two different options to determine the size of the Table Top you 
 | Type             | List Radio Button |
 | List Source      | =TEXTJOIN(";",TRUE,'Table Top Database'!K42:K43) |
 
-- Adjust the settings of controls that suppose to change the size by add a condition for each:
-    - Edit control
-    - Check in 'Enable Condition' settings
-    - As Conditional property select 'Sizing Mode' that you just created before
-    - Set 'Stock sizes' for Conditional value for 'Select Size' control, while set 'Custom size' for 'Width' and 'Depth' controls.
+- Adjust the settings of controls that are supposed to change the size by adding a condition for each:
+    - Edit the control
+    - Check the 'Enable Condition' setting
+    - As the Conditional property, select 'Sizing Mode' that you just created
+    - Set 'Stock sizes' for the Conditional value of the 'Select Size' control, and set 'Custom size' for the 'Width' and 'Depth' controls.
 
 <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/controls/images/EditControl.png" alt="EditControl" style="vertical-align: middle;">
 
@@ -141,8 +140,8 @@ After creating two different options to determine the size of the Table Top you 
 
 ## Dynamically change Minimum and Maximum values of a Control
 
-- For numerical controls like Spinbox Sliders there are also option to set up minimum and maxium values (starting and end points).
-    For that set up some formula in Table Top Database:
+- For numerical controls like Spinbox Sliders, there is also an option to set up minimum and maximum values (starting and end points).
+    For that, set up some formulas in the Table Top Database:
 
 | Target Cell        | Value       |
 |------------------|-------------|
@@ -151,15 +150,15 @@ After creating two different options to determine the size of the Table Top you 
 
 <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/controls/images/createMinMax.png" alt="GenerateMax" style="vertical-align: middle;">
 
-- Link the calculated maximum values back to the control by seetting formulas on Cadify MASTER
+- Link the calculated maximum values back to the control by setting formulas on Cadify MASTER:
 
 | Target Cell        | Value       |
 |------------------|-------------|
 | 'K18' on Cadify MASTER tab           | ='Table Top Database'!V40 |
 | 'K19' on Cadify MASTER tab           | ='Table Top Database'!W40 |
 
-💡 *Remember to call Build Control Hierarchy so dynamically change elements will be picked up by Cadify Calculation Engine.* 
+💡 *Remember to call Build Control Hierarchy so dynamically changing elements will be picked up by the Cadify Calculation Engine.* 
 
-*Tools -> Build Cadify Control Hierarchy. It will generate the references list in Cadify MASTER 'P' column.*
+*Tools -> Build Cadify Control Hierarchy. It will generate the references list in the Cadify MASTER 'P' column.*
 
 <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/controls/images/buildHierarchy.png" alt="BuildHierarchy" style="vertical-align: middle;">
