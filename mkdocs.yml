@@ -27,7 +27,9 @@ nav:
           - Drawing Types: cadify/product/drawingTypes.md
           - Export Drawings: cadify/product/exportDrawings.md
     - Common:
-      - Web Controls: controls/cadifycontrols.md
+      - Web Controls:
+        - Overview: controls/cadifycontrols.md
+        - Advanced: controls/cadifycontrols-advanced.md
       - Media Manager: mediaManager/MediaManager.md
       - Sketcher:
         - Sketcher Overview: sketcher/sketcher-overview.md
