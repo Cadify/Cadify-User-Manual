@@ -22,18 +22,18 @@ nav:
       - Cadify Product:
         - Create product: cadify/product/createProduct.md
         - Create drawing: cadify/product/createDrawing.md
-        - Advanced:
+        - Best practices:
           - Library Elements: cadify/product/library.md
           - Drawing Types: cadify/product/drawingTypes.md
           - Export Drawings: cadify/product/exportDrawings.md
     - Common:
       - Web Controls:
         - Available Controls: controls/cadifycontrols.md
-        - Advanced: controls/cadifycontrols-advanced.md
+        - Best practices: controls/cadifycontrols-advanced.md
       - Media Manager: mediaManager/MediaManager.md
       - Sketcher:
         - Sketcher Overview: sketcher/sketcher-overview.md
-        - Advanced:
+        - Best practices:
           - Sketcher Scroll-By: sketcher/advanced-sketcher-scrollby.md        
         - CadifySheet: sketcher/cadifysheet.md
         - CadifyLine: sketcher/cadifyline.md

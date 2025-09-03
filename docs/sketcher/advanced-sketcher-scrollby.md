@@ -1,4 +1,4 @@
-# Advanced Option: Scroll-By Rules for Sketcher Tabs in Cadify Sketcher
+# Best practice: Scroll-By Rules for Sketcher Tabs in Cadify Sketcher
 
 This guide describes an advanced feature in Cadify Sketcher that allows you to dynamically control which Sketcher tab is displayed based on user input or selection. This is especially useful when you have multiple Controls and multiple Sketcher Tabs in your product, and you want to create a "scroll-by" rule to determine which Sketcher tab should be shown for each control.
 
