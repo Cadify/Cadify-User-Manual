@@ -1,14 +1,8 @@
 site_name: Cadify User Manuals
 nav:
-  - Home: index.md
-  
-  - Documentation:
-    - Cadify Light:
-      - Getting Started: light/getting_started.md
-      - Menu Elements: light/menu_elements.md
-      - Task Pane Overview: taskPane/task_pane.md
-      
-    - Cadify:
+  - Getting Started with Cadify: index.md
+
+  - Cadify:
       - Getting Started: cadify/getting_started.md
       - Menu Elements:
         - Overview: cadify/menu_elements/overview.md
@@ -21,16 +15,27 @@ nav:
         - Web Tab: cadify/task_panes/webTab.md
       - Cadify Product:
         - Create product: cadify/product/createProduct.md
-        - Create drawing: cadify/product/createDrawing.md
+        - Create drawing: cadify/product/drawing/drawings.md
         - Best practices:
           - Library Elements: cadify/product/library.md
           - Drawing Types: cadify/product/drawingTypes.md
           - Export Drawings: cadify/product/exportDrawings.md
-    - Common:
       - Web Controls:
         - Available Controls: controls/cadifycontrols.md
         - Best practices: controls/cadifycontrols-advanced.md
       - Media Manager: mediaManager/MediaManager.md
+      - Content Management: common/7tabs/roles-7-tabs.md
+      - Bill of Materials: common/bom/bom.md
+  - Cadify Light:
+      - Getting Started: light/getting_started.md
+      - Menu Elements: light/menu_elements.md
+      - Task Pane Overview: taskPane/task_pane.md
+      - Web Controls:
+        - Available Controls: controls/cadifycontrols.md
+        - Best practices: controls/cadifycontrols-advanced.md
+      - Media Manager: mediaManager/MediaManager.md
+      - Content Management: common/7tabs/roles-7-tabs.md
+      - Bill of Materials: common/bom/bom.md
       - Sketcher:
         - Sketcher Overview: sketcher/sketcher-overview.md
         - Best practices:
@@ -48,6 +53,11 @@ nav:
         - CadifyJson: sketcher/cadifyjson.md
         - CadifyDartJson: sketcher/cadifydartjson.md
         - CadifyDartImage: sketcher/cadifydartimage.md
+  
+  - Cadify Web:
+      - Getting Started: web/nopC_getting_started.md
+
+  - Cadify Service: service/service.md
 theme:
   name: material
 
