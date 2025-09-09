@@ -24,7 +24,7 @@ nav:
         - Available Controls: controls/cadifycontrols.md
         - Best practices: controls/cadifycontrols-advanced.md
       - Media Manager: mediaManager/MediaManager.md
-      - Content Management: common/7tabs/roles-7-tabs.md
+      - 7 Tabs Management: common/7tabs/roles-7-tabs.md
       - Bill of Materials: common/bom/bom.md
   - Cadify Light:
       - Getting Started: light/getting_started.md
@@ -34,7 +34,7 @@ nav:
         - Available Controls: controls/cadifycontrols.md
         - Best practices: controls/cadifycontrols-advanced.md
       - Media Manager: mediaManager/MediaManager.md
-      - Content Management: common/7tabs/roles-7-tabs.md
+      - 7 Tabs Management: common/7tabs/roles-7-tabs.md
       - Bill of Materials: common/bom/bom.md
       - Sketcher:
         - Sketcher Overview: sketcher/sketcher-overview.md
@@ -57,7 +57,10 @@ nav:
   - Cadify Web:
       - Getting Started: web/nopC_getting_started.md
 
-  - Cadify Service: service/service.md
+  - Cadify Service:
+      - Service Introduction: service/service.md
+      - Service Core Components: service/core_components.md
+      - Service Architecture: service/service_architecture.md
 theme:
   name: material
 
