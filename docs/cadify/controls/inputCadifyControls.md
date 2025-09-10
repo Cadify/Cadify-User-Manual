@@ -2,7 +2,7 @@
 
 <p>This document provides an overview of the various <strong>Input Web Control</strong> types that you can create to manipulate your product. Each control includes a preview that will be shown both in the Task Pane and on the published product in nopCommerce. Once you've created a control, you can set up references to dynamically update your Excel formulas.</p>
 
-<p>You can download sample products from the <a href="https://github.com/Cadify/Cadify-Light-User-Manual/tree/main/samples">samples folder</a>.</p>
+<p>You can download sample products from the <a href="https://github.com/Cadify/Cadify-User-Manual/tree/main/samples">samples folder</a>.</p>
 
 ---
 
@@ -16,7 +16,7 @@ Introducion text.
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/cadify/controls/images/list_dropdown_wizard.png" alt="List Dropdown Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/list_dropdown_wizard.png" alt="List Dropdown Wizard">
   </div>
   <div class="col-8">
     <p>Drop-down selection from a defined list of values.</p>
@@ -35,7 +35,7 @@ Introducion text.
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/cadify/controls/images/list_radio_button_wizard.png" alt="List Radio Button Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/list_radio_button_wizard.png" alt="List Radio Button Wizard">
   </div>
   <div class="col-8">
     <p>Radio button group for single selection from multiple options.</p>
@@ -54,7 +54,7 @@ Introducion text.
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/cadify/controls/images/image_squares_wizard.png" alt="Image Squares Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/image_squares_wizard.png" alt="Image Squares Wizard">
   </div>
   <div class="col-8">
     <p>Input control for selecting images represented as squares.</p>
@@ -73,7 +73,7 @@ Introducion text.
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/cadify/controls/images/checkboxes_wizard.png" alt="Checkboxes Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/checkboxes_wizard.png" alt="Checkboxes Wizard">
   </div>
   <div class="col-8">
     <p>Multi-select group from a list of values.</p>
@@ -96,7 +96,7 @@ Introducion text.
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/cadify/controls/images/numerical_wizard.png" alt="Numerical Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/numerical_wizard.png" alt="Numerical Wizard">
   </div>
   <div class="col-8">
     <p>Simple numeric input.</p>
@@ -118,7 +118,7 @@ Introducion text.
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/cadify/controls/images/spinbox_updown_wizard.png" alt="Spinbox Up Down Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/spinbox_updown_wizard.png" alt="Spinbox Up Down Wizard">
   </div>
   <div class="col-8">
     <p>Numeric input with increment/decrement buttons.</p>
@@ -140,7 +140,7 @@ Introducion text.
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/cadify/controls/images/spinbox_slider_wizard.png" alt="Spinbox Slider Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/spinbox_slider_wizard.png" alt="Spinbox Slider Wizard">
   </div>
   <div class="col-8">
     <p>Slider control for numeric input within a range.</p>
@@ -162,7 +162,7 @@ Introducion text.
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/cadify/controls/images/list_numeric_wizard.png" alt="List Numeric Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/list_numeric_wizard.png" alt="List Numeric Wizard">
   </div>
   <div class="col-8">
     <p>Input control for lists of numeric values.</p>
@@ -185,7 +185,7 @@ Introducion text.
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/cadify/controls/images/textbox_wizard.png" alt="Textbox Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/textbox_wizard.png" alt="Textbox Wizard">
   </div>
   <div class="col-8">
     <p>A single-line text input for basic string values.</p>
@@ -204,7 +204,7 @@ Introducion text.
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/cadify/controls/images/multiline_textbox_wizard.png" alt="Multiline Textbox Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/multiline_textbox_wizard.png" alt="Multiline Textbox Wizard">
   </div>
   <div class="col-8">
     <p>A multi-line text input for longer or formatted string entries.</p>

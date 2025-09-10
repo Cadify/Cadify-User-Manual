@@ -10,7 +10,7 @@ The Media Manager UI is divided into three main sections:
 - **PDF from File**: Set up downloadable PDF brochures for products.
 - **Pictures**: Manage product images and associate them with controls.
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/cadify/mediaManager/images/mediaManager.png" alt="MediaManager">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/mediaManager/images/mediaManager.png" alt="MediaManager">
 
 ## Excel Data Mapping
 
@@ -21,7 +21,7 @@ The configuration for each media type is stored in a structured format in the Ex
 
 The following example shows how these proxies are stored in the Excel workbook:
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/cadify/mediaManager/images/proxyInExcel.png" alt="ProxyInExcel">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/mediaManager/images/proxyInExcel.png" alt="ProxyInExcel">
 
 ---
 
