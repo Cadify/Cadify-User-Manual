@@ -56,9 +56,16 @@ nav:
   
   - Cadify Web:
       - Getting Started: web/nopC_getting_started.md
-
+      - Stores:
+        - Overview: web/stores.md
+        - General Settings: web/storeSettings.md
+        - Cadify Cloud: web/cloud.md
+        - ERP Connection: web/erpConnection.md
+      - Web:
+        - Overview: web/web.md
+        - Headless web API: web/headlessAPI.md
   - Cadify Service:
-      - Service Introduction: service/service.md
+      - Service Introduction: service/serviceIntroduction.md
       - Service Core Components: service/core_components.md
       - Service Architecture: service/service_architecture.md
 theme:

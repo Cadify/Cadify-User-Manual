@@ -1,0 +1,3 @@
+# ERP Connection
+
+Cadify Web supports direct connection to ERP systems through secure webhooks. Each substore may define its own ERP endpoint, authentication method, and default ERP ID. Connection settings include endpoint address, health check URL, security type, and credentials. Built-in tests allow handshake, data simulation, and latency verification to ensure reliable integration before activating the connection
