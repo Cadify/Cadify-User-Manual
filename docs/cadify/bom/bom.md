@@ -67,6 +67,8 @@ When transferring the Cadify BOM via API to ERP/MES, some columns carry special 
 
 ## CNC, Laser Cutting, and 3D Printing
 
+This section introduces Cadify’s support for CNC, laser cutting, and 3D printing. From each configuration, machine-ready formats such as DXF, STEP, and STL are generated together with the BOM. Files are complete, synchronized, and updated in real time, ensuring direct use in production without conversion or manual adjustments
+
 Cadify can generate production‑ready documentation and files (e.g., DXF, STEP, STL) directly from the configurator, together with the BOM. Because everything is updated in real time, machines can begin work immediately without manual conversion or error‑prone handoffs.
 
 **Attachment field (clarification):** For digital manufacturing, this is where machine‑ready files (DXF, STEP, STL) are linked and transferred to ERP/MES.

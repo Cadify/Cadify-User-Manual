@@ -1,0 +1,3 @@
+# Drawing Tab in Solidworks
+
+This subchapter explains how customer selections are converted into synchronized drawing outputs. Each choice updates the 3D model, BOM, and production files, ensuring that drawings for customers and for production remain consistent. The following sections describe in detail how drawings are created, how dimensions and notes are managed, and how Cadify secures full alignment between configuration logic and documentation
