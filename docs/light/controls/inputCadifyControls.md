@@ -6,49 +6,17 @@
 
 ---
 
-## Textbox
+## Lists
+
+- **Static Lists**: Lists in Cadify provide a simple way to present available choices for configuration. They are static by default, showing all options regardless of previous selections, which is ideal when every choice is always valid.
+
+- **Dynamic Lists** : Dynamic Lists in Cadify provide structured handling of product variants and sub-variants. Instead of static ranges, lists are filtered in Excel and updated dynamically with each customer choice. This ensures that only valid options are presented and maintained throughout the configuration. In this section, the manual explains the logic, use cases, and configuration steps for implementing dynamic lists.
+
+### List Dropdown
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/cadify/controls/images/textbox_wizard.png" alt="Textbox Wizard">
-  </div>
-  <div class="col-8">
-    <p>A single-line text input for basic string values.</p>
-    <ul>
-      <li><strong>Example Name:</strong> Last Name</li>
-      <li><strong>Example Value:</strong> John</li>
-      <li><strong>Min/Max:</strong> 0 / 100</li>
-      <li><strong>Type:</strong> Input</li>
-    </ul>
-  </div>
-</div>
-
----
-
-## Multiline Textbox
-
-<div class="grid">
-  <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/cadify/controls/images/multiline_textbox_wizard.png" alt="Multiline Textbox Wizard">
-  </div>
-  <div class="col-8">
-    <p>A multi-line text input for longer or formatted string entries.</p>
-    <ul>
-      <li><strong>Example Name:</strong> First Name</li>
-      <li><strong>Example Value:</strong> Smith</li>
-      <li><strong>Min/Max:</strong> 0 / 100</li>
-      <li><strong>Type:</strong> Input</li>
-    </ul>
-  </div>
-</div>
-
----
-
-## List Dropdown
-
-<div class="grid">
-  <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/cadify/controls/images/list_dropdown_wizard.png" alt="List Dropdown Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/list_dropdown_wizard.png" alt="List Dropdown Wizard">
   </div>
   <div class="col-8">
     <p>Drop-down selection from a defined list of values.</p>
@@ -63,11 +31,11 @@
 
 ---
 
-## List Radio Button
+### List Radio Button
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/cadify/controls/images/list_radio_button_wizard.png" alt="List Radio Button Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/list_radio_button_wizard.png" alt="List Radio Button Wizard">
   </div>
   <div class="col-8">
     <p>Radio button group for single selection from multiple options.</p>
@@ -82,11 +50,11 @@
 
 ---
 
-## Image Squares
+### Image Squares
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/cadify/controls/images/image_squares_wizard.png" alt="Image Squares Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/image_squares_wizard.png" alt="Image Squares Wizard">
   </div>
   <div class="col-8">
     <p>Input control for selecting images represented as squares.</p>
@@ -101,11 +69,34 @@
 
 ---
 
-## Numerical
+### Checkboxes
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/cadify/controls/images/numerical_wizard.png" alt="Numerical Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/checkboxes_wizard.png" alt="Checkboxes Wizard">
+  </div>
+  <div class="col-8">
+    <p>Multi-select group from a list of values.</p>
+    <ul>
+      <li><strong>Example Name:</strong> Select multiple</li>
+      <li><strong>List Values:</strong> 1;2;3;4;5;6;7;8</li>
+      <li><strong>Example Value:</strong> 1;4</li>
+      <li><strong>Type:</strong> Input</li>
+    </ul>
+  </div>
+</div>
+
+---
+
+## Numericals
+
+Numerical web controls in Cadify handle values that may include both static and dynamic min/max limits. Each input is validated against defined ranges, ensuring that calculations remain consistent and errors are avoided. When a value falls outside limits, the system applies strategies such as error messages or guided corrections. This section introduces the concept before detailing each numerical type.
+
+### Numerical
+
+<div class="grid">
+  <div class="col-4">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/numerical_wizard.png" alt="Numerical Wizard">
   </div>
   <div class="col-8">
     <p>Simple numeric input.</p>
@@ -123,11 +114,11 @@
 
 ---
 
-## Spinbox Up Down
+### Spinbox Up Down
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/cadify/controls/images/spinbox_updown_wizard.png" alt="Spinbox Up Down Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/spinbox_updown_wizard.png" alt="Spinbox Up Down Wizard">
   </div>
   <div class="col-8">
     <p>Numeric input with increment/decrement buttons.</p>
@@ -145,11 +136,11 @@
 
 ---
 
-## Spinbox Slider
+### Spinbox Slider
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/cadify/controls/images/spinbox_slider_wizard.png" alt="Spinbox Slider Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/spinbox_slider_wizard.png" alt="Spinbox Slider Wizard">
   </div>
   <div class="col-8">
     <p>Slider control for numeric input within a range.</p>
@@ -167,30 +158,11 @@
 
 ---
 
-## Checkboxes
+### List Numeric
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/cadify/controls/images/checkboxes_wizard.png" alt="Checkboxes Wizard">
-  </div>
-  <div class="col-8">
-    <p>Multi-select group from a list of values.</p>
-    <ul>
-      <li><strong>Example Name:</strong> Select multiple</li>
-      <li><strong>List Values:</strong> 1;2;3;4;5;6;7;8</li>
-      <li><strong>Example Value:</strong> 1;4</li>
-      <li><strong>Type:</strong> Input</li>
-    </ul>
-  </div>
-</div>
-
----
-
-## List Numeric
-
-<div class="grid">
-  <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/cadify/controls/images/list_numeric_wizard.png" alt="List Numeric Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/list_numeric_wizard.png" alt="List Numeric Wizard">
   </div>
   <div class="col-8">
     <p>Input control for lists of numeric values.</p>
@@ -198,6 +170,46 @@
       <li><strong>Example Name:</strong> Numeric List</li>
       <li><strong>List Values:</strong> 1;2;3;4;5;6;7</li>
       <li><strong>Unit:</strong> mm</li>
+      <li><strong>Type:</strong> Input</li>
+    </ul>
+  </div>
+</div>
+
+---
+
+## Other
+
+### Textbox
+
+<div class="grid">
+  <div class="col-4">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/textbox_wizard.png" alt="Textbox Wizard">
+  </div>
+  <div class="col-8">
+    <p>A single-line text input for basic string values.</p>
+    <ul>
+      <li><strong>Example Name:</strong> Last Name</li>
+      <li><strong>Example Value:</strong> John</li>
+      <li><strong>Min/Max:</strong> 0 / 100</li>
+      <li><strong>Type:</strong> Input</li>
+    </ul>
+  </div>
+</div>
+
+---
+
+### Multiline Textbox
+
+<div class="grid">
+  <div class="col-4">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/multiline_textbox_wizard.png" alt="Multiline Textbox Wizard">
+  </div>
+  <div class="col-8">
+    <p>A multi-line text input for longer or formatted string entries.</p>
+    <ul>
+      <li><strong>Example Name:</strong> First Name</li>
+      <li><strong>Example Value:</strong> Smith</li>
+      <li><strong>Min/Max:</strong> 0 / 100</li>
       <li><strong>Type:</strong> Input</li>
     </ul>
   </div>

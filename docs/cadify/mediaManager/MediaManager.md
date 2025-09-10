@@ -27,6 +27,8 @@ The following example shows how these proxies are stored in the Excel workbook:
 
 ## 1. Print from Excel (`ProxyReport`)
 
+This subchapter explains how Cadify generates reports as part of integrated quality assurance. Reports are created from Excel using defined print ranges and exported as standard PDF files. They may contain drawings, control points, or checklists, and are always linked to the product configuration. The following pages describe how report templates are prepared, how print ranges are managed, and how outputs are distributed.
+
 Allows the user to specify a worksheet and range to define a printable area for the product.
 
 | Field                | Example Value      | Description                                  |

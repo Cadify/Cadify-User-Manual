@@ -53,6 +53,8 @@ Version number for traceability and change management throughout the lifecycle.
 
 ## ERP/MES‑Focused Columns
 
+This subchapter introduces the Bill of Materials (BOM) as Cadify’s core connector between configuration and enterprise systems. Every customer choice generates a structured BOM that feeds ERP and MES with complete and traceable data. The following sections describe the BOM structure, column definitions, and how cost, process, and documentation fields secure a seamless digital flow from configurator to production
+
 When transferring the Cadify BOM via API to ERP/MES, some columns carry special importance for planning, scheduling, and execution:
 
 - **Manufacturing** — actionable production instructions (e.g., required treatments, process steps, or quality notes).
@@ -68,4 +70,3 @@ When transferring the Cadify BOM via API to ERP/MES, some columns carry special 
 Cadify can generate production‑ready documentation and files (e.g., DXF, STEP, STL) directly from the configurator, together with the BOM. Because everything is updated in real time, machines can begin work immediately without manual conversion or error‑prone handoffs.
 
 **Attachment field (clarification):** For digital manufacturing, this is where machine‑ready files (DXF, STEP, STL) are linked and transferred to ERP/MES.
-

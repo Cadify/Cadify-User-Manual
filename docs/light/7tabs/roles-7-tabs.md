@@ -1,8 +1,6 @@
 # Cadify 7 Tab Role System Documentation
 
-This chapter summarizes fixed product tabs, role mapping, localization, content management, drawing settings, and store‑admin workflows.
-
-> **Context:** PARA 4 is designed as a landing paragraph from Home Page buttons that link directly to “document access and roles.”
+The fixed tab structure in Cadify ensures that every stakeholder receives the right files in the right place. Seven tabs are predefined, each linked to a role that governs visibility and permissions. From descriptions for customers to source archives for administrators, this system maintains order, consistency, and security. This section of the manual explains how the tabs work in detail.
 
 ## Fixed Product Tabs and Functionality
 

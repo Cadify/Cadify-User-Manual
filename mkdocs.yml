@@ -53,6 +53,13 @@ nav:
       - Getting Started: light/getting_started.md
       - Menu Elements: light/menu_elements.md
       - Task Pane Overview: light/taskPane/task_pane.md
+      - Cadify Light Product:
+        - Overview: light/product/productOverview.md
+        - Create product: light/product/createProduct.md
+        - Best practices:
+          - Overview: light/product/productBestPractise.md
+          - Yellow Brick Road: light/product/yellowBrickRoad.md
+          - Five Formulas: light/product/fiveFormulas.md
       - Web Controls:
         - Input Web Controls: light/controls/inputCadifyControls.md
         - Output Web Controls: light/controls/outputControls.md

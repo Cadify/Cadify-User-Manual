@@ -8,9 +8,9 @@
 
 ## Lists
 
-Introducion text.
+- **Static Lists**: Lists in Cadify provide a simple way to present available choices for configuration. They are static by default, showing all options regardless of previous selections, which is ideal when every choice is always valid.
 
----
+- **Dynamic Lists** : Dynamic Lists in Cadify provide structured handling of product variants and sub-variants. Instead of static ranges, lists are filtered in Excel and updated dynamically with each customer choice. This ensures that only valid options are presented and maintained throughout the configuration. In this section, the manual explains the logic, use cases, and configuration steps for implementing dynamic lists.
 
 ### List Dropdown
 
@@ -90,7 +90,7 @@ Introducion text.
 
 ## Numericals
 
----
+Numerical web controls in Cadify handle values that may include both static and dynamic min/max limits. Each input is validated against defined ranges, ensuring that calculations remain consistent and errors are avoided. When a value falls outside limits, the system applies strategies such as error messages or guided corrections. This section introduces the concept before detailing each numerical type.
 
 ### Numerical
 
@@ -178,8 +178,6 @@ Introducion text.
 ---
 
 ## Other
-
----
 
 ### Textbox
 
