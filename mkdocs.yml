@@ -21,39 +21,59 @@ nav:
           - Drawing Types: cadify/product/drawingTypes.md
           - Export Drawings: cadify/product/exportDrawings.md
       - Web Controls:
-        - Available Controls: controls/cadifycontrols.md
-        - Best practices: controls/cadifycontrols-advanced.md
-      - Media Manager: mediaManager/MediaManager.md
-      - 7 Tabs Management: common/7tabs/roles-7-tabs.md
-      - Bill of Materials: common/bom/bom.md
+        - Input Web Controls: cadify/controls/inputCadifyControls.md
+        - Output Web Controls: cadify/controls/outputControls.md
+        - Checkout Web Control: cadify/controls/checkoutControls.md
+        - Best practices: cadify/controls/cadifycontrols-advanced.md
+      - Media Manager: cadify/mediaManager/MediaManager.md
+      - 7 Tabs Management: cadify/7tabs/roles-7-tabs.md
+      - Bill of Materials: cadify/bom/bom.md
+      - Sketcher:
+        - Sketcher Overview: cadify/sketcher/sketcher-overview.md
+        - Best practices:
+          - Sketcher Scroll-By: cadify/sketcher/advanced-sketcher-scrollby.md
+        - CadifySheet: cadify/sketcher/cadifysheet.md
+        - CadifyLine: cadify/sketcher/cadifyline.md
+        - CadifyRectangle: cadify/sketcher/cadifyrectangle.md
+        - CadifyEllipse: cadify/sketcher/cadifyellipse.md
+        - CadifyHoles: cadify/sketcher/cadifyholes.md
+        - CadifyImage: cadify/sketcher/cadifyimage.md
+        - CadifyDim: cadify/sketcher/cadifydim.md
+        - CadifyText: cadify/sketcher/cadifytext.md
+        - CadifyBezier: cadify/sketcher/cadifybezier.md
+        - CadifySvg: cadify/sketcher/cadifysvg.md
+        - CadifyJson: cadify/sketcher/cadifyjson.md
+        - CadifyDartJson: cadify/sketcher/cadifydartjson.md
+        - CadifyDartImage: cadify/sketcher/cadifydartimage.md
   - Cadify Light:
       - Getting Started: light/getting_started.md
       - Menu Elements: light/menu_elements.md
-      - Task Pane Overview: taskPane/task_pane.md
+      - Task Pane Overview: light/taskPane/task_pane.md
       - Web Controls:
-        - Available Controls: controls/cadifycontrols.md
-        - Best practices: controls/cadifycontrols-advanced.md
-      - Media Manager: mediaManager/MediaManager.md
-      - 7 Tabs Management: common/7tabs/roles-7-tabs.md
-      - Bill of Materials: common/bom/bom.md
+        - Input Web Controls: light/controls/inputCadifyControls.md
+        - Output Web Controls: light/controls/outputControls.md
+        - Best practices: light/controls/cadifycontrols-advanced.md
+      - Media Manager: light/mediaManager/MediaManager.md
+      - 7 Tabs Management: light/7tabs/roles-7-tabs.md
+      - Bill of Materials: light/bom/bom.md
       - Sketcher:
-        - Sketcher Overview: sketcher/sketcher-overview.md
+        - Sketcher Overview: light/sketcher/sketcher-overview.md
         - Best practices:
-          - Sketcher Scroll-By: sketcher/advanced-sketcher-scrollby.md        
-        - CadifySheet: sketcher/cadifysheet.md
-        - CadifyLine: sketcher/cadifyline.md
-        - CadifyRectangle: sketcher/cadifyrectangle.md
-        - CadifyEllipse: sketcher/cadifyellipse.md
-        - CadifyHoles: sketcher/cadifyholes.md
-        - CadifyImage: sketcher/cadifyimage.md
-        - CadifyDim: sketcher/cadifydim.md
-        - CadifyText: sketcher/cadifytext.md
-        - CadifyBezier: sketcher/cadifybezier.md
-        - CadifySvg: sketcher/cadifysvg.md
-        - CadifyJson: sketcher/cadifyjson.md
-        - CadifyDartJson: sketcher/cadifydartjson.md
-        - CadifyDartImage: sketcher/cadifydartimage.md
-  
+          - Sketcher Scroll-By: light/sketcher/advanced-sketcher-scrollby.md
+        - CadifySheet: light/sketcher/cadifysheet.md
+        - CadifyLine: light/sketcher/cadifyline.md
+        - CadifyRectangle: light/sketcher/cadifyrectangle.md
+        - CadifyEllipse: light/sketcher/cadifyellipse.md
+        - CadifyHoles: light/sketcher/cadifyholes.md
+        - CadifyImage: light/sketcher/cadifyimage.md
+        - CadifyDim: light/sketcher/cadifydim.md
+        - CadifyText: light/sketcher/cadifytext.md
+        - CadifyBezier: light/sketcher/cadifybezier.md
+        - CadifySvg: light/sketcher/cadifysvg.md
+        - CadifyJson: light/sketcher/cadifyjson.md
+        - CadifyDartJson: light/sketcher/cadifydartjson.md
+        - CadifyDartImage: light/sketcher/cadifydartimage.md
+
   - Cadify Web:
       - Getting Started: web/nopC_getting_started.md
       - Stores:
