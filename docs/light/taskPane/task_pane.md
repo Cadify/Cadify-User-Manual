@@ -5,7 +5,7 @@ The Cadify Light Task Pane is your central workspace for configuring product con
 ---
 
 ## 1. Menu Bar (Top)
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/taskPane/images/MenuBar.png" alt="Menu">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/light/taskPane/images/MenuBar.png" alt="Menu">
 
 - Located at the very top.
 - Main menu (`File`, `Tools`), shows your login state (e.g., your email).
@@ -15,14 +15,14 @@ The Cadify Light Task Pane is your central workspace for configuring product con
 
 ## 2. Icon Buttons (Below Menu)
 
-- <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/taskPane/images/AddWebControl.png" alt="AddWebControl" style="vertical-align: middle;"> **Add Control**: Lets you create a new Web Control.  
+- <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/light/taskPane/images/AddWebControl.png" alt="AddWebControl" style="vertical-align: middle;"> **Add Control**: Lets you create a new Web Control.  
   You can choose to create Input or Output Web Controls.</br>
   </br>See [Input Control creation details](/light/controls/inputCadifyControls)
   </br>See [Output Control creation details](/light/controls/outputControls)
 
 </br>
 
-- <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/taskPane/images/mediaManager.png" alt="MediaManager" style="vertical-align: middle;"> **Open Media Manager**: Opens the Media Manager for product media configuration.  
+- <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/light/taskPane/images/mediaManager.png" alt="MediaManager" style="vertical-align: middle;"> **Open Media Manager**: Opens the Media Manager for product media configuration.  
   See [Media Manager details](mediaManager/MediaManager).
 
 ---
@@ -35,18 +35,18 @@ The Cadify Light Task Pane is your central workspace for configuring product con
   - **Edit**: Modify the control.  
   - **Delete**: Remove the control.
   <br>
-  <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/taskPane/images/ControlContextMenu.png" alt="ContextMenu">
+  <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/light/taskPane/images/ControlContextMenu.png" alt="ContextMenu">
 
 ---
 
 ## 4. Status Bar (Bottom, with 4 icons)
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/taskPane/images/StatusBar.png" alt="Status Bar">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/light/taskPane/images/StatusBar.png" alt="Status Bar">
 
-- <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/taskPane/images/excel.png" alt="Excel status" style="vertical-align: middle;"> **Excel Table** integrity. Turns red if issues detected (best practice: reopen product).
-- <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/taskPane/images/library.png" alt="Library status" style="vertical-align: middle;"> **Library** sync status. Spinner shows syncing; hover for file count.
-- <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/taskPane/images/dropbox.png" alt="Dropbox status" style="vertical-align: middle;"> **Dropbox** connection: Blue (stable), Yellow (slow), Red (unavailable).
-- <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/taskPane/images/nopC.png" alt="NopC status" style="vertical-align: middle;"> **NopCommerce** connection: Blue (available), yellow (slow), red (unreachable).
+- <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/light/taskPane/images/excel.png" alt="Excel status" style="vertical-align: middle;"> **Excel Table** integrity. Turns red if issues detected (best practice: reopen product).
+- <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/light/taskPane/images/library.png" alt="Library status" style="vertical-align: middle;"> **Library** sync status. Spinner shows syncing; hover for file count.
+- <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/light/taskPane/images/dropbox.png" alt="Dropbox status" style="vertical-align: middle;"> **Dropbox** connection: Blue (stable), Yellow (slow), Red (unavailable).
+- <img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/light/taskPane/images/nopC.png" alt="NopC status" style="vertical-align: middle;"> **NopCommerce** connection: Blue (available), yellow (slow), red (unreachable).
 
 ---
 
@@ -58,7 +58,7 @@ The Cadify Light Task Pane is your central workspace for configuring product con
 - **Context Menus**: Edit or delete controls via the vertical dots.
 - **Status Bar**: Always know the health of your integrations.
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/taskPane/images/TaskPaneOverview.png" alt="TaskPaneOverview">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/light/taskPane/images/TaskPaneOverview.png" alt="TaskPaneOverview">
 
 For details, see:  
 - [Menu Elements](/light/menu_elements)  

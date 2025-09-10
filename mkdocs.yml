@@ -14,9 +14,13 @@ nav:
         - Drawing Tab: cadify/task_panes/drawingTab.md
         - Web Tab: cadify/task_panes/webTab.md
       - Cadify Product:
+        - Overview: cadify/product/productOverview.md
         - Create product: cadify/product/createProduct.md
         - Create drawing: cadify/product/drawing/drawings.md
         - Best practices:
+          - Overview: cadify/product/productBestPractise.md
+          - Yellow Brick Road: cadify/product/yellowBrickRoad.md
+          - Five Formulas: cadify/product/fiveFormulas.md
           - Library Elements: cadify/product/library.md
           - Drawing Types: cadify/product/drawingTypes.md
           - Export Drawings: cadify/product/exportDrawings.md
