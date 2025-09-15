@@ -59,8 +59,3 @@ The Cadify Light Task Pane is your central workspace for configuring product con
 - **Status Bar**: Always know the health of your integrations.
 
 <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/TaskPaneOverview.png" alt="TaskPaneOverview">
-
-For details, see:  
-- [Menu Elements](/light/menu_elements)  
-- [Web Controls](/controls/cadifycontrols)  
-- [Media Manager](/mediaManager/MediaManager)

@@ -10,6 +10,7 @@ nav:
         - Tools: cadify/menu_elements/toolsMenu.md
         - Test: cadify/menu_elements/testMenu.md
       - Task Panes:
+        - Overview: cadify/task_panes/taskPaneOverview.md
         - Model Tab: cadify/task_panes/modelTab.md
         - Drawing Tab: cadify/task_panes/drawingTab.md
         - Web Tab: cadify/task_panes/webTab.md
