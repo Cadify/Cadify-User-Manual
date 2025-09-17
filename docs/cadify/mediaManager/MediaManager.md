@@ -9,6 +9,7 @@ The Media Manager UI is divided into three main sections:
 - **Print from Excel**: Configure print areas from specified worksheets and ranges.
 - **PDF from File**: Set up downloadable PDF brochures for products.
 - **Pictures**: Manage product images and associate them with controls.
+- **Models**: Solidworks product as downloadable files.
 
 <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/mediaManager/images/mediaManager.png" alt="MediaManager">
 
@@ -18,6 +19,7 @@ The configuration for each media type is stored in a structured format in the Ex
 - `ProxyReport` for print areas
 - `ProxyBrochure` for PDF brochures
 - `ProxyPicture` for product images
+- `ProxyModel` for Solidworks files
 
 The following example shows how these proxies are stored in the Excel workbook:
 
@@ -82,21 +84,28 @@ Users can assign images as product pictures or connect them to Cadify Controls (
 
 ---
 
+## 4. Proxy Models (`ProxyModel`)
+
+Users can provide the entire product .sldprt or .sldasm file compressed as a ZIP archive, or they can export a specific 3D output from the model, such as a STEP or 3MF file.
+
+| Field                | Example Value      | Description                                  |
+|----------------------|-------------------|----------------------------------------------|
+| Destination tab      | 6 Fabricator / 7 SourceAdmin      | Where the result is stored   |
+| File format          | step / zip        | Output file format                           |
+| File name            | 3D_model_as_step.step / 3d_compressed.zip | Output file name     |
+| Prompt               | 3D model in STEP / 3D model in zip | Display name in UI          |
+| Display order        | 10 /20              | UI display order                           |
+
+---
+
 ## Proxy Object Mapping
 
 - **ProxyReport**: Defines Excel printing areas.
 - **ProxyBrochure**: Defines downloadable PDF brochures.
 - **ProxyPicture**: Defines product images and their attributes.
+- **ProxyModel**: Defines downloadable 3D model files.
 
 Each proxy is represented as a structured row in the Excel workbook, making it easy to configure and automate media management for products.
-
----
-
-### Workflow Summary
-
-1. **Configure print areas** in Excel via `ProxyReport`.
-2. **Add downloadable PDFs** via `ProxyBrochure`.
-3. **Assign and connect images** via `ProxyPicture` and link them to controls (e.g., ImageSquares).
 
 ---
 
@@ -105,6 +114,7 @@ Each proxy is represented as a structured row in the Excel workbook, making it e
 - **Add PDF print**: Add a new Excel print configuration.
 - **Add PDF as file**: Attach a downloadable PDF brochure.
 - **Add picture**: Add new product images and associate them with controls.
+- **Add model**: Add new downloadable 3D model output exported directly from Solidworks model.
 
 Buttons at the bottom allow users to validate and apply changes, ensuring the product's media settings are correctly saved.
 

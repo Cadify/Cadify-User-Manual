@@ -14,10 +14,6 @@ Loads parameter values from the product’s design table. **Disabled if no produ
 
 Opens and manages an additional Excel file with extra parameters.
 
-### Merge excels *(debug only)*
-
-Combines multiple Excel sources into one (only visible in debug mode).
-
 ### Mate Reference Generator
 
 Helps generate mate references for assembly components.
