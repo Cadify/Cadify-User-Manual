@@ -16,7 +16,7 @@ Numerical controls often need both minimum and maximum values, and these may cha
     If the user enters a value above the maximum allowed, the Excel field turns red and a message appears, as shown in the example where 11 holes is outside the valid range of 4–10. Cadify then applies a chosen strategy: block the value, suggest a valid alternative, or automatically correct it.
   </div>
   <div class="col-8" style="flex:0 0 40%; max-width:40%; box-sizing:border-box; text-align:center;">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/menu_elements/images/MaxMinHolesInPCD.png" alt="Textbox Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/MaxMinHolesInPCD.png" alt="Textbox Wizard">
   </div>
 </div>
 
