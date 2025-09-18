@@ -1,16 +1,40 @@
-# Input Web Control Types
+# Input - List Web Controls
 
-<p>This document provides an overview of the various <strong>Input Web Control</strong> types that you can create to manipulate your product. Each control includes a preview that will be shown both in the Task Pane and on the published product in nopCommerce. Once you've created a control, you can set up references to dynamically update your Excel formulas.</p>
+<p>This document provides an overview of the various <strong>List</strong> Web Control types that you can create to manipulate your product. Each control includes a preview that will be shown both in the Task Pane and on the published product in nopCommerce. Once you've created a control, you can set up references to dynamically update your Excel formulas.</p>
 
 <p>You can download sample products from the <a href="https://github.com/Cadify/Cadify-User-Manual/tree/main/samples">samples folder</a>.</p>
 
 ---
 
-## Lists
+## Static Lists
+Lists in Cadify provide a simple way to present available choices for configuration. They are static by default, showing all options regardless of previous selections, which is ideal when every choice is always valid.
 
-- **Static Lists**: Lists in Cadify provide a simple way to present available choices for configuration. They are static by default, showing all options regardless of previous selections, which is ideal when every choice is always valid.
+---
 
-- **Dynamic Lists** : Dynamic Lists in Cadify provide structured handling of product variants and sub-variants. Instead of static ranges, lists are filtered in Excel and updated dynamically with each customer choice. This ensures that only valid options are presented and maintained throughout the configuration. In this section, the manual explains the logic, use cases, and configuration steps for implementing dynamic lists.
+## Dynamic Lists
+Dynamic Lists in Cadify provide structured handling of product variants and sub-variants. Instead of static ranges, lists are filtered in Excel and updated dynamically with each customer choice. This ensures that only valid options are presented and maintained throughout the configuration. In this section, the manual explains the logic, use cases, and configuration steps for implementing dynamic lists.
+
+Dynamic lists in Cadify operate by filtering available options in Excel based on the customer’s current selection. Rather than showing all possible sub-variants at once, only the valid subset is displayed and updated interactively. This prevents errors and simplifies the configuration process.
+
+<div class="grid" style="display:flex; align-items:flex-start; gap:12px; flex-wrap:nowrap;">
+  <div class="col-4" style="flex:0 0 60%; max-width:60%; box-sizing:border-box; padding-right:12px;">
+    The illustration demonstrates this principle. On the left, a complete list of variants is shown in Excel with both Variant A and Variant B together with their sub-variants. A filter is applied, represented by the funnel, which reduces the list according to the customer’s choice. On the right, the result is a clean table showing only the valid sub-variants of Variant A, in this case, a1, a2, a3.
+  </div>
+  <div class="col-8" style="flex:0 0 40%; max-width:40%; box-sizing:border-box; text-align:center;">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/menu_elements/images/DynamicLists.png" alt="Textbox Wizard">
+  </div>
+</div>
+
+This mechanism ensures that:
+Invalid or irrelevant sub-variants are never presented to the customer.
+Each choice dynamically controls the list shown in the next step.
+Excel remains the foundation for managing ranges and logic, but Cadify ensures that updates happen instantly in the web interface.
+
+By relying on this structured filtering, large and complex product families can be managed without overwhelming the customer. For engineers, it secures a clear rule-based process that adapts as new variants are added.
+
+---
+
+## List Controls
 
 ### List Dropdown
 

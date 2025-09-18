@@ -26,7 +26,10 @@ nav:
           - Drawing Types: cadify/product/drawingTypes.md
           - Export Drawings: cadify/product/exportDrawings.md
       - Web Controls:
-        - Input Web Controls: cadify/controls/inputCadifyControls.md
+        - Input Web Controls:
+          - List Controls: cadify/controls/inputListControls.md
+          - Numerical Controls: cadify/controls/inputNumericalControls.md
+          - Other Controls: cadify/controls/inputOtherControls.md
         - Output Web Controls: cadify/controls/outputControls.md
         - Checkout Web Control: cadify/controls/checkoutControls.md
         - Best practices: cadify/controls/cadifycontrols-advanced.md
@@ -62,7 +65,10 @@ nav:
           - Yellow Brick Road: light/product/yellowBrickRoad.md
           - Five Formulas: light/product/fiveFormulas.md
       - Web Controls:
-        - Input Web Controls: light/controls/inputCadifyControls.md
+        - Input Web Controls:
+          - List Controls: light/controls/inputListControls.md
+          - Numerical Controls: light/controls/inputNumericalControls.md
+          - Other Controls: light/controls/inputOtherControls.md
         - Output Web Controls: light/controls/outputControls.md
         - Best practices: light/controls/cadifycontrols-advanced.md
       - Media Manager: light/mediaManager/MediaManager.md
