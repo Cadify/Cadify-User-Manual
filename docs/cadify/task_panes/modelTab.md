@@ -5,7 +5,7 @@
     In Cadify, every product starts with a SolidWorks 3D model  representation of the real product. This model makes it easy to see, explore, and understand a product before it’s ever manufactured. Because the 3D model is connected to product data in Cadify, customizations can be automatically validated and constrained, ensuring that every version stays accurate and manufacturable. The result is a streamlined production process with full control at every stage, and the first version is always right.    
   </div>
   <div class="col-8" style="flex:0 0 38%; max-width:38%; box-sizing:border-box; text-align:center;">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/task_panes/images/img_001.png" alt="Textbox Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/task_panes/images/img_001.png" alt="3DModelTab">
   </div>
 </div>
 

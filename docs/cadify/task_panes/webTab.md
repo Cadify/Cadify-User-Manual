@@ -6,7 +6,7 @@
   </div>
   <div class="col-8" style="flex:0 0 38%; max-width:38%; box-sizing:border-box; text-align:center;">
     <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/task_panes/images/img_003.png"
-         alt="Textbox Wizard"
+         alt="WebTab"
          style="display:block; width:100%; height:auto;">
   </div>
 </div>
@@ -17,18 +17,14 @@ Additionally, here are also the settings for our media files: Reports, Brochures
 
 <div class="grid">
   <div class="col-4">
-    <a href="/cadify/controls/inputCadifyControls"
-   style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px;
-          text-decoration:none;font-weight:600;line-height:1.2;">
-  Cadify Web Controls
-</a>  
+    <a href="/cadify/controls/inputCadifyControls" style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px; text-decoration:none;font-weight:600;line-height:1.2;">
+      Cadify Web Controls
+  </a> 
   </div>
   <div class="col-8">
-    <a href="/cadify/controls/inputCadifyControls"
-   style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px;
-          text-decoration:none;font-weight:600;line-height:1.2;">
-  Tutorial: Create dynamic reports
-</a>
+    <a href="/cadify/controls/inputCadifyControls" style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px; text-decoration:none;font-weight:600;line-height:1.2;">
+      Tutorial: Create dynamic reports
+    </a>
   </div>
 </div>
 
