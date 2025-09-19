@@ -25,7 +25,7 @@ The Bill of Materials is generated directly from the digital twin and updated in
   </a> 
   </div>
   <div class="col-8">
-    <a href="/Cadify-User-Manual/cadify/controls/inputCadifyControls" style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px; text-decoration:none;font-weight:600;line-height:1.2; text-align:center;">
+    <a href="/Cadify-User-Manual/cadify/mediaManager/MediaManager/#1-print-from-excel-proxyreport" style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px; text-decoration:none;font-weight:600;line-height:1.2; text-align:center;">
       See how scalable production works in Report Tab
     </a>
   </div>
@@ -35,7 +35,7 @@ The Bill of Materials is generated directly from the digital twin and updated in
 
 Cadify integrates with ERP and MES systems to deliver complete order data automatically. This enables capacity planning without manual coordination. Whether scaling up or down, production stays aligned with available resources and customer demand, maintaining both flow and profitability.
 
-<a href="/Cadify-User-Manual/cadify/mediaManager/MediaManager/#1-print-from-excel-proxyreport"
+<a href="/Cadify-User-Manual/cadify/bom/bom/#erpmesfocused-columns"
    style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px;
           text-decoration:none;font-weight:600;line-height:1.2;">
   See how scalable production works in ERP Connections
