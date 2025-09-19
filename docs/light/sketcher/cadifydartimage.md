@@ -15,9 +15,10 @@ When you enter this function into a cell, it posts the provided JSON (from `Cadi
 
 | Parameter   | Description |
 |-------------|-------------|
-| `json`      | JSON string, typically from `CadifyDartJson` |
-| `jsonType`  | Type of JSON/ML request.<br>**Currently, only `1` (Floris) is supported** |
-| `target`    | Excel cell reference (e.g., `"B2"`) for the top-left corner of the image |
+| `Endpoint URL`       | Url to call example: `https://api.runpod.ai/v2/689zc0j1f8go4t/runsync` |
+| `JSON input`      | JSON string, typically from `CadifyDartJson` |
+| `JSON export type`  | Type of JSON/ML request.<br>**Currently, only `1` (Floris) is supported** |
+| `Top Left Cell`    | Excel cell reference (e.g., `"B2"`) for the top-left corner of the image |
 
 ## ✅ Example
 

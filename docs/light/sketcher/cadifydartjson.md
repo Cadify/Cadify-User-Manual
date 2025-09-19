@@ -15,7 +15,7 @@ When you enter this function into a cell, it collects relevant values from the C
 
 | Parameter   | Description |
 |-------------|-------------|
-| `jsonType`  | Type of JSON to export.<br>`0` = Standard Cadify JSON<br>`1` = Floris-style prompt for AI image generation |
+| `JSON export type`  | Type of JSON to export.<br>`0` = Standard Cadify JSON<br>`1` = Floris-style prompt for AI image generation |
 
 ## ✅ Example
 
