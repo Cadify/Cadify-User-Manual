@@ -66,4 +66,4 @@
    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/sketcher/images/createSvg.png" alt="CreationExample">
 
 3. **Product Preview in NopCommerce**  
-   <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/sketcher/images/nopCpreview.png" alt="ProductPreview">
+   <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/sketcher/images/nopCpreview.png" alt="ProductPreview"

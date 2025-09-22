@@ -1,32 +1,38 @@
 site_name: Cadify User Manuals
+
+theme:
+  name: material
+  features:
+    - navigation.indexes   # make each section title a real page
+
 nav:
   - Getting Started with Cadify: index.md
 
   - Cadify:
-      - Getting Started: cadify/getting_started.md
+      - Getting Started: cadify/index.md
       - Scalable Production: cadify/scalableProduction.md
       - Menu Elements:
-        - Overview: cadify/menu_elements/overview.md
+        - Overview: cadify/menu_elements/index.md
         - File: cadify/menu_elements/filemenus.md
         - Tools: cadify/menu_elements/toolsMenu.md
         - Test: cadify/menu_elements/testMenu.md
       - Task Panes:
-        - Overview: cadify/task_panes/taskPaneOverview.md
+        - Overview: cadify/task_panes/index.md
         - 3D Model Tab: cadify/task_panes/modelTab.md
         - Drawing Tab: cadify/task_panes/drawingTab.md
         - Web Tab: cadify/task_panes/webTab.md
       - Cadify Product:
-        - Overview: cadify/product/productOverview.md
+        - Overview: cadify/product/index.md
         - Create product: cadify/product/createProduct.md
         - Create drawing: cadify/product/drawing/drawings.md
         - Best practices:
-          - Overview: cadify/product/productBestPractise.md
-          - Yellow Brick Road: cadify/product/yellowBrickRoad.md
-          - Five Formulas: cadify/product/fiveFormulas.md
-          - Library Elements: cadify/product/library.md
-          - Drawing Types: cadify/product/drawingTypes.md
-          - Export Drawings: cadify/product/exportDrawings.md
-          - Flexible Standardization: cadify/product/flexibleStandardization.md
+          - Overview: cadify/product/bestPractices/index.md
+          - Yellow Brick Road: cadify/product/bestPractices/yellowBrickRoad.md
+          - Five Formulas: cadify/product/bestPractices/fiveFormulas.md
+          - Library Elements: cadify/product/bestPractices/library.md
+          - Drawing Types: cadify/product/bestPractices/drawingTypes.md
+          - Export Drawings: cadify/product/bestPractices/exportDrawings.md
+          - Flexible Standardization: cadify/product/bestPractices/flexibleStandardization.md
       - Web Controls:
         - Input Web Controls:
           - List Controls: cadify/controls/inputListControls.md
@@ -39,7 +45,7 @@ nav:
       - 7 Tabs Management: cadify/7tabs/roles-7-tabs.md
       - Bill of Materials: cadify/bom/bom.md
       - Sketcher:
-        - Sketcher Overview: cadify/sketcher/sketcher-overview.md
+        - Overview: cadify/sketcher/index.md
         - Best practices:
           - Sketcher Scroll-By: cadify/sketcher/advanced-sketcher-scrollby.md
         - CadifySheet: cadify/sketcher/cadifysheet.md
@@ -56,16 +62,16 @@ nav:
         - CadifyDartJson: cadify/sketcher/cadifydartjson.md
         - CadifyDartImage: cadify/sketcher/cadifydartimage.md
   - Cadify Light:
-      - Getting Started: light/getting_started.md
+      - Getting Started: light/index.md
       - Menu Elements: light/menu_elements.md
       - Task Pane Overview: light/taskPane/task_pane.md
       - Cadify Light Product:
-        - Overview: light/product/productOverview.md
+        - Overview: light/product/index.md
         - Create product: light/product/createProduct.md
         - Best practices:
-          - Overview: light/product/productBestPractise.md
-          - Yellow Brick Road: light/product/yellowBrickRoad.md
-          - Five Formulas: light/product/fiveFormulas.md
+          - Overview: light/product/bestPractices/index.md
+          - Yellow Brick Road: light/product/bestPractices/yellowBrickRoad.md
+          - Five Formulas: light/product/bestPractices/fiveFormulas.md
       - Web Controls:
         - Input Web Controls:
           - List Controls: light/controls/inputListControls.md
@@ -77,7 +83,7 @@ nav:
       - 7 Tabs Management: light/7tabs/roles-7-tabs.md
       - Bill of Materials: light/bom/bom.md
       - Sketcher:
-        - Sketcher Overview: light/sketcher/sketcher-overview.md
+        - Sketcher Overview: light/sketcher/index.md
         - Best practices:
           - Sketcher Scroll-By: light/sketcher/advanced-sketcher-scrollby.md
         - CadifySheet: light/sketcher/cadifysheet.md
@@ -95,21 +101,22 @@ nav:
         - CadifyDartImage: light/sketcher/cadifydartimage.md
 
   - Cadify Web:
-      - Getting Started: web/nopC_getting_started.md
+      - Getting Started: web/index.md
       - Stores:
-        - Overview: web/stores.md
-        - General Settings: web/storeSettings.md
-        - Cadify Cloud: web/cloud.md
-        - ERP Connection: web/erpConnection.md
+        - Overview: web/store/index.md
+        - General Settings: web/store/storeSettings.md
+        - Cadify Cloud: web/store/cadifyCloud.md
+        - ERP Connection: web/store/erpConnection.md
       - Web:
-        - Overview: web/web.md
-        - Headless web API: web/headlessAPI.md
+        - Overview: web/web/index.md
+        - Headless web API: web/web/headlessAPI.md
+
   - Cadify Service:
-      - Service Introduction: service/serviceIntroduction.md
+      - Service Introduction: service/index.md
       - Service Core Components: service/core_components.md
       - Service Architecture: service/service_architecture.md
-theme:
-  name: material
+
+use_directory_urls: true  
 
 markdown_extensions:
   - admonition
@@ -117,4 +124,4 @@ markdown_extensions:
   - pymdownx.superfences
   - tables
   - attr_list
-  - md_in_html
+  - md_in_html  
