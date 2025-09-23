@@ -1,6 +1,6 @@
 # Exporting Drawings to DXF, DWG, and PDF Across 7 Tabs
 
-Cadify enables you to export your SolidWorks drawings to DXF, DWG, and PDF formats and assign them to any of the 7 product tabs, each with its own role-based access. This ensures that the right files are delivered to the right stakeholders—customers, partners, fabricators, or administrators—according to your workflow and security needs.
+Cadify enables you to export your SolidWorks drawings to DXF, DWG, and PDF formats and assign them to any of the 7 product tabs, each with its own role based access. This ensures that the right files are delivered to the right stakeholders, customers, partners, fabricators, or administrators, according to your workflow and security needs.
 
 For a detailed explanation of the 7 tab system and role-based access, see [Cadify 7 Tab Role System Documentation](../../7tabs/roles-7-tabs.md).
 
@@ -12,10 +12,15 @@ For a detailed explanation of the 7 tab system and role-based access, see [Cadif
 
 2. **Configure Drawing Export:**
 	- In the Drawing Settings form, you can set the drawing title, prompts, and display order.
-	- In the highlighted area (see image below), simply check the checkboxes for the desired file formats (DWG, DXF, PDF) and the destination tabs (3: Brochures, 4: Customer, 5: Partner, 6: Fabricator, 7: SourceAdmin).
+	- In the highlighted area (see image below), simply check the checkboxes for the desired file formats (DWG, DXF, PDF) and the destination tabs:
+        - 3 Brochures
+        - 4 Customer
+        - 5 Partner
+        - 6 Fabricator
+        - 7 SourceAdmin
 	- This setup determines which files are generated and where they will appear in the web store, based on the tab's role permissions.
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/drawingSettings.png" alt="Drawing Settings Form" />
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/drawingExport.png" alt="Drawing Settings Form" />
 
 > **Note:** When you check a box, Cadify creates a proxy entry in the Cadify table (Excel workbook) for that export.
 
