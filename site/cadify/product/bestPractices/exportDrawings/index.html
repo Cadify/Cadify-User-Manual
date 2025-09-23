@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../library/">
+        <link rel="prev" href="../drawingTypes/">
       
       
         <link rel="next" href="../flexibleStandardization/">
@@ -60,6 +60,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#exporting-drawings-to-dxf-dwg-and-pdf-across-7-tabs" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -822,7 +827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../drawingTypes.md" class="md-nav__link">
+      <a href="../drawingTypes/" class="md-nav__link">
         
   
   
@@ -851,6 +856,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Export Drawings
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -863,6 +883,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-export-drawings-to-tabs" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Export Drawings to Tabs
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3180,6 +3228,25 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-export-drawings-to-tabs" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Export Drawings to Tabs
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -3195,9 +3262,41 @@
 
 
 
-  <h1>Export Drawings</h1>
-
-
+<h1 id="exporting-drawings-to-dxf-dwg-and-pdf-across-7-tabs">Exporting Drawings to DXF, DWG, and PDF Across 7 Tabs</h1>
+<p>Cadify enables you to export your SolidWorks drawings to DXF, DWG, and PDF formats and assign them to any of the 7 product tabs, each with its own role based access. This ensures that the right files are delivered to the right stakeholders, customers, partners, fabricators, or administrators, according to your workflow and security needs.</p>
+<p>For a detailed explanation of the 7 tab system and role-based access, see <a href="../../../7tabs/roles-7-tabs/">Cadify 7 Tab Role System Documentation</a>.</p>
+<h2 id="how-to-export-drawings-to-tabs">How to Export Drawings to Tabs</h2>
+<ol>
+<li>
+<p><strong>Open the Drawing Settings Form:</strong></p>
+<ul>
+<li>Access it from the <strong>Tools</strong> menu, or</li>
+<li>Use the button on the <strong>Drawing Task Pane</strong> in SolidWorks.</li>
+</ul>
+</li>
+<li>
+<p><strong>Configure Drawing Export:</strong></p>
+<ul>
+<li>In the Drawing Settings form, you can set the drawing title, prompts, and display order.</li>
+<li>In the highlighted area (see image below), simply check the checkboxes for the desired file formats (DWG, DXF, PDF) and the destination tabs:<ul>
+<li>3 Brochures</li>
+<li>4 Customer</li>
+<li>5 Partner</li>
+<li>6 Fabricator</li>
+<li>7 SourceAdmin</li>
+</ul>
+</li>
+<li>This setup determines which files are generated and where they will appear in the web store, based on the tab's role permissions.</li>
+</ul>
+</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/drawingExport.png" alt="Drawing Settings Form" /></p>
+<blockquote>
+<p><strong>Note:</strong> When you check a box, Cadify creates a proxy entry in the Cadify table (Excel workbook) for that export.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/exportProxy.png" alt="Drawing Exports" /></p>
+<p>Tabs without assigned content are hidden from the product page, ensuring only relevant files are shown to each user role.</p>
+<p>For more on tab roles, permissions, and file assignment, refer to the <a href="../../../7tabs/roles-7-tabs/">7 Tab Role System Documentation</a>.</p>
 
 
 
