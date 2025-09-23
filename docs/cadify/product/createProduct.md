@@ -9,12 +9,10 @@ Follow these steps to create a new product using the Cadify SolidWorks add-in:
 
 ## 2. Open or Create a SolidWorks Part/Assembly
 
-<p>You can download sample products from the <a href="https://github.com/Cadify/Cadify-User-Manual/tree/main/samples">samples folder</a>.</p>
-
 - Open an existing SolidWorks part or assembly file, or create a new one from scratch.
 - **Example:** To create a simple cube, start a new part, select the **Front Plane**, and use the rectangle sketch tool to draw a square. Then use the **Extrude** feature to create a cube.
 
-> **Tip:** We also provide ready-to-go product samples. [Link will go here]
+> **Tip:** We also provide ready-to-go product samples. <a href="https://github.com/Cadify/Cadify-User-Manual/tree/main/samples">Samples</a>
 
 ## 3. Create a New Raw Product
 
