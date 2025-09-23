@@ -24,7 +24,7 @@ nav:
       - Cadify Product:
         - Overview: cadify/product/index.md
         - Create product: cadify/product/createProduct.md
-        - Create drawing: cadify/product/drawing/drawings.md
+        - Create drawing: cadify/product/drawings.md
         - Best practices:
           - Overview: cadify/product/bestPractices/index.md
           - Yellow Brick Road: cadify/product/bestPractices/yellowBrickRoad.md
