@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#drawing-types-in-cadify" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -663,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../drawing/drawings/" class="md-nav__link">
+      <a href="../../drawings/" class="md-nav__link">
         
   
   
@@ -828,6 +833,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Drawing Types
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -840,6 +860,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-drawing-from-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Drawing from Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Notes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-laser-cut" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Laser Cut
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-from-existing-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. From Existing Sheet
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3180,6 +3255,52 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-drawing-from-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Drawing from Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Notes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-laser-cut" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Laser Cut
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-from-existing-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. From Existing Sheet
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -3195,9 +3316,43 @@
 
 
 
-  <h1>Drawing Types</h1>
-
-
+<h1 id="drawing-types-in-cadify">Drawing Types in Cadify</h1>
+<p>In Cadify, there are three basic types of drawing sheets you can create, plus a fourth option for create one from an existing sheet. Each type serves a different purpose in your workflow:</p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/sheetStyles.png" alt="Sheet Styles" /></p>
+<h2 id="1-drawing-from-model">1. Drawing from Model</h2>
+<p>This is the standard method for generating technical drawings. It automatically creates a sheet with three standard views (Front, Top, and Left) from either the entire assembly or any selected sub-part.</p>
+<p><strong>Plane Override:</strong></p>
+<p>Users can override which model plane is used as the "Front" plane for the drawing views. For example, if your model was designed on the Right Plane but you want the drawing's front view to show that side, you can select the Right Plane as the front. This ensures your drawings always present the model from the intended perspective.</p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/overrideFrontPlane.png" alt="Select model plane to use as Front plane" /></p>
+<p><strong>View Layout Override:</strong></p>
+<p>The automatically inserted standard views (Front, Top, Left) can also be customized by the user. As shown in the image below, you can choose which views to insert—such as replacing the Left view with the Right view, omitting side views, or adding section/break views. This gives you full control over the drawing layout to match your documentation needs.</p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/viewOptions.png" alt="Select views to insert and override layout" /></p>
+<p><strong>Key features:</strong></p>
+<ul>
+<li>Supports both assemblies and parts.</li>
+<li>Users can specify view breaks and section views.</li>
+<li>Break positions can be controlled by Excel formulas, ensuring that only the relevant parts of long models are displayed (e.g., showing just the start and end of a long part).</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/sectionView.png" alt="Section View Settings" /></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/breakSettings.png" alt="Break View Settings" /></p>
+<h2 id="2-notes">2. Notes</h2>
+<p>This option creates a completely empty sheet, ideal for adding note annotations, instructions, or other non-geometry information.</p>
+<p><strong>Use case:</strong></p>
+<ul>
+<li>Add manufacturing notes, assembly instructions, or general documentation.</li>
+</ul>
+<h2 id="3-laser-cut">3. Laser Cut</h2>
+<p>Designed for sheet metal parts:
+- If the model contains a sheet metal feature with a flat pattern, Cadify will automatically unsuppress the flat pattern and generate a flat pattern drawing view.
+- If the model is not a sheet metal part, Cadify creates a "fake" laser cut drawing using only the model's front view.</p>
+<h2 id="4-from-existing-sheet">4. From Existing Sheet</h2>
+<p>This option allows you to create a new drawing sheet by duplicating an existing one.</p>
+<p><strong>Use case:</strong></p>
+<ul>
+<li>Reuse layouts, annotations, or view setups from previous drawings to save time and maintain consistency.</li>
+</ul>
+<hr />
+<p>By choosing the appropriate drawing type, you can streamline your documentation process and ensure your drawings meet your project's needs.</p>
 
 
 
