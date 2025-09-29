@@ -1,6 +1,14 @@
-# Creating Default UDFs via the Cadify Tab
+# The Cadify Sketcher
 
-## To create defaults from UDFs, follow these steps:
+## Introduction
+
+Cadify Sketcher turns product rules into live, engineer-authored visuals that never drift from the source model. As the user adjusts parameters, the web preview updates instantly, showing exactly what the rules allow. The result is clarity during configuration and a smoother path to checkout.
+
+Sketcher is optimized for fast, data-bound previews, not freehand drawing. Typical outputs include a dimensioned outline preview and parameter-driven hole patterns that reflect the current configuration. Interactivity comes from your Web Controls, while Sketcher renders a deterministic, rule-safe picture that matches the same parameters used for BOM, drawings, and production data.
+
+Outputs are delivered to the storefront as clean text, grid, svg and graphs for the product page preview, and can also be exported or embedded in Reports where needed. The goal is better user guidance, higher engagement, and fewer errors, so complex products feel straightforward to configure.
+
+## How to create your own Sketcher graphics:
 
 1. **Open the Cadify Tab in Excel**  
    Select the **Cadify** tab on the Excel ribbon.
