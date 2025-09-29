@@ -1,6 +1,10 @@
 # Drawings
 
-This chapter explains how to create and manage drawings in the SolidWorks Task Pane with Cadify, including model/drawing dimensions, notes, and role‑based distribution.
+This chapter introduces how Cadify creates and manages drawings directly from the validated 3D model. All drawings remain synchronized with the approved configuration, any change in parameters regenerates the set consistently. 
+
+You will learn how to control sheet formats and templates, view sets and title blocks, model and drawing dimensions, relative notes anchored to geometry and fixed notes for meta information, symbols and GD and T, BOM balloons and callouts. Cadify supports multiple drawings per product, and multiple sheets per drawing, while every sheet in a drawing uses the same sheet format template as the first sheet. Role based distribution delivers the right drawing to the right party, customer, contractor, installer, quality, with versioning and approval marks recorded. Generated drawing packs are attached to the order together with the BOM and machine ready files, so production starts without manual rework. 
+
+The following sections describe the Drawing Task Pane, recommended workflows, approval options, and how drawing updates propagate safely through roles in 7 tabs.
 
 ## Creating a New Drawing
 
