@@ -84,9 +84,11 @@ Users can assign images as product pictures or connect them to Cadify Controls (
 
 ---
 
-## 4. Proxy Models (`ProxyModel`)
+## 4. 3D model export data formats
 
-Users can provide the entire product .sldprt or .sldasm file compressed as a ZIP archive, or they can export a specific 3D output from the model, such as a STEP or 3MF file.
+Digital manufacturing demands precise, machine ready data. Cadify builds a single source of truth from SolidWorks models and Excel rules, then outputs the right format for each process. From the configurator, validated parameters drive exports for CNC, laser cutting, and 3D printing, DXF for flat patterns and laser operations, STEP for milling, turning, and assemblies, STL or 3MF for additive workflows. Files stay consistent with the approved configuration, so machines receive exactly what they need the first time.
+
+This section explains how these exports are created, named, and version bound, and how they travel with the order. It also covers the optional proxy model path, where you provide either a complete SolidWorks Pack and Go ZIP archive of the full 3D model, or a specific 3D export such as STEP or 3MF.
 
 | Field                | Example Value      | Description                                  |
 |----------------------|-------------------|----------------------------------------------|

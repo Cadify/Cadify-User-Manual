@@ -110,6 +110,8 @@ nav:
       - Web:
         - Overview: web/web/index.md
         - Headless web API: web/web/headlessAPI.md
+      - Drop Shipping:
+        - Overview: web/dropShipping/index.md
 
   - Cadify Service:
       - Service Introduction: service/index.md
