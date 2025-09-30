@@ -12,7 +12,7 @@
         <link rel="prev" href="../store/erpConnection/">
       
       
-        <link rel="next" href="headlessAPI/">
+        <link rel="next" href="../dropShipping/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#your-storefront-our-headless-engine" class="md-skip">
+        <a href="#cadify-with-nopcommerce-web-api" class="md-skip">
           Skip to content
         </a>
       
@@ -705,6 +705,8 @@
       
         
       
+        
+      
     
     
     
@@ -850,6 +852,29 @@
   
   <span class="md-ellipsis">
     Export Drawings
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cadify/product/bestPractices/sku/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SKU & Revision Management
     
   </span>
   
@@ -2970,8 +2995,6 @@
           
         
       
-        
-      
     
     
     
@@ -2996,11 +3019,6 @@
 
             </a>
             
-              
-              <label class="md-nav__link md-nav__link--active" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
           </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
@@ -3010,29 +3028,6 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="headlessAPI/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Headless web API
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
           </ul>
@@ -3236,6 +3231,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#headless-commerce-with-nopcommerce" class="md-nav__link">
+    <span class="md-ellipsis">
+      Headless Commerce with nopCommerce
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#embedding-the-cadify-configurator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embedding the Cadify Configurator
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#separation-of-concerns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Separation of Concerns
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3250,8 +3280,37 @@
 
 
 
-<h1 id="your-storefront-our-headless-engine">Your storefront, our headless engine</h1>
+<h1 id="cadify-with-nopcommerce-web-api">Cadify with nopCommerce Web API</h1>
+<p>This section explains how Cadify connects with nopCommerce using the official Web API. It shows how nopCommerce serves as the backend for commerce operations, while Cadify extends the system with advanced product configuration and production-ready data.</p>
 <p>Cadify connects to NopCommerce through the official Web API. NopCommerce manages catalog, pricing, and projects in the backend, while your storefront consumes the APIs. Cadify adds configuration logic and supplies production-ready data directly into the commerce process.</p>
+<hr />
+<h2 id="headless-commerce-with-nopcommerce">Headless Commerce with nopCommerce</h2>
+<p>Cadify integrates with nopCommerce through the official Web API, allowing nopCommerce to run purely as a <strong>headless commerce backend</strong>.<br />
+In this setup:</p>
+<ul>
+<li>nopCommerce manages catalog data and customer roles.  </li>
+<li>Your storefront communicates with it through standard REST endpoints.  </li>
+<li>The nopCommerce admin remains the single place to manage products, ensuring familiar workflows for both your team and ours.  </li>
+</ul>
+<hr />
+<h2 id="embedding-the-cadify-configurator">Embedding the Cadify Configurator</h2>
+<p>Your storefront embeds the <strong>Cadify configurator</strong>, which handles advanced product logic:</p>
+<ul>
+<li>3D product configuration  </li>
+<li>Dynamic pricing  </li>
+<li>Automated generation of production-ready data  </li>
+</ul>
+<p>When a customer completes a configuration, Cadify sends the result as structured attributes or order details via the nopCommerce API.<br />
+The order is then processed using nopCommerce’s built-in workflows, without bypassing security or compliance features.</p>
+<hr />
+<h2 id="separation-of-concerns">Separation of Concerns</h2>
+<p>This architecture separates responsibilities clearly:</p>
+<ul>
+<li>The <strong>storefront</strong> can be built with any modern framework such as React, Angular, or Vue.  </li>
+<li><strong>nopCommerce</strong> provides a stable, PCI-compliant backend with full B2B capabilities.  </li>
+<li><strong>Cadify</strong> adds the intelligence layer that transforms complex input into manufacturable products.  </li>
+</ul>
+<p>All integration happens through supported API surfaces, making the system <strong>upgrade-safe, scalable, and aligned with best practices</strong>.</p>
 
 
 
