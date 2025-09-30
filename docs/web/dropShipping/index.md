@@ -115,12 +115,12 @@ Cadify supports drop shipping across several industry types:
 - [Checkout Web Controls (section in progress)](../../cadify/controls/checkoutControls.md)
 - [BOM](../../cadify/bom/bom.md)
 - [ERP Connection (section in progress)](../store/erpConnection.md)
-- [Headless Web API](../web/headlessAPI.md)
+- [Headless Web API](../web/index.md)
 - [Stores and Sub-stores (section in progress)](../store/storeSettings.md)
 
 ---
 
 ## Reference Information
 
-- <a href="https://github.com/Cadify/cadify-assets/raw/main/documents/Executive%20Summary%20How%20Cadify%20Powers%20Drop%20Ship%20at%20Scale.docx">Executive Summary How Cadify Powers Drop Ship at Scale</a> 
-- <a href="https://github.com/Cadify/cadify-assets/raw/main/documents/Current%20State%20of%20the%20Art%20and%20Trends%20in%20Drop%20Shipping%20in%20Cadify%20context.docx">Current State of the Art and Trends in Drop Shipping in Cadify context</a>  
+- <a href="https://docs.google.com/viewer?url=https://github.com/Cadify/cadify-assets/raw/main/documents/Executive%20Summary%20How%20Cadify%20Powers%20Drop%20Ship%20at%20Scale.pdf">Executive Summary How Cadify Powers Drop Ship at Scale</a> 
+- <a href="https://docs.google.com/viewer?url=https://github.com/Cadify/cadify-assets/raw/main/documents/Current%20State%20of%20the%20Art%20and%20Trends%20in%20Drop%20Shipping%20in%20Cadify%20context.pdf">Current State of the Art and Trends in Drop Shipping in Cadify context</a>  

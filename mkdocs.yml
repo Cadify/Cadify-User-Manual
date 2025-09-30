@@ -32,6 +32,7 @@ nav:
           - Library Elements: cadify/product/bestPractices/library.md
           - Drawing Types: cadify/product/bestPractices/drawingTypes.md
           - Export Drawings: cadify/product/bestPractices/exportDrawings.md
+          - SKU & Revision Management: cadify/product/bestPractices/sku.md
           - Flexible Standardization: cadify/product/bestPractices/flexibleStandardization.md
       - Web Controls:
         - Input Web Controls:
@@ -109,7 +110,6 @@ nav:
         - ERP Connection: web/store/erpConnection.md
       - Web:
         - Overview: web/web/index.md
-        - Headless web API: web/web/headlessAPI.md
       - Drop Shipping:
         - Overview: web/dropShipping/index.md
 
