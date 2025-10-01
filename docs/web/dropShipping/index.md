@@ -122,6 +122,6 @@ Cadify supports drop shipping across several industry types:
 
 ## Reference Information
 
-- <a href="https://docs.google.com/viewer?url=https://github.com/Cadify/cadify-assets/raw/main/documents/Executive_Summary_How_Cadify_Powers_Drop_Ship_at_Scale.pdf" target="_blank" rel="noopener noreferrer">Executive Summary How Cadify Powers Drop Ship at Scale</a>
+- <a href="files/Executive Summary How Cadify Powers Drop Ship at Scale.pdf" target="_blank" rel="noopener noreferrer">Executive Summary How Cadify Powers Drop Ship at Scale</a>
 
-- <a href="https://docs.google.com/viewer?url=https://github.com/Cadify/cadify-assets/raw/main/documents/Current_State_of_the_Art_and_Trends_in_Drop_Shipping_in_Cadify_context.pdf" target="_blank" rel="noopener noreferrer">Current State of the Art and Trends in Drop Shipping in Cadify context</a>
+- <a href="files/Current State of the Art and Trends in Drop Shipping in Cadify context.pdf" target="_blank" rel="noopener noreferrer">Current State of the Art and Trends in Drop Shipping in Cadify context</a>
