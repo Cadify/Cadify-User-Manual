@@ -41,7 +41,8 @@ nav:
           - Other Controls: cadify/controls/inputOtherControls.md
         - Output Web Controls: cadify/controls/outputControls.md
         - Checkout Web Control: cadify/controls/checkoutControls.md
-        - Best practices: cadify/controls/cadifycontrols-advanced.md
+        - Linking Sketcher Output: cadify/controls/linkSketcher.md
+        - Best practices: cadify/controls/cadifycontrols-advanced.md        
       - Media Manager: cadify/mediaManager/MediaManager.md
       - 7 Tabs Management: cadify/7tabs/roles-7-tabs.md
       - Bill of Materials: cadify/bom/bom.md
@@ -62,6 +63,7 @@ nav:
         - CadifyJson: cadify/sketcher/cadifyjson.md
         - CadifyDartJson: cadify/sketcher/cadifydartjson.md
         - CadifyDartImage: cadify/sketcher/cadifydartimage.md
+        - Making Sketcher Visible Online: cadify/sketcher/addSketcher.md
   - Cadify Light:
       - Getting Started: light/index.md
       - Menu Elements: light/menu_elements.md
@@ -79,6 +81,7 @@ nav:
           - Numerical Controls: light/controls/inputNumericalControls.md
           - Other Controls: light/controls/inputOtherControls.md
         - Output Web Controls: light/controls/outputControls.md
+        - Linking Sketcher Output: light/controls/linkSketcher.md
         - Best practices: light/controls/cadifycontrols-advanced.md
       - Media Manager: light/mediaManager/MediaManager.md
       - 7 Tabs Management: light/7tabs/roles-7-tabs.md
@@ -100,6 +103,7 @@ nav:
         - CadifyJson: light/sketcher/cadifyjson.md
         - CadifyDartJson: light/sketcher/cadifydartjson.md
         - CadifyDartImage: light/sketcher/cadifydartimage.md
+        - Making Sketcher Visible Online: light/sketcher/addSketcher.md
 
   - Cadify Web:
       - Getting Started: web/index.md
