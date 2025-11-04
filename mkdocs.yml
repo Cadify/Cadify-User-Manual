@@ -113,7 +113,7 @@ nav:
         - Cadify Cloud: web/store/cadifyCloud.md
         - ERP Connection: web/store/erpConnection.md
       - Headless Web:
-        - Overview: web/web/index.md
+        - Overview: web/headlessAPI/index.md
       - Drop Shipping:
         - Overview: web/dropShipping/index.md
 
