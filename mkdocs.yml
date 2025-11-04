@@ -110,10 +110,11 @@ nav:
       - Stores:
         - Overview: web/store/index.md
         - General Settings: web/store/storeSettings.md
-        - Cadify Cloud: web/store/cadifyCloud.md
-        - ERP Connection: web/store/erpConnection.md
+        - Cadify Cloud: web/store/cadifyCloud.md           
       - Headless Web:
         - Overview: web/headlessAPI/index.md
+      - ERP Connection: 
+        - Overview: web/erpConnection/index.md
       - Drop Shipping:
         - Overview: web/dropShipping/index.md
 
