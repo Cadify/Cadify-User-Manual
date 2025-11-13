@@ -1,127 +1,123 @@
 # RFQ & Order Workflows
 
-This page documents the user and admin flows for Request-for-Quote (RFQ) and Order actions exposed by the Cadify plugin.
+This page documents user and admin flows for Request‑for‑Quote (RFQ), Cancel and Order actions implemented by the Cadify plugin. It includes where the UI is rendered (views/components), the client behaviour and server endpoints used.
 
 ---
 
 ## Summary
 
-- Users request quotes from the Project page (`Views/ShoppingCart/Project.cshtml`).
-- RFQ button states:
-  - `RFQ` — initial
-  - `Quote Requested` — after user requests
-  - `Quote Sent` — after admin accepts
-- Admins accept quotes from the Customers admin area (customer record → Projects section).
-- Order A behavior: a lightweight Order is created by the server and deleted immediately if creation finishes successfully; project quote flags are cleared.
+- Users can request quotes from:
+  - Project page: `Plugins/nopCommerce.Plugin.Cadify/Views/ShoppingCart/Project.cshtml`
+  - Project lists / datatable: `Plugins/nopCommerce.Plugin.Cadify/Views/Project/_ProjectListDataTable.cshtml` (used by `ProjectLists`)
+  - Project selector component: `Plugins/nopCommerce.Plugin.Cadify/Views/Shared/Components/ProjectSelector/Default.cshtml`
+- Buttons and actions available:
+  - RFQ (Request quotation)
+  - Cancel (reset quote request)
+  - Order (Order A behaviour — ephemeral order created then deleted after success)
+- Admins accept quotes in the Customers admin area (customer edit views provided by the plugin).
 
 ---
 
-## User steps (request a quote)
+## Project list (datatable) — quick reference
 
-1. Open Project page for the project.
-2. Click the RFQ button.
-   - Client posts to `POST /Project/GetProject` with `quotebutton`.
-   - If successful:
-     - Project record: `IsQuoteRequested = true`
-     - Each project item: `HasQuoted = true`
-     - RFQ history entry and optional ERP messages are created.
-3. UI feedback:
-   - Button text changes to `Quote Requested` and is disabled.
-   - Project history updates.
+View: `Plugins/nopCommerce.Plugin.Cadify/Views/Project/_ProjectListDataTable.cshtml`  
+Used in: `Plugins/nopCommerce.Plugin.Cadify/Views/Project/ProjectLists.cshtml` and the Project selector view component.
 
-Place screenshot: *Project page showing RFQ button here.*
+What it renders
+- The datatable groups rows by project and renders a group header containing:
+  - RFQ button (id `rfq-btn-{projectGuid}`)
+  - Cancel button (id `cancel-btn-{projectGuid}`) — visible when `IsQuoteRequested` or `IsQuoted`
+  - Order button (id `order-btn-{projectGuid}`) — visible when `IsQuoted`
+- Buttons call client handlers defined in the same file:
+  - `handleRfqClick(projectGuid)` → sets button UI to "Quote in Progress" then calls `postQuote(projectGuid)`
+  - `handleCancelClick(projectGuid)` → AJAX POST with `resetquotebutton`
+  - `handleOrderClick(projectGuid)` → AJAX POST to `/Project/CreateOrder`
 
----
+Server endpoints used by the datatable
+- `POST /Project/GetProject` with:
+  - `quotebutton=1` and `from-datatable=1` → triggers `ProjectController.QuoteRequest(...)`
+  - `resetquotebutton=1` and `from-datatable=1` → triggers `ProjectController.ResetQuoteRequest(...)`
+- `POST /Project/CreateOrder` with `{ projectGuid }` → triggers `ProjectController.CreateOrder(...)`
 
-## User: cancel quote request
+Notes
+- Datatable handlers expect JSON responses (hence `from-datatable`).
+- Client notifications use `displayBarNotification(...)`. If your theme differs, replace or implement that helper.
 
-- Click Cancel (visible when a quote is requested or sent).
-- Client calls `POST /Project/GetProject` with `resetquotebutton`.
-- Server resets:
-  - `IsQuoteRequested = false`
-  - `IsQuoted = false`
-  - All project items `HasQuoted = false`
-  - Adds a project history entry: *QuoteCancelled*
-  - Notifies ERP via `ConstructRFQMessageAsync(..., "Project.History.QuoteCancelled", ...)`
-- UI updates: RFQ button reverts to `RFQ`.
-
----
-
-## Order (Order A behaviour)
-
-- On Project page, user clicks Order button (enabled only when `IsQuoted` is true).
-- Client calls `POST /Project/CreateOrder`.
-- Server:
-  - Calls `CreateOrderFromProjectAsync(project)` which:
-    - Creates an Order with required NOT NULL fields (e.g. `CustomOrderNumber`, `BillingAddressId`).
-    - Inserts related OrderItem entries for eligible project items.
-  - Per Order A: controller deletes the created Order if creation succeeded.
-  - Clears quote flags:
-    - `IsQuoteRequested = false`
-    - `IsQuoted = false`
-    - All project items `HasQuoted = false`
-  - Records elapsed time for RFQ metrics and notifies ERP with `QuoteCancelled`.
-- Client:
-  - Shows confirmation and reloads to reflect cleared quote state.
+Place screenshot(s) for datatable:
+- `docs/images/project-list-datatable.png` — show a row group header with RFQ / Cancel / Order buttons.
 
 ---
 
-## Admin: accept a quote
+## Project selector component
 
-1. Open Admin → Customers → Edit the customer owning the project.
-2. Locate the plugin Projects area (plugin UI or project list in customer admin).
-3. Accept a quote (plugin may have an Accept action); when accepted:
-   - `WidemoreProjectRecord.IsQuoted = true`
-   - Optionally set `QuotedOnUtc` / `QuotedBy`
-   - Trigger `SendQuoteFinishedMessageAsync(...)` to notify recipients
-   - Publish `ProjectQuotedEvent` for ERP/integrations
-4. After acceptance, Project page RFQ button shows `Quote Sent`.
+File: `Plugins/nopCommerce.Plugin.Cadify/Views/Shared/Components/ProjectSelector/Default.cshtml`
 
-Place screenshot: *Customers admin showing Accept Quote here.*
+- The ProjectSelector component presents compact project choices and can surface the same RFQ/Order actions (depending on configuration).
+- Behaviour and endpoints are identical to datatable / project page: RFQ → `POST /Project/GetProject`, Cancel → `POST /Project/GetProject` (reset), Order → `POST /Project/CreateOrder`.
+
+Place screenshot(s) for selector:
+- `docs/images/project-selector.png` — show the component in a page where a user can pick a project and request an RFQ.
 
 ---
 
-## Endpoints (reference)
+## Project page (detailed) — recap
 
-- POST `/Project/GetProject`  
-  - `quotebutton` → request quote (server: `QuoteRequest`)
-  - `resetquotebutton` → cancel/reset quote (server: `ResetQuoteRequest`)
-- GET `/Project/GetProjectRecord?projectGuid={guid}` — returns project state JSON (used by client polling)
-- GET `/Project/GetProjectHistory?projectGuid={guid}` — project history JSON
-- POST `/Project/CreateOrder` — create ephemeral order and then delete it (Order A)
+File: `Plugins/nopCommerce.Plugin.Cadify/Views/ShoppingCart/Project.cshtml`
 
----
+- Contains the main RFQ, Cancel and Order controls for a single project.
+- Client polling updates button state using `GET /Project/GetProjectRecord` and `GET /Project/GetProjectHistory`.
+- Order button calls `/Project/CreateOrder` (AJAX or form) and UI is updated after server response.
 
-## Client behaviour
-
-- Project page polls:
-  - `GET /Project/GetProjectHistory` — updates history
-  - `GET /Project/GetProjectRecord` — updates RFQ / Order button states
-- Buttons:
-  - RFQ: posts form (regular or AJAX)
-  - Cancel: AJAX POST with `resetquotebutton`
-  - Order: AJAX POST to `/Project/CreateOrder` (then refresh or show notification)
+Place screenshot(s) for project page:
+- `docs/images/project-page-rfq.png` — RFQ button on project details page.
+- `docs/images/project-page-order-cancel.png` — Order and Cancel buttons shown together.
 
 ---
 
-## Important notes & gotchas
+## Admin: accepting a quote
 
-- Authentication: RFQ/Order actions require a logged-in (non-guest) user.
-- Project locking: locked projects disallow RFQ/Order actions.
-- DB constraints: `Order.CustomOrderNumber` and `Order.BillingAddressId` are required; service provides fallback values (creates minimal address if needed).
-- ERP failures are logged; they do not necessarily block the user happy path.
-- Order A deletes the created order immediately — remove deletion if persistent orders are required.
+Where to look:
+- Admin customer edit view: `Plugins/nopCommerce.Plugin.Cadify/Views/Admin/Customer/_CreateOrUpdate.cshtml` (plugin adds Project/ERP details there)
+- Admin controllers: `Plugins/nopCommerce.Plugin.Cadify\Controllers\Admin\CadifyConfigurationController.cs` and `Plugins/nopCommerce.Plugin.Cadify\Controllers\Admin\ProjectController.cs`
+
+Admin actions
+- When admin accepts a quote the project record should become `IsQuoted = true`. The plugin exposes helper methods and services:
+  - `IProjectService` / `ProjectService` — project updates and `CreateOrderFromProjectAsync(...)`
+  - `SendQuoteFinishedMessageAsync` to email recipients
+  - `ProjectQuotedEvent` is published for integrations
+
+Place screenshot(s) for admin:
+- `docs/images/admin-customer-projects.png` — show customer edit with Projects / Accept controls.
+
+---
+
+## Endpoints & implementation summary
+
+- `POST /Project/GetProject` (form POST)
+  - `quotebutton` → QuoteRequest (user RFQ)
+  - `resetquotebutton` → ResetQuoteRequest (cancel)
+- `GET /Project/GetProjectRecord?projectGuid={guid}` → returns project JSON (used by polling)
+- `GET /Project/GetProjectHistory?projectGuid={guid}` → project history list (used by polling)
+- `POST /Project/CreateOrder` → CreateOrderFromProject flow (Order A: create then delete)
+
+Files of interest
+- UI:
+  - `Plugins/nopCommerce.Plugin.Cadify/Views/Project/_ProjectListDataTable.cshtml`
+  - `Plugins/nopCommerce.Plugin.Cadify/Views/Project/ProjectLists.cshtml`
+  - `Plugins/nopCommerce.Plugin.Cadify/Views/ShoppingCart/Project.cshtml`
+  - `Plugins/nopCommerce.Plugin.Cadify/Views/Shared/Components/ProjectSelector/Default.cshtml`
+- Backend:
+  - `Plugins/nopCommerce.Plugin.Cadify\Controllers\ProjectController.cs`
+  - `Plugins/nopCommerce.Plugin.Cadify\Services\Project\ProjectService.cs`
+  - `Plugins/nopCommerce.Plugin.Cadify\Services\UsageStat\QuotationRequestService.cs`
 
 ---
 
-## Troubleshooting
+## Pictures / where to put them in docs
 
-- RFQ button does nothing: check console and network for `POST /Project/GetProject`.
-- Order DB errors: verify `Order` table nullability, ensure `CreateOrderFromProjectAsync` sets required fields.
-- Polling stale: ensure `/Project/GetProjectRecord` reachable and not blocked by auth.
-
----
-
-## Images / Screenshots
-
----
+Recommended paths in the docs folder:
+- `docs/images/project-page-rfq.png` — Project page RFQ button
+- `docs/images/project-page-order-cancel.png` — Project page Order + Cancel
+- `docs/images/project-list-datatable.png` — `_ProjectListDataTable` group header (RFQ/Cancel/Order)
+- `docs/images/project-selector.png` — `ProjectSelector` component
+- `docs/images/admin-customer-projects.png` — Admin customer Projects area
