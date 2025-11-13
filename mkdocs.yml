@@ -115,6 +115,8 @@ nav:
         - Overview: web/headlessAPI/index.md
       - ERP Connection: 
         - Overview: web/erpConnection/index.md
+      - Order:
+        - Overview: web/order/index.md
       - Drop Shipping:
         - Overview: web/dropShipping/index.md
 
