@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#weldments" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -704,8 +709,6 @@
       
         
       
-        
-      
     
     
     
@@ -782,29 +785,6 @@
   
   <span class="md-ellipsis">
     Five Formulas
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../product/bestPractices/library/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Library Elements
     
   </span>
   
@@ -933,6 +913,10 @@
     
       
         
+          
+        
+      
+        
       
         
       
@@ -953,8 +937,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../controls/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -963,8 +948,14 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6">
@@ -972,6 +963,8 @@
             Web Controls
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -996,10 +989,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_6_1" id="__nav_2_6_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_6_2" id="__nav_2_6_2_label" tabindex="0">
             
   
   
@@ -1012,8 +1005,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6_1">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_2">
             <span class="md-nav__icon md-icon"></span>
             Input Web Controls
           </label>
@@ -1338,6 +1331,8 @@
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
+      
+        
       
       
       <a href="./" class="md-nav__link md-nav__link--active">
@@ -3560,6 +3555,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -3575,9 +3572,20 @@
 
 
 
-  <h1>Weldments</h1>
-
-
+<h1 id="weldments">Weldments</h1>
+<p>Folder name: <code>weldments</code></p>
+<p>Purpose
+- Stores SolidWorks weldment profile files and related profile definitions.
+- Provides weldment profiles used by SolidWorks weldment tools.</p>
+<p>Key points
+- Created automatically during Cadify installation.
+- Do not rename this folder — SolidWorks expects this name to locate weldment profiles.
+- Files placed here are synchronized to Dropbox and other synced machines when a sync agent is active.</p>
+<p>Typical file types
+- Weldment profile files (formats used by the SolidWorks weldment feature)
+- Supporting sketches or profile definitions</p>
+<p>Usage
+- Add or update weldment profiles by placing files in this folder. Changes propagate automatically via Cadify sync.</p>
 
 
 

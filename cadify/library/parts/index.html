@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#solidworks-mate-references-and-smartmates" class="md-skip">
+        <a href="#create-a-product-with-cadify-library" class="md-skip">
           Skip to content
         </a>
       
@@ -709,8 +709,6 @@
       
         
       
-        
-      
     
     
     
@@ -787,29 +785,6 @@
   
   <span class="md-ellipsis">
     Five Formulas
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../product/bestPractices/library/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Library Elements
     
   </span>
   
@@ -938,6 +913,10 @@
     
       
         
+          
+        
+      
+        
       
         
       
@@ -958,8 +937,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../controls/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -968,8 +948,14 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6">
@@ -977,6 +963,8 @@
             Web Controls
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -1001,10 +989,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_6_1" id="__nav_2_6_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_6_2" id="__nav_2_6_2_label" tabindex="0">
             
   
   
@@ -1017,8 +1005,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6_1">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_2">
             <span class="md-nav__icon md-icon"></span>
             Input Web Controls
           </label>
@@ -1298,6 +1286,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1329,6 +1319,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -1492,9 +1484,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-change-the-filename-using-a-formula" class="md-nav__link">
+  <a href="#3-create-a-simple-control-to-manage-selected-library-element" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Change the FileName Using a Formula
+      3. Create a simple control to manage selected library element
     </span>
   </a>
   
@@ -1504,6 +1496,15 @@
   <a href="#4-how-folderpath-works" class="md-nav__link">
     <span class="md-ellipsis">
       4. How FolderPath Works
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-update-the-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Update the model
     </span>
   </a>
   
@@ -3772,6 +3773,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -3934,9 +3937,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-change-the-filename-using-a-formula" class="md-nav__link">
+  <a href="#3-create-a-simple-control-to-manage-selected-library-element" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Change the FileName Using a Formula
+      3. Create a simple control to manage selected library element
     </span>
   </a>
   
@@ -3946,6 +3949,15 @@
   <a href="#4-how-folderpath-works" class="md-nav__link">
     <span class="md-ellipsis">
       4. How FolderPath Works
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-update-the-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Update the model
     </span>
   </a>
   
@@ -3972,18 +3984,17 @@
 
 
 
-  <h1>Parts</h1>
-
+<h1 id="create-a-product-with-cadify-library">Create a Product with Cadify Library</h1>
+<p>This section walks you through the process of creating a product in SOLIDWORKS and adding a component from the Cadify Library. You will see how a library part is inserted, connected through Named Mate References, and checked into the Cadify MASTER so it becomes a configurable element in the final product.</p>
 <h2 id="solidworks-mate-references-and-smartmates">SOLIDWORKS Mate References and SmartMates</h2>
 <p>In SOLIDWORKS, a Mate Reference is a feature added to a part or subassembly (SLDPRT or SLDASM) that stores up to three reference entities (Primary, Secondary, Tertiary) together with their intended mate types such as Concentric or Coincident. When you insert that component or drag it onto matching geometry, SmartMates reads those Mate References and automatically creates the specified mates. This snaps the component into the correct position and orientation. Hardware and repeatable components can drop into place without manually creating mates, as long as the target geometry provides a corresponding set of references.</p>
 <h3 id="drag-and-drop-smartmate-example">Drag and Drop SmartMate Example</h3>
 <div style="text-align:center; margin:12px 0;">
-  <img src="/images/InsertLibrary.gif" 
+  <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/library/images/InsertLibrary.gif" 
        alt="SmartMate Drag and Drop Placeholder" 
        style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 </div>
 
-<p><em>(Replace with actual GIF of drag and drop SmartMate behavior.)</em></p>
 <h2 id="how-cadify-automates-this">How Cadify Automates This</h2>
 <p>Cadify builds on the native mechanism by using the SmartMate API to programmatically place and, when needed, swap components from your Cadify Library into Named Mate References. To enable fully automated placement, you define Named Mate References on both sides: in the assembly where the component will be placed, and inside each library SLDPRT that may be inserted there. Cadify matches these names exactly and drives SOLIDWORKS to apply the SmartMates automatically so parts drop in, align, and are ready without manual picking. With consistent naming, you get predictable placement and one click part substitutions that preserve design intent.</p>
 <h2 id="required-mate-reference-name-must-match-exactly">Required: Mate Reference Name Must Match Exactly</h2>
@@ -3998,21 +4009,21 @@
 <h2 id="mate-reference-setup-examples">Mate Reference Setup Examples</h2>
 <h3 id="parent-side-assembly">Parent Side (Assembly)</h3>
 <div style="text-align:center; margin:12px 0;">
-  <img src="/images/materefInAssembly.png" 
+  <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/library/images/metrefsInAssembly.png" 
        alt="Mate Reference Setup in Assembly Placeholder" 
        style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 </div>
 
 <h3 id="child-side-library-part">Child Side (Library Part)</h3>
 <div style="text-align:center; margin:12px 0;">
-  <img src="/images/createMateReferenceInPart.png" 
+  <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/library/images/createMateReferenceInPart.png" 
        alt="Mate Reference Setup in Part Placeholder" 
        style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 </div>
 
 <h3 id="second-library-part">Second Library Part</h3>
 <div style="text-align:center; margin:12px 0;">
-  <img src="/images/createExampleB.png" 
+  <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/library/images/createExampleB.png" 
        alt="Mate Reference Setup in Part Placeholder" 
        style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 </div>
@@ -4036,7 +4047,7 @@
 <p>Cadify allows a placed component to be replaced automatically when its library reference changes in the Cadify MASTER (Excel). This makes it possible to swap parts, update variants, and push new configurations into the assembly without deleting or re-mating anything manually, as long as the mate reference setup is consistent.</p>
 <h3 id="1-check-in-the-exact-element-from-the-tree-view">1. Check In the Exact Element from the Tree View</h3>
 <div style="text-align:center; margin:12px 0%;">
-  <img src="/images/treeviewCheck.png"
+  <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/library/images/treeviewCheck.png"
        alt="Cadify Tree View Check In Placeholder"
        style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 </div>
@@ -4048,19 +4059,40 @@
 <li><strong>FolderPath</strong></li>
 </ul>
 <p>Example:</p>
-<div class="highlight"><pre><span></span><code>FileName:    ExampleA.SLDPRT
-FolderPath:  Library:\parts\example
+<div class="highlight"><pre><span></span><code>FolderPath:  Library:\parts\example
+FileName:    ExampleA.SLDPRT
 </code></pre></div>
-<h3 id="3-change-the-filename-using-a-formula">3. Change the FileName Using a Formula</h3>
-<p>Example:</p>
-<div class="highlight"><pre><span></span><code>=IF(A2=&quot;K9&quot;,&quot;Endelokk_K9.SLDPRT&quot;,&quot;Endelokk_K7.SLDPRT&quot;)
-</code></pre></div>
+<h3 id="3-create-a-simple-control-to-manage-selected-library-element">3. Create a simple control to manage selected library element</h3>
+<p><a href="/Cadify-User-Manual/cadify/controls"
+   style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px;
+          text-decoration:none;font-weight:600;line-height:1.2;">
+  See how to create a Control
+</a></p>
+<div style="text-align:center; margin:12px 0%;">
+  <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/library/images/SetCellReference.png"
+       alt="Cadify Tree View Check In Placeholder"
+       style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
+</div>
+
+<p>Set up the cell reference:</p>
+<div style="text-align:center; margin:12px 0%;">
+  <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/library/images/SetCellReference.png"
+       alt="Cadify Tree View Check In Placeholder"
+       style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
+</div>
+
 <p>Cadify will resolve the new file, verify the mate references, remove the old part, and insert the new one automatically.</p>
 <h3 id="4-how-folderpath-works">4. How FolderPath Works</h3>
 <div class="highlight"><pre><span></span><code>Library:\parts\example
     becomes
 C:\Cadify\Library\Store.Name\parts\example\
 </code></pre></div>
+<h3 id="5-update-the-model">5. Update the model</h3>
+<div style="text-align:center; margin:12px 0%;">
+  <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/library/images/Update.gif"
+       alt="Cadify Tree View Check In Placeholder"
+       style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
+</div>
 
 
 

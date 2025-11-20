@@ -707,8 +707,6 @@
       
         
       
-        
-      
     
     
     
@@ -785,29 +783,6 @@
   
   <span class="md-ellipsis">
     Five Formulas
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../cadify/product/bestPractices/library/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Library Elements
     
   </span>
   
@@ -936,6 +911,10 @@
     
       
         
+          
+        
+      
+        
       
         
       
@@ -956,8 +935,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../cadify/controls/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -966,8 +946,14 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6">
@@ -975,6 +961,8 @@
             Web Controls
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -999,10 +987,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_6_1" id="__nav_2_6_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_6_2" id="__nav_2_6_2_label" tabindex="0">
             
   
   
@@ -1015,8 +1003,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6_1">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_2">
             <span class="md-nav__icon md-icon"></span>
             Input Web Controls
           </label>
@@ -3739,7 +3727,7 @@
 <ul>
 <li>Add a new worksheet and name it 'Table Top Database'</li>
 <li>Determine some static elements like the List of Materials and Available thicknesses for Wood (e.g., 10, 15, 20, 25, 30)
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createStatics.png" alt="CreateStatics" style="vertical-align: middle;"></li>
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createStatics.png" alt="CreateStatics" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></li>
 </ul>
 <h2 id="create-the-first-control">Create the first Control</h2>
 <p>Create a control to manage material selection, name it 'Select Material,' and set up the values list to the material list created on the 'Table Top Database' tab.</p>
@@ -3765,7 +3753,7 @@
 </tr>
 </tbody>
 </table>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createListControl.png" alt="CreateListControl" style="vertical-align: middle;"></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createListControl.png" alt="CreateListControl" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 <h2 id="set-up-your-first-calculation">Set up your first calculation</h2>
 <p>To determine the available thicknesses based on the selected material, you will need to create your first formulas in 'Table Top Database':
 - Determine the selected index of available materials:</p>
@@ -3800,7 +3788,7 @@
 </tr>
 </tbody>
 </table>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createFirstDynamicList.png" alt="CreateListControlDynamic" style="vertical-align: middle;"></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createFirstDynamicList.png" alt="CreateListControlDynamic" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 <ul>
 <li>As a last step, now create a control with the generated list:</li>
 </ul>
@@ -3826,21 +3814,21 @@
 </tr>
 </tbody>
 </table>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createControlWithDynamicList.png" alt="CreateListControlDynamic" style="vertical-align: middle;"></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createControlWithDynamicList.png" alt="CreateListControlDynamic" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 <p>💡 <em>Always select a range large enough to cover all possible values. Cadify will automatically remove any empty elements from the control, so you don’t need to worry about blanks.</em></p>
 <p>💡 <em>Call Build Control Hierarchy so dynamically changing elements will be picked up by the Cadify Calculation Engine.</em> </p>
 <p><em>Tools -&gt; Build Cadify Control Hierarchy. It will generate the references list in the Cadify MASTER 'P' column.</em></p>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/firstHierarchyBuilt.png" alt="FirstHierarchy" style="vertical-align: middle;"></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/firstHierarchyBuilt.png" alt="FirstHierarchy" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 <p>🎉 Congratulations! You have successfully created your first control with dynamically changing available thicknesses based on the selected material.</p>
 <h2 id="practise-a-little-bit-more">Practise a little bit more</h2>
 <p>To practise dynamic lists a little bit more, let’s add some more static elements into the Table Top Database.</p>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/moreStaticForLists.png" alt="MoreStaticContent" style="vertical-align: middle;"></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/moreStaticForLists.png" alt="MoreStaticContent" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 <ul>
 <li>Fill the 'Q' column with calculations:</li>
 </ul>
 <p><code>=IF(P65='Cadify MASTER'!G$15;'Table Top Database'!O65;"")</code></p>
 <p>This will provide an element of a list or an empty string if the selected material is not matched.</p>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/listElementOrEmpty.png" alt="ListElementOrEmpty" style="vertical-align: middle;"></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/listElementOrEmpty.png" alt="ListElementOrEmpty" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 <ul>
 <li>Create a UNIQUE/FILTER function combination to generate the proper available values:</li>
 </ul>
@@ -3858,7 +3846,7 @@
 </tr>
 </tbody>
 </table>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/UniqueFilter.png" alt="UniqueFilter" style="vertical-align: middle;"></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/UniqueFilter.png" alt="UniqueFilter" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 <ul>
 <li>Now everything is ready to create a control to select from stock-sized Table Tops:</li>
 </ul>
@@ -3884,10 +3872,10 @@
 </tr>
 </tbody>
 </table>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/customSizes.png" alt="CustomSizes" style="vertical-align: middle;"></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/customSizes.png" alt="CustomSizes" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 <p>💡 <em>Remember to call Build Control Hierarchy so dynamically changing elements will be picked up by the Cadify Calculation Engine.</em> </p>
 <p><em>Tools -&gt; Build Cadify Control Hierarchy. It will generate the references list in the Cadify MASTER 'P' column.</em></p>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/secondHierarchy.png" alt="BuildHierarchySecondTime" style="vertical-align: middle;"></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/secondHierarchy.png" alt="BuildHierarchySecondTime" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 <ul>
 <li>Create two Slider controls as well to let the users control the width and depth of the Table Top manually.</li>
 </ul>
@@ -3921,7 +3909,7 @@
 </tr>
 </tbody>
 </table>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createSliders.png" alt="CreateSliders" style="vertical-align: middle;"></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createSliders.png" alt="CreateSliders" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 <table>
 <thead>
 <tr>
@@ -3957,7 +3945,7 @@
 <ul>
 <li>First create a control to determine which option is preferred:</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/sizeMode.png" alt="SizeMode" style="vertical-align: middle;"></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/sizeMode.png" alt="SizeMode" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 <table>
 <thead>
 <tr>
@@ -3989,8 +3977,8 @@
 </ul>
 </li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/EditControl.png" alt="EditControl" style="vertical-align: middle;"></p>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/Condition.png" alt="SetCondition" style="vertical-align: middle;"></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/EditControl.png" alt="EditControl" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/Condition.png" alt="SetCondition" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 <h2 id="dynamically-change-minimum-and-maximum-values-of-a-control">Dynamically change Minimum and Maximum values of a Control</h2>
 <ul>
 <li>For numerical controls like Spinbox Sliders, there is also an option to set up minimum and maximum values (starting and end points).
@@ -4014,7 +4002,7 @@
 </tr>
 </tbody>
 </table>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createMinMax.png" alt="GenerateMax" style="vertical-align: middle;"></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createMinMax.png" alt="GenerateMax" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 <ul>
 <li>Link the calculated maximum values back to the control by setting formulas on Cadify MASTER:</li>
 </ul>
@@ -4038,7 +4026,7 @@
 </table>
 <p>💡 <em>Remember to call Build Control Hierarchy so dynamically changing elements will be picked up by the Cadify Calculation Engine.</em> </p>
 <p><em>Tools -&gt; Build Cadify Control Hierarchy. It will generate the references list in the Cadify MASTER 'P' column.</em></p>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/buildHierarchy.png" alt="BuildHierarchy" style="vertical-align: middle;"></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/buildHierarchy.png" alt="BuildHierarchy" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 
 
 

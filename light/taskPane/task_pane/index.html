@@ -707,8 +707,6 @@
       
         
       
-        
-      
     
     
     
@@ -785,29 +783,6 @@
   
   <span class="md-ellipsis">
     Five Formulas
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../cadify/product/bestPractices/library/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Library Elements
     
   </span>
   
@@ -936,6 +911,10 @@
     
       
         
+          
+        
+      
+        
       
         
       
@@ -956,8 +935,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../cadify/controls/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -966,8 +946,14 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6">
@@ -975,6 +961,8 @@
             Web Controls
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -999,10 +987,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_6_1" id="__nav_2_6_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_6_2" id="__nav_2_6_2_label" tabindex="0">
             
   
   
@@ -1015,8 +1003,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6_1">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_2">
             <span class="md-nav__icon md-icon"></span>
             Input Web Controls
           </label>
@@ -3728,7 +3716,7 @@
 <p>The Cadify Light Task Pane is your central workspace for configuring product controls, managing media, and monitoring integration status. The layout is intuitive and visually aligned with how controls will appear on your nopCommerce product page.</p>
 <hr />
 <h2 id="1-menu-bar-top">1. Menu Bar (Top)</h2>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/MenuBar.png" alt="Menu"></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/MenuBar.png" alt="Menu" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 <ul>
 <li>Located at the very top.</li>
 <li>Main menu (<code>File</code>, <code>Tools</code>), shows your login state (e.g., your email).</li>
@@ -3737,14 +3725,14 @@
 <hr />
 <h2 id="2-icon-buttons-below-menu">2. Icon Buttons (Below Menu)</h2>
 <ul>
-<li><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/AddWebControl.png" alt="AddWebControl" style="vertical-align: middle;"> <strong>Add Control</strong>: Lets you create a new Web Control.<br />
+<li><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/AddWebControl.png" alt="AddWebControl" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"> <strong>Add Control</strong>: Lets you create a new Web Control.<br />
   You can choose to create Input or Output Web Controls.</br>
   </br>See <a href="/light/controls/inputCadifyControls">Input Control creation details</a>
   </br>See <a href="/light/controls/outputControls">Output Control creation details</a></li>
 </ul>
 <p></br></p>
 <ul>
-<li><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/mediaManager.png" alt="MediaManager" style="vertical-align: middle;"> <strong>Open Media Manager</strong>: Opens the Media Manager for product media configuration.<br />
+<li><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/mediaManager.png" alt="MediaManager" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"> <strong>Open Media Manager</strong>: Opens the Media Manager for product media configuration.<br />
   See <a href="mediaManager/MediaManager">Media Manager details</a>.</li>
 </ul>
 <hr />
@@ -3762,10 +3750,10 @@
 <h2 id="4-status-bar-bottom-with-4-icons">4. Status Bar (Bottom, with 4 icons)</h2>
 <p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/StatusBar.png" alt="Status Bar"></p>
 <ul>
-<li><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/excel.png" alt="Excel status" style="vertical-align: middle;"> <strong>Excel Table</strong> integrity. Turns red if issues detected (best practice: reopen product).</li>
-<li><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/library.png" alt="Library status" style="vertical-align: middle;"> <strong>Library</strong> sync status. Spinner shows syncing; hover for file count.</li>
-<li><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/dropbox.png" alt="Dropbox status" style="vertical-align: middle;"> <strong>Dropbox</strong> connection: Blue (stable), Yellow (slow), Red (unavailable).</li>
-<li><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/nopC.png" alt="NopC status" style="vertical-align: middle;"> <strong>NopCommerce</strong> connection: Blue (available), yellow (slow), red (unreachable).</li>
+<li><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/excel.png" alt="Excel status" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"> <strong>Excel Table</strong> integrity. Turns red if issues detected (best practice: reopen product).</li>
+<li><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/library.png" alt="Library status" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"> <strong>Library</strong> sync status. Spinner shows syncing; hover for file count.</li>
+<li><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/dropbox.png" alt="Dropbox status" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"> <strong>Dropbox</strong> connection: Blue (stable), Yellow (slow), Red (unavailable).</li>
+<li><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/nopC.png" alt="NopC status" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"> <strong>NopCommerce</strong> connection: Blue (available), yellow (slow), red (unreachable).</li>
 </ul>
 <hr />
 <h3 id="quick-reference">Quick Reference</h3>
@@ -3776,7 +3764,7 @@
 <li><strong>Context Menus</strong>: Edit or delete controls via the vertical dots.</li>
 <li><strong>Status Bar</strong>: Always know the health of your integrations.</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/TaskPaneOverview.png" alt="TaskPaneOverview"></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/TaskPaneOverview.png" alt="TaskPaneOverview" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 
 
 

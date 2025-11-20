@@ -709,8 +709,6 @@
       
         
       
-        
-      
     
     
     
@@ -787,29 +785,6 @@
   
   <span class="md-ellipsis">
     Five Formulas
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../product/bestPractices/library/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Library Elements
     
   </span>
   
@@ -938,6 +913,10 @@
     
       
         
+          
+        
+      
+        
       
         
       
@@ -958,8 +937,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../controls/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -968,8 +948,14 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6">
@@ -977,6 +963,8 @@
             Web Controls
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -1001,10 +989,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_6_1" id="__nav_2_6_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_6_2" id="__nav_2_6_2_label" tabindex="0">
             
   
   
@@ -1017,8 +1005,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6_1">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_2">
             <span class="md-nav__icon md-icon"></span>
             Input Web Controls
           </label>
@@ -3776,7 +3764,7 @@
 <li><strong>Pictures</strong>: Manage product images and associate them with controls.</li>
 <li><strong>Models</strong>: Solidworks product as downloadable files.</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/mediaManager/images/mediaManager.png" alt="MediaManager"></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/mediaManager/images/mediaManager.png" alt="MediaManager" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 <h2 id="excel-data-mapping">Excel Data Mapping</h2>
 <p>The configuration for each media type is stored in a structured format in the Excel workbook. Each section uses a proxy object:
 - <code>ProxyReport</code> for print areas
@@ -3784,7 +3772,7 @@
 - <code>ProxyPicture</code> for product images
 - <code>ProxyModel</code> for Solidworks files</p>
 <p>The following example shows how these proxies are stored in the Excel workbook:</p>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/mediaManager/images/proxyInExcel.png" alt="ProxyInExcel"></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/mediaManager/images/proxyInExcel.png" alt="ProxyInExcel" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 <hr />
 <h2 id="1-print-from-excel-proxyreport">1. Print from Excel (<code>ProxyReport</code>)</h2>
 <p>This subchapter explains how Cadify generates reports as part of integrated quality assurance. Reports are created from Excel using defined print ranges and exported as standard PDF files. They may contain drawings, control points, or checklists, and are always linked to the product configuration. The following pages describe how report templates are prepared, how print ranges are managed, and how outputs are distributed.</p>

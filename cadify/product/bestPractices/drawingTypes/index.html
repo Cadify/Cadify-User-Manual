@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../library/">
+        <link rel="prev" href="../fiveFormulas/">
       
       
         <link rel="next" href="../exportDrawings/">
@@ -713,8 +713,6 @@
       
         
       
-        
-      
     
     
     
@@ -791,29 +789,6 @@
   
   <span class="md-ellipsis">
     Five Formulas
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../library/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Library Elements
     
   </span>
   
@@ -1020,6 +995,10 @@
     
       
         
+          
+        
+      
+        
       
         
       
@@ -1040,8 +1019,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../controls/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -1050,8 +1030,14 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6">
@@ -1059,6 +1045,8 @@
             Web Controls
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -1083,10 +1071,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_6_1" id="__nav_2_6_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_6_2" id="__nav_2_6_2_label" tabindex="0">
             
   
   
@@ -1099,8 +1087,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6_1">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_2">
             <span class="md-nav__icon md-icon"></span>
             Input Web Controls
           </label>
@@ -3700,23 +3688,23 @@
 
 <h1 id="drawing-types-in-cadify">Drawing Types in Cadify</h1>
 <p>In Cadify, there are three basic types of drawing sheets you can create, plus a fourth option for create one from an existing sheet. Each type serves a different purpose in your workflow:</p>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/sheetStyles.png" alt="Sheet Styles" /></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/sheetStyles.png" alt="Sheet Styles" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"/></p>
 <h2 id="1-drawing-from-model">1. Drawing from Model</h2>
 <p>This is the standard method for generating technical drawings. It automatically creates a sheet with three standard views (Front, Top, and Left) from either the entire assembly or any selected sub-part.</p>
 <p><strong>Plane Override:</strong></p>
 <p>Users can override which model plane is used as the "Front" plane for the drawing views. For example, if your model was designed on the Right Plane but you want the drawing's front view to show that side, you can select the Right Plane as the front. This ensures your drawings always present the model from the intended perspective.</p>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/overrideFrontPlane.png" alt="Select model plane to use as Front plane" /></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/overrideFrontPlane.png" alt="Select model plane to use as Front plane" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"/></p>
 <p><strong>View Layout Override:</strong></p>
 <p>The automatically inserted standard views (Front, Top, Left) can also be customized by the user. As shown in the image below, you can choose which views to insert—such as replacing the Left view with the Right view, omitting side views, or adding section/break views. This gives you full control over the drawing layout to match your documentation needs.</p>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/viewOptions.png" alt="Select views to insert and override layout" /></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/viewOptions.png" alt="Select views to insert and override layout" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"/></p>
 <p><strong>Key features:</strong></p>
 <ul>
 <li>Supports both assemblies and parts.</li>
 <li>Users can specify view breaks and section views.</li>
 <li>Break positions can be controlled by Excel formulas, ensuring that only the relevant parts of long models are displayed (e.g., showing just the start and end of a long part).</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/sectionView.png" alt="Section View Settings" /></p>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/breakSettings.png" alt="Break View Settings" /></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/sectionView.png" alt="Section View Settings" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"/></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/breakSettings.png" alt="Break View Settings" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"/></p>
 <h2 id="2-notes">2. Notes</h2>
 <p>This option creates a completely empty sheet, ideal for adding note annotations, instructions, or other non-geometry information.</p>
 <p><strong>Use case:</strong></p>
