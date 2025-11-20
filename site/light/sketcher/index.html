@@ -707,8 +707,6 @@
       
         
       
-        
-      
     
     
     
@@ -785,29 +783,6 @@
   
   <span class="md-ellipsis">
     Five Formulas
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../cadify/product/bestPractices/library/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Library Elements
     
   </span>
   
@@ -936,6 +911,10 @@
     
       
         
+          
+        
+      
+        
       
         
       
@@ -956,8 +935,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../cadify/controls/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -966,8 +946,14 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6">
@@ -975,6 +961,8 @@
             Web Controls
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -999,10 +987,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_6_1" id="__nav_2_6_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_6_2" id="__nav_2_6_2_label" tabindex="0">
             
   
   
@@ -1015,8 +1003,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6_1">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_2">
             <span class="md-nav__icon md-icon"></span>
             Input Web Controls
           </label>
@@ -3666,7 +3654,7 @@
 </ol>
 <hr />
 <p><strong>Example Screenshot</strong><br />
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/sketcher/images/image.png" alt="Example"></p>
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/sketcher/images/image.png" alt="Example" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 <hr />
 <h2 id="with-the-sketcher-you-can-quickly-build-a-new-sheet-and-insert-default-udfs-by">With the Sketcher, you can quickly build a new sheet and insert default UDFs by:</h2>
 <ul>
@@ -3675,17 +3663,20 @@
 <li>Choosing which UDFs to add through a user-friendly interface.</li>
 <li>Automatically generating formulas and layouts for engineering tasks.</li>
 <li>Check out each UDF documentation:<ul>
-<li><a href="/sketcher/cadifysheet">CadifySheet</a>.</li>
-<li><a href="/sketcher/cadifyline">CadifyLine</a>.</li>
-<li><a href="/sketcher/cadifyrectangle">CadifyRectangle</a>.</li>
-<li><a href="/sketcher/cadifyellipse">CadifyEllipse</a>.</li>
-<li><a href="/sketcher/cadifyholes">CadifyHoles</a>.</li>
-<li><a href="/sketcher/cadifyimage">CadifyImage</a>.</li>
-<li><a href="/sketcher/cadifydim">CadifyDim</a>.</li>
-<li><a href="/sketcher/cadifytext">CadifyText</a>.</li>
-<li><a href="/sketcher/cadifybezier">CadifyBezier</a>.</li>
-<li><a href="/sketcher/cadifysvg">CadifySvg</a>.</li>
-<li><a href="/sketcher/cadifyjson">CadifyJsone</a>.</li>
+<li><a href="cadifysheet/">CadifySheet</a></li>
+<li><a href="cadifyline/">CadifyLine</a></li>
+<li><a href="cadifyrectangle/">CadifyRectangle</a></li>
+<li><a href="cadifyellipse/">CadifyEllipse</a></li>
+<li><a href="cadifyholes/">CadifyHoles</a></li>
+<li><a href="cadifyimage/">CadifyImage</a></li>
+<li><a href="cadifydim/">CadifyDim</a></li>
+<li><a href="cadifytext/">CadifyText</a></li>
+<li><a href="cadifyGraph/">CadifyGraph</a></li>
+<li><a href="cadifybezier/">CadifyBezier</a></li>
+<li><a href="cadifysvg/">CadifySvg</a></li>
+<li><a href="cadifyjson/">CadifyJson</a></li>
+<li><a href="cadifydartjson/">CadifyDartJson</a></li>
+<li><a href="cadifydartimage/">CadifyDartImage</a>   </li>
 </ul>
 </li>
 </ul>
@@ -3695,15 +3686,15 @@
 <li>
 <p><strong>Add a New Web Control</strong><br />
    Click the 'Add' button on the Task Pane to create a new Web Control. This will create a tab container to show the SVG output generated by your Sketcher.<br />
-   <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/sketcher/images/addControl.png" alt="AddControl"></p>
+   <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/sketcher/images/addControl.png" alt="AddControl" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 </li>
 <li>
 <p><strong>Creation Example</strong><br />
-   <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/sketcher/images/createSvg.png" alt="CreationExample"></p>
+   <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/sketcher/images/createSvg.png" alt="CreationExample" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 </li>
 <li>
 <p><strong>Product Preview in NopCommerce</strong><br />
-   <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/sketcher/images/nopCpreview.png" alt="ProductPreview"></p>
+   <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/sketcher/images/nopCpreview.png" alt="ProductPreview" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 </li>
 </ol>
 

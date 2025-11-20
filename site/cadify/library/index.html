@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#cadify-library" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -704,8 +709,6 @@
       
         
       
-        
-      
     
     
     
@@ -782,29 +785,6 @@
   
   <span class="md-ellipsis">
     Five Formulas
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../product/bestPractices/library/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Library Elements
     
   </span>
   
@@ -933,6 +913,10 @@
     
       
         
+          
+        
+      
+        
       
         
       
@@ -953,8 +937,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
         
           
-          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../controls/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -963,8 +948,14 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6">
@@ -972,6 +963,8 @@
             Web Controls
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -996,10 +989,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_6_1" id="__nav_2_6_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_6_2" id="__nav_2_6_2_label" tabindex="0">
             
   
   
@@ -1012,8 +1005,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_6_1">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_2">
             <span class="md-nav__icon md-icon"></span>
             Input Web Controls
           </label>
@@ -3552,6 +3545,97 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-cadify-library-sync-does" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Cadify Library Sync does
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-files-live-in-dropbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where files live in Dropbox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-synchronization-runs-must-read" class="md-nav__link">
+    <span class="md-ellipsis">
+      When synchronization runs (must read)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-local-changes-are-handled" class="md-nav__link">
+    <span class="md-ellipsis">
+      How local changes are handled
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-dropbox-cloud-changes-are-handled" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Dropbox (cloud) changes are handled
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-folders-created-at-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Base folders created at installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-tasks-and-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common tasks and workflows
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-quick-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting (quick checks)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best practices
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -3567,9 +3651,90 @@
 
 
 
-  <h1>Library Overview</h1>
-
-
+<h1 id="cadify-library">Cadify Library</h1>
+<p>This page explains, in simple terms, how Cadify keeps library files synchronized between the local machine and the cloud (Dropbox), what is required for synchronization to run, and basic user guidance.</p>
+<h2 id="what-cadify-library-sync-does">What Cadify Library Sync does</h2>
+<ul>
+<li>Keeps files and folders in the local Cadify library folder in sync with the Cadify library stored in Dropbox.</li>
+<li>Sync is two way:</li>
+<li>Files and folders added or changed locally are uploaded to Dropbox.</li>
+<li>Files and folders added or changed on Dropbox are downloaded to the local library.</li>
+<li>Folder structure is preserved. Files are compared by content, so unchanged files are not re uploaded.</li>
+</ul>
+<h2 id="where-files-live-in-dropbox">Where files live in Dropbox</h2>
+<p>Cadify connects the local library for each nopCommerce store to a matching <strong>Dropbox app folder</strong>.</p>
+<ul>
+<li>Each store gets its own app folder under the Dropbox <code>Apps</code> folder.  </li>
+<li>The folder name is based on the store name or URL.</li>
+</ul>
+<p>Example:</p>
+<ul>
+<li>Store: <code>cadify.gratis</code>  </li>
+<li>Dropbox app folder: <code>Apps\Cadify.Gratis\Library\</code></li>
+<li>Local folder: <code>C:\Cadify\Library\Cadify.Gratis\</code></li>
+</ul>
+<p>Inside that app folder, Cadify expects the same library structure as on the local machine (for example <code>cadify textures</code>, <code>weldments</code>, <code>parts</code>, and any subfolders you create).  </p>
+<p>This mapping is fixed per store. If you log into another store, Cadify uses a different app folder under <code>Apps</code>.</p>
+<h2 id="when-synchronization-runs-must-read">When synchronization runs (must read)</h2>
+<p>Automatic synchronization runs only while one of the following is active on the computer:</p>
+<ul>
+<li>SolidWorks is running with the Cadify AddIn installed, or</li>
+<li>The Cadify Service is running, or</li>
+<li>Excel is open with the Cadify Task Pane active (Cadify installed and Task Pane open)</li>
+</ul>
+<p>If none of these are active, automatic sync will not occur. To force sync, start any one of these applications or components.</p>
+<p>On status bar you can see the state of syncing.
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/library.png" alt="Syncronized" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/library/images/Sync.png" alt="Syncing" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
+<h2 id="how-local-changes-are-handled">How local changes are handled</h2>
+<ul>
+<li>Cadify watches the local library folder for file and folder events: create, change, rename, delete.</li>
+<li>When a file is created or changed, Cadify computes a content hash and uploads the file to Dropbox if the content is new or changed.</li>
+<li>When a file or folder is renamed or deleted locally, Cadify updates the cloud copy in the app folder accordingly.</li>
+<li>Temporary OS or editor files (paths containing <code>~</code>) are ignored to avoid uploading incomplete files.</li>
+</ul>
+<h2 id="how-dropbox-cloud-changes-are-handled">How Dropbox (cloud) changes are handled</h2>
+<ul>
+<li>Cadify keeps a continuous connection to Dropbox (long poll). When Dropbox reports changes in the relevant app folder, those updates are applied to the local library.</li>
+<li>On startup Cadify performs an initial sync and downloads files that are new or newer than the local copy.</li>
+</ul>
+<h2 id="base-folders-created-at-installation">Base folders created at installation</h2>
+<p>During installation Cadify creates three base folders inside the local library root:</p>
+<ul>
+<li><code>cadify textures</code> – contains SolidWorks appearance, texture, and color files.</li>
+<li><code>weldments</code> – contains SolidWorks weldment profile files (profiles used by the Weldment tool).</li>
+<li><code>parts</code> – general parts folder for CAD part files.</li>
+</ul>
+<p>Important: <code>cadify textures</code> and <code>weldments</code> are special folders used by SolidWorks for specific file types and must not be renamed. Renaming them can break SolidWorks ability to find those resources.</p>
+<p>The same folder names and structure are mirrored under the store specific Dropbox app folder, for example:</p>
+<ul>
+<li>Local: <code>C:\Cadify\Library\Store.Name\cadify textures</code>  </li>
+<li>Dropbox: <code>Apps\Cadify.Gratis\cadify textures</code></li>
+</ul>
+<h2 id="common-tasks-and-workflows">Common tasks and workflows</h2>
+<ul>
+<li>To add textures or weldment profiles, place the files into <code>cadify textures</code> or <code>weldments</code>. If sync is active, the files will be uploaded to the Dropbox app folder and distributed to other machines.</li>
+<li>To add parts, place files into <code>parts</code> (or subfolders). These will sync like any other files.</li>
+<li>To force a sync, open SolidWorks (with Cadify AddIn), or start the Cadify Service, or open Excel with the Cadify Task Pane.</li>
+</ul>
+<h2 id="troubleshooting-quick-checks">Troubleshooting (quick checks)</h2>
+<ul>
+<li>Ensure one of the required sync agents is running (SolidWorks with Cadify AddIn, Cadify Service, or Excel Task Pane).</li>
+<li>Confirm internet connectivity and that the Dropbox account or developer token is valid.</li>
+<li>Verify the local Cadify library path exists and is accessible.</li>
+<li>Avoid editing the same file simultaneously on multiple machines, this reduces conflicts.</li>
+<li>If files do not appear, restart SolidWorks, Excel with the Task Pane, or the Cadify Service to trigger the sync agent.</li>
+</ul>
+<h2 id="best-practices">Best practices</h2>
+<ul>
+<li>Do not rename <code>cadify textures</code> or <code>weldments</code>.</li>
+<li>Add resources (textures, weldment profiles) to the appropriate folder so SolidWorks can use them without extra path configuration.</li>
+<li>Allow a short time for sync to complete after adding or changing files. Uploads and downloads happen automatically but may take a moment.</li>
+<li>Keep a clear store to folder mapping, for example:</li>
+<li><code>cadify.gratis</code> → <code>Apps\Cadify.Gratis\Library\</code></li>
+<li><code>store.example.com</code> → <code>Apps\Store.Example.Com\Library\</code></li>
+</ul>
+<p>For additional assistance or details about Cadify behavior, consult the help pages provided with the installation or contact the administrator managing the Cadify Dropbox store.</p>
 
 
 
