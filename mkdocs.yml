@@ -44,6 +44,11 @@ nav:
         - Linking Sketcher Output: cadify/controls/linkSketcher.md
         - Best practices: cadify/controls/cadifycontrols-advanced.md        
       - Media Manager: cadify/mediaManager/MediaManager.md
+      - Library:
+        - Library Overview: cadify/library/index.md
+        - Parts: cadify/library/parts.md
+        - Textures: cadify/library/textures.md
+        - Weldments: cadify/library/weldments.md
       - 7 Tabs Management: cadify/7tabs/roles-7-tabs.md
       - Bill of Materials: cadify/bom/bom.md
       - Sketcher:
