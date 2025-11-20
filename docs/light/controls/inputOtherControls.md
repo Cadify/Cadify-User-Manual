@@ -10,7 +10,7 @@
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/textbox_wizard.png" alt="Textbox Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/textbox_wizard.png" alt="Textbox Wizard" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
   <div class="col-8">
     <p>A single-line text input for basic string values.</p>
@@ -29,7 +29,7 @@
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/multiline_textbox_wizard.png" alt="Multiline Textbox Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/multiline_textbox_wizard.png" alt="Multiline Textbox Wizard" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
   <div class="col-8">
     <p>A multi-line text input for longer or formatted string entries.</p>

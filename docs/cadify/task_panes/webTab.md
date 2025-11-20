@@ -7,7 +7,7 @@
   <div class="col-8" style="flex:0 0 38%; max-width:38%; box-sizing:border-box; text-align:center;">
     <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/task_panes/images/img_003.png"
          alt="WebTab"
-         style="display:block; width:100%; height:auto;">
+         style="display:block; width:100%; height:auto;border:1px solid #ccc; border-radius:6px;">
   </div>
 </div>
 

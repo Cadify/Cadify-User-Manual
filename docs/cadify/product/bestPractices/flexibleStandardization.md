@@ -5,13 +5,13 @@
     Cadify demonstrates how flexible standardization should be applied across multiple levels. Firstly, drawings and sheet templates follow recognized industrial standards, ensuring compatibility and compliance. Additionally, rules and parameters manage controlled variation, so product families can adapt to production capacities, available materials, and customer-specific needs.    
   </div>
   <div class="col-8" style="flex:0 0 38%; max-width:38%; box-sizing:border-box; text-align:center;">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/FlexibleStandardizationPyramide.png" alt="FlexibleStandardizationPyramide">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/FlexibleStandardizationPyramide.png" alt="FlexibleStandardizationPyramide" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
 </div>
 
 <div class="grid" style="display:flex; align-items:flex-start; gap:12px; flex-wrap:nowrap;">
   <div class="col-4" style="flex:0 0 50%; max-width:50%; box-sizing:border-box; padding-right:12px;">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/DNV_ST_0194_BucklingReportExample.png" alt="DNV_ST_0194_BucklingReportExample">   
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/DNV_ST_0194_BucklingReportExample.png" alt="DNV_ST_0194_BucklingReportExample" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">   
   </div>
   <div class="col-8" style="flex:0 0 50%; max-width:50%; box-sizing:border-box;">
     <p>A practical example is the DNV ST 0194 buckling calculation for hydraulic cylinders. This calculation combines multiple levels of standardization: geometric definitions such as cylinder length and diameters, material parameters for tubes and rods, and safety factors including friction allowances. In Cadify, these parameters are defined once and then reused across all variants.</p>

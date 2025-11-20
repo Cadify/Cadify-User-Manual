@@ -21,7 +21,7 @@ Dynamic lists in Cadify operate by filtering available options in Excel based on
     The illustration demonstrates this principle. On the left, a complete list of variants is shown in Excel with both Variant A and Variant B together with their sub-variants. A filter is applied, represented by the funnel, which reduces the list according to the customer’s choice. On the right, the result is a clean table showing only the valid sub-variants of Variant A, in this case, a1, a2, a3.
   </div>
   <div class="col-8" style="flex:0 0 40%; max-width:40%; box-sizing:border-box; text-align:center;">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/DynamicLists.png" alt="DynamicLists">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/DynamicLists.png" alt="DynamicLists" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
 </div>
 
@@ -40,7 +40,7 @@ By relying on this structured filtering, large and complex product families can 
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/list_dropdown_wizard.png" alt="List Dropdown Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/list_dropdown_wizard.png" alt="List Dropdown Wizard" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
   <div class="col-8">
     <p>Drop-down selection from a defined list of values.</p>
@@ -59,7 +59,7 @@ By relying on this structured filtering, large and complex product families can 
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/list_radio_button_wizard.png" alt="List Radio Button Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/list_radio_button_wizard.png" alt="List Radio Button Wizard" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
   <div class="col-8">
     <p>Radio button group for single selection from multiple options.</p>
@@ -78,7 +78,7 @@ By relying on this structured filtering, large and complex product families can 
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/image_squares_wizard.png" alt="Image Squares Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/image_squares_wizard.png" alt="Image Squares Wizard" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
   <div class="col-8">
     <p>Input control for selecting images represented as squares.</p>
@@ -97,7 +97,7 @@ By relying on this structured filtering, large and complex product families can 
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/checkboxes_wizard.png" alt="Checkboxes Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/checkboxes_wizard.png" alt="Checkboxes Wizard" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
   <div class="col-8">
     <p>Multi-select group from a list of values.</p>
@@ -120,7 +120,7 @@ Numerical web controls in Cadify handle values that may include both static and 
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/numerical_wizard.png" alt="Numerical Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/numerical_wizard.png" alt="Numerical Wizard" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
   <div class="col-8">
     <p>Simple numeric input.</p>
@@ -142,7 +142,7 @@ Numerical web controls in Cadify handle values that may include both static and 
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/spinbox_updown_wizard.png" alt="Spinbox Up Down Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/spinbox_updown_wizard.png" alt="Spinbox Up Down Wizard" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
   <div class="col-8">
     <p>Numeric input with increment/decrement buttons.</p>
@@ -164,7 +164,7 @@ Numerical web controls in Cadify handle values that may include both static and 
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/spinbox_slider_wizard.png" alt="Spinbox Slider Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/spinbox_slider_wizard.png" alt="Spinbox Slider Wizard" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
   <div class="col-8">
     <p>Slider control for numeric input within a range.</p>
@@ -186,7 +186,7 @@ Numerical web controls in Cadify handle values that may include both static and 
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/list_numeric_wizard.png" alt="List Numeric Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/list_numeric_wizard.png" alt="List Numeric Wizard" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
   <div class="col-8">
     <p>Input control for lists of numeric values.</p>
@@ -207,7 +207,7 @@ Numerical web controls in Cadify handle values that may include both static and 
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/textbox_wizard.png" alt="Textbox Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/textbox_wizard.png" alt="Textbox Wizard" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
   <div class="col-8">
     <p>A single-line text input for basic string values.</p>
@@ -226,7 +226,7 @@ Numerical web controls in Cadify handle values that may include both static and 
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/multiline_textbox_wizard.png" alt="Multiline Textbox Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/multiline_textbox_wizard.png" alt="Multiline Textbox Wizard" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
   <div class="col-8">
     <p>A multi-line text input for longer or formatted string entries.</p>

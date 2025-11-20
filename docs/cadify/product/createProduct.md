@@ -29,7 +29,7 @@ You will see a dialog titled **Product General Information**. Fill in the follow
 - **SKU**: Enter the Stock Keeping Unit (SKU) code.
 - **Admin comment**: (Optional) Add any internal notes.
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/createRaw.png" alt="create raw">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/createRaw.png" alt="create raw" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 
 Once all fields are filled, click **Ok** to create the product, or **Cancel** to abort.
@@ -42,14 +42,14 @@ Cadify will create the raw product for you and save it to the cloud. This allows
 
 On the **3D Model** tab, you will see your model's parameters organized in a hierarchical tree. When you select a dimension (for example, by checking its checkbox), it will be stored in the Cadify workbook (Excel file). This enables you to use these parameters for calculations and further automation.
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/productParameters.png" alt="product parameters">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/productParameters.png" alt="product parameters" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 ## 7. Use Controls in the Web Tab
 
 As you proceed to the **Web Tab**, Cadify will automatically create controls for your selected numerical dimensions. You can now control your model's dimensions directly from these controls.
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/autoParameters.png" alt="automatically created controls">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/autoParameters.png" alt="automatically created controls" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 - **Example:** Change the extrude dimension from 10mm to 20mm using the web control (see image below).
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/update.png" alt="Update">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/update.png" alt="Update" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">

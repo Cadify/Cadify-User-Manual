@@ -24,7 +24,7 @@ This function designates a rectangular sheet area that other Cadify functions ca
 
 To update the following values click on 'Cadify Refresh'
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-Light-User-Manual/main/docs/sketcher/images/ribbonRefresh.png" alt="RefreshButton" style="vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/sketcher/images/ribbonRefresh.png" alt="RefreshButton" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 | Parameter | Description |
 |-----------|-------------|

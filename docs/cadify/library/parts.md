@@ -1,3 +1,8 @@
+# Create a Product with Cadify Library
+
+This section walks you through the process of creating a product in SOLIDWORKS and adding a component from the Cadify Library. You will see how a library part is inserted, connected through Named Mate References, and checked into the Cadify MASTER so it becomes a configurable element in the final product.
+
+
 ## SOLIDWORKS Mate References and SmartMates
 
 In SOLIDWORKS, a Mate Reference is a feature added to a part or subassembly (SLDPRT or SLDASM) that stores up to three reference entities (Primary, Secondary, Tertiary) together with their intended mate types such as Concentric or Coincident. When you insert that component or drag it onto matching geometry, SmartMates reads those Mate References and automatically creates the specified mates. This snaps the component into the correct position and orientation. Hardware and repeatable components can drop into place without manually creating mates, as long as the target geometry provides a corresponding set of references.
@@ -5,12 +10,10 @@ In SOLIDWORKS, a Mate Reference is a feature added to a part or subassembly (SLD
 ### Drag and Drop SmartMate Example
 
 <div style="text-align:center; margin:12px 0;">
-  <img src="/images/InsertLibrary.gif" 
+  <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/library/images/InsertLibrary.gif" 
        alt="SmartMate Drag and Drop Placeholder" 
        style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 </div>
-
-*(Replace with actual GIF of drag and drop SmartMate behavior.)*
 
 ## How Cadify Automates This
 
@@ -32,7 +35,7 @@ Correct naming is the key that allows Cadify to perform automated placement with
 ### Parent Side (Assembly)
 
 <div style="text-align:center; margin:12px 0;">
-  <img src="/images/materefInAssembly.png" 
+  <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/library/images/metrefsInAssembly.png" 
        alt="Mate Reference Setup in Assembly Placeholder" 
        style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 </div>
@@ -41,7 +44,7 @@ Correct naming is the key that allows Cadify to perform automated placement with
 ### Child Side (Library Part)
 
 <div style="text-align:center; margin:12px 0;">
-  <img src="/images/createMateReferenceInPart.png" 
+  <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/library/images/createMateReferenceInPart.png" 
        alt="Mate Reference Setup in Part Placeholder" 
        style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 </div>
@@ -49,7 +52,7 @@ Correct naming is the key that allows Cadify to perform automated placement with
 ### Second Library Part
 
 <div style="text-align:center; margin:12px 0;">
-  <img src="/images/createExampleB.png" 
+  <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/library/images/createExampleB.png" 
        alt="Mate Reference Setup in Part Placeholder" 
        style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 </div>
@@ -85,7 +88,7 @@ Cadify allows a placed component to be replaced automatically when its library r
 ### 1. Check In the Exact Element from the Tree View
 
 <div style="text-align:center; margin:12px 0%;">
-  <img src="/images/treeviewCheck.png"
+  <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/library/images/treeviewCheck.png"
        alt="Cadify Tree View Check In Placeholder"
        style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 </div>
@@ -100,17 +103,31 @@ Two key fields control replacement behavior:
 Example:
 
 ```
-FileName:    ExampleA.SLDPRT
 FolderPath:  Library:\parts\example
+FileName:    ExampleA.SLDPRT
 ```
 
-### 3. Change the FileName Using a Formula
+### 3. Create a simple control to manage selected library element
 
-Example:
+<a href="/Cadify-User-Manual/cadify/controls"
+   style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px;
+          text-decoration:none;font-weight:600;line-height:1.2;">
+  See how to create a Control
+</a>
 
-```
-=IF(A2="K9","Endelokk_K9.SLDPRT","Endelokk_K7.SLDPRT")
-```
+<div style="text-align:center; margin:12px 0%;">
+  <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/library/images/SetCellReference.png"
+       alt="Cadify Tree View Check In Placeholder"
+       style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
+</div>
+
+Set up the cell reference:
+
+<div style="text-align:center; margin:12px 0%;">
+  <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/library/images/SetCellReference.png"
+       alt="Cadify Tree View Check In Placeholder"
+       style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
+</div>
 
 Cadify will resolve the new file, verify the mate references, remove the old part, and insert the new one automatically.
 
@@ -121,3 +138,11 @@ Library:\parts\example
     becomes
 C:\Cadify\Library\Store.Name\parts\example\
 ```
+
+### 5. Update the model
+
+<div style="text-align:center; margin:12px 0%;">
+  <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/library/images/Update.gif"
+       alt="Cadify Tree View Check In Placeholder"
+       style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
+</div>

@@ -10,7 +10,7 @@
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/custom_text_wizard.png" alt="Custom Text Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/custom_text_wizard.png" alt="Custom Text Wizard" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
   <div class="col-8">
     <p>Output control for custom, static text.</p>
@@ -28,7 +28,7 @@
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/custom_html_text_wizard.png" alt="Custom HTML Text Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/custom_html_text_wizard.png" alt="Custom HTML Text Wizard" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
   <div class="col-8">
     <p>Output control for rich HTML-formatted content.</p>
@@ -46,7 +46,7 @@
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/hyperlink_wizard.png" alt="Hyperlink Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/hyperlink_wizard.png" alt="Hyperlink Wizard" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
   <div class="col-8">
     <p>Output control for clickable links.</p>
@@ -64,7 +64,7 @@
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/numerical_output_wizard.png" alt="Numerical Output Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/numerical_output_wizard.png" alt="Numerical Output Wizard" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
   <div class="col-8">
     <p>Output control for computed or summary numeric values.</p>
