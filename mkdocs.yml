@@ -29,12 +29,12 @@ nav:
           - Overview: cadify/product/bestPractices/index.md
           - Yellow Brick Road: cadify/product/bestPractices/yellowBrickRoad.md
           - Five Formulas: cadify/product/bestPractices/fiveFormulas.md
-          - Library Elements: cadify/product/bestPractices/library.md
           - Drawing Types: cadify/product/bestPractices/drawingTypes.md
           - Export Drawings: cadify/product/bestPractices/exportDrawings.md
           - SKU & Revision Management: cadify/product/bestPractices/sku.md
           - Flexible Standardization: cadify/product/bestPractices/flexibleStandardization.md
       - Web Controls:
+        - Overview: cadify/controls/index.md  
         - Input Web Controls:
           - List Controls: cadify/controls/inputListControls.md
           - Numerical Controls: cadify/controls/inputNumericalControls.md
@@ -44,6 +44,11 @@ nav:
         - Linking Sketcher Output: cadify/controls/linkSketcher.md
         - Best practices: cadify/controls/cadifycontrols-advanced.md        
       - Media Manager: cadify/mediaManager/MediaManager.md
+      - Library:
+        - Library Overview: cadify/library/index.md
+        - Parts: cadify/library/parts.md
+        - Textures: cadify/library/textures.md
+        - Weldments: cadify/library/weldments.md
       - 7 Tabs Management: cadify/7tabs/roles-7-tabs.md
       - Bill of Materials: cadify/bom/bom.md
       - Sketcher:

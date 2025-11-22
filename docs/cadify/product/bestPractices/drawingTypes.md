@@ -3,7 +3,7 @@
 
 In Cadify, there are three basic types of drawing sheets you can create, plus a fourth option for create one from an existing sheet. Each type serves a different purpose in your workflow:
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/sheetStyles.png" alt="Sheet Styles" />
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/sheetStyles.png" alt="Sheet Styles" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"/>
 
 
 ## 1. Drawing from Model
@@ -14,13 +14,13 @@ This is the standard method for generating technical drawings. It automatically 
 
 Users can override which model plane is used as the "Front" plane for the drawing views. For example, if your model was designed on the Right Plane but you want the drawing's front view to show that side, you can select the Right Plane as the front. This ensures your drawings always present the model from the intended perspective.
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/overrideFrontPlane.png" alt="Select model plane to use as Front plane" />
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/overrideFrontPlane.png" alt="Select model plane to use as Front plane" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"/>
 
 **View Layout Override:**
 
 The automatically inserted standard views (Front, Top, Left) can also be customized by the user. As shown in the image below, you can choose which views to insert—such as replacing the Left view with the Right view, omitting side views, or adding section/break views. This gives you full control over the drawing layout to match your documentation needs.
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/viewOptions.png" alt="Select views to insert and override layout" />
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/viewOptions.png" alt="Select views to insert and override layout" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"/>
 
 **Key features:**
 
@@ -28,9 +28,9 @@ The automatically inserted standard views (Front, Top, Left) can also be customi
 - Users can specify view breaks and section views.
 - Break positions can be controlled by Excel formulas, ensuring that only the relevant parts of long models are displayed (e.g., showing just the start and end of a long part).
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/sectionView.png" alt="Section View Settings" />
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/sectionView.png" alt="Section View Settings" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"/>
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/breakSettings.png" alt="Break View Settings" />
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/breakSettings.png" alt="Break View Settings" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"/>
 
 ## 2. Notes
 

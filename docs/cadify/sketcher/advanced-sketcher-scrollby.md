@@ -20,7 +20,7 @@ To configure scroll-by rules, follow these steps in the Control Editor:
 - **Available Sketcher Sheet(s):** Select the Sketcher tab (sheet) you want this rule to affect.
 - **Display Order:** Set the display order if needed.
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/sketcher/images/addsketcherscrollby.png" alt="AddSketcher">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/sketcher/images/addsketcherscrollby.png" alt="AddSketcher" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 ### 2. Define Scroll-By Parameters
 
@@ -32,7 +32,7 @@ On the right side of the Control Editor, you will find the section for scroll-by
 
 The screenshot below shows a parameter ("Select your favorite color") added as a scroll-by parameter:
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/sketcher/images/addedscrollby.png" alt="AddedScrollBy">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/sketcher/images/addedscrollby.png" alt="AddedScrollBy" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 #### Tip:
 Once a parameter is added, it will be highlighted in the **Selected Scroll-by parameters**. The **Available values for condition** section will display all possible values for this parameter (e.g., Red, Green, Blue).
@@ -58,7 +58,7 @@ Suppose you have a control for "Select your favorite color" and three Sketcher t
 
 This setup enables a tailored experience where the visible Sketcher tab responds directly to the user's input.
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/sketcher/images/ScrollByActivation.png" alt="ScrollByActivation">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/sketcher/images/ScrollByActivation.png" alt="ScrollByActivation" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 ---
 

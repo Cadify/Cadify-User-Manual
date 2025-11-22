@@ -7,7 +7,7 @@ This guide shows how to build Web Controls for a TableTop product directly and w
 ## Starting point
 - Add a new worksheet and name it 'Table Top Database'
 - Determine some static elements like the List of Materials and Available thicknesses for Wood (e.g., 10, 15, 20, 25, 30)
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createStatics.png" alt="CreateStatics" style="vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createStatics.png" alt="CreateStatics" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 ## Create the first Control
 Create a control to manage material selection, name it 'Select Material,' and set up the values list to the material list created on the 'Table Top Database' tab.
@@ -18,7 +18,7 @@ Create a control to manage material selection, name it 'Select Material,' and se
 | Type             | List Radio Button |
 | List Source      | =TEXTJOIN(";",TRUE,'Table Top Database'!$B$42:$B$45) |
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createListControl.png" alt="CreateListControl" style="vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createListControl.png" alt="CreateListControl" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 ## Set up your first calculation
 To determine the available thicknesses based on the selected material, you will need to create your first formulas in 'Table Top Database':
@@ -34,7 +34,7 @@ To determine the available thicknesses based on the selected material, you will 
 |------------------|-------------|
 | 'I42' on Table Top Database tab           | =CHOOSE(H40;D42:D46;E42:E46;F42:F45;G42:G45) |
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createFirstDynamicList.png" alt="CreateListControlDynamic" style="vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createFirstDynamicList.png" alt="CreateListControlDynamic" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 - As a last step, now create a control with the generated list:
 
@@ -44,7 +44,7 @@ To determine the available thicknesses based on the selected material, you will 
 | Type             | List Dropdown |
 | List Source      | =TEXTJOIN(";",TRUE,'Table Top Database'!$I$42:$I$59) |
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createControlWithDynamicList.png" alt="CreateListControlDynamic" style="vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createControlWithDynamicList.png" alt="CreateListControlDynamic" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 💡 *Always select a range large enough to cover all possible values. Cadify will automatically remove any empty elements from the control, so you don’t need to worry about blanks.*
 
@@ -52,7 +52,7 @@ To determine the available thicknesses based on the selected material, you will 
 
 *Tools -> Build Cadify Control Hierarchy. It will generate the references list in the Cadify MASTER 'P' column.*
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/firstHierarchyBuilt.png" alt="FirstHierarchy" style="vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/firstHierarchyBuilt.png" alt="FirstHierarchy" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 🎉 Congratulations! You have successfully created your first control with dynamically changing available thicknesses based on the selected material.
 
@@ -60,7 +60,7 @@ To determine the available thicknesses based on the selected material, you will 
 
 To practise dynamic lists a little bit more, let’s add some more static elements into the Table Top Database.
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/moreStaticForLists.png" alt="MoreStaticContent" style="vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/moreStaticForLists.png" alt="MoreStaticContent" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 - Fill the 'Q' column with calculations:
 
@@ -68,7 +68,7 @@ To practise dynamic lists a little bit more, let’s add some more static elemen
 
 This will provide an element of a list or an empty string if the selected material is not matched.
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/listElementOrEmpty.png" alt="ListElementOrEmpty" style="vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/listElementOrEmpty.png" alt="ListElementOrEmpty" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 - Create a UNIQUE/FILTER function combination to generate the proper available values:
 
@@ -76,7 +76,7 @@ This will provide an element of a list or an empty string if the selected materi
 |------------------|-------------|
 | 'S42' on Table Top Database tab           | =UNIQUE(FILTER(Q42:Q65;Q42:Q65<>"")) |
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/UniqueFilter.png" alt="UniqueFilter" style="vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/UniqueFilter.png" alt="UniqueFilter" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 - Now everything is ready to create a control to select from stock-sized Table Tops:
 
@@ -86,13 +86,13 @@ This will provide an element of a list or an empty string if the selected materi
 | Type             | List Dropdown |
 | List Source      | =TEXTJOIN(";",TRUE,'Table Top Database'!$S$42:$S$65) |
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/customSizes.png" alt="CustomSizes" style="vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/customSizes.png" alt="CustomSizes" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 💡 *Remember to call Build Control Hierarchy so dynamically changing elements will be picked up by the Cadify Calculation Engine.* 
 
 *Tools -> Build Cadify Control Hierarchy. It will generate the references list in the Cadify MASTER 'P' column.*
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/secondHierarchy.png" alt="BuildHierarchySecondTime" style="vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/secondHierarchy.png" alt="BuildHierarchySecondTime" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 - Create two Slider controls as well to let the users control the width and depth of the Table Top manually.
 
@@ -104,7 +104,7 @@ This will provide an element of a list or an empty string if the selected materi
 | Minimum | 400 |
 | Maximum | 2000 |
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createSliders.png" alt="CreateSliders" style="vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createSliders.png" alt="CreateSliders" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 | Parameter        | Value       |
 |------------------|-------------|
@@ -120,7 +120,7 @@ After creating two different options to determine the size of the Table Top, you
 
 - First create a control to determine which option is preferred:
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/sizeMode.png" alt="SizeMode" style="vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/sizeMode.png" alt="SizeMode" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 | Parameter        | Value       |
 |------------------|-------------|
@@ -134,9 +134,9 @@ After creating two different options to determine the size of the Table Top, you
     - As the Conditional property, select 'Sizing Mode' that you just created
     - Set 'Stock sizes' for the Conditional value of the 'Select Size' control, and set 'Custom size' for the 'Width' and 'Depth' controls.
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/EditControl.png" alt="EditControl" style="vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/EditControl.png" alt="EditControl" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/Condition.png" alt="SetCondition" style="vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/Condition.png" alt="SetCondition" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 ## Dynamically change Minimum and Maximum values of a Control
 
@@ -148,7 +148,7 @@ After creating two different options to determine the size of the Table Top, you
 | 'V40' on Table Top Database tab           | ='Cadify MASTER'!G16*100 |
 | 'W40' on Table Top Database tab           | ='Cadify MASTER'!G16*80 |
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createMinMax.png" alt="GenerateMax" style="vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createMinMax.png" alt="GenerateMax" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 - Link the calculated maximum values back to the control by setting formulas on Cadify MASTER:
 
@@ -161,4 +161,4 @@ After creating two different options to determine the size of the Table Top, you
 
 *Tools -> Build Cadify Control Hierarchy. It will generate the references list in the Cadify MASTER 'P' column.*
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/buildHierarchy.png" alt="BuildHierarchy" style="vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/buildHierarchy.png" alt="BuildHierarchy" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">

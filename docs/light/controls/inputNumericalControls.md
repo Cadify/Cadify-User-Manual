@@ -16,7 +16,7 @@ Numerical controls often need both minimum and maximum values, and these may cha
     If the user enters a value above the maximum allowed, the Excel field turns red and a message appears, as shown in the example where 11 holes is outside the valid range of 4–10. Cadify then applies a chosen strategy: block the value, suggest a valid alternative, or automatically correct it.
   </div>
   <div class="col-8" style="flex:0 0 40%; max-width:40%; box-sizing:border-box; text-align:center;">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/MaxMinHolesInPCD.png" alt="MaxMinHolesInPCD">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/MaxMinHolesInPCD.png" alt="MaxMinHolesInPCD" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
 </div>
 
@@ -28,7 +28,7 @@ This ensures that inputs always respect physical limits and that the resulting d
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/numerical_wizard.png" alt="Numerical Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/numerical_wizard.png" alt="Numerical Wizard" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
   <div class="col-8">
     <p>Simple numeric input.</p>
@@ -50,7 +50,7 @@ This ensures that inputs always respect physical limits and that the resulting d
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/spinbox_updown_wizard.png" alt="Spinbox Up Down Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/spinbox_updown_wizard.png" alt="Spinbox Up Down Wizard" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
   <div class="col-8">
     <p>Numeric input with increment/decrement buttons.</p>
@@ -72,7 +72,7 @@ This ensures that inputs always respect physical limits and that the resulting d
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/spinbox_slider_wizard.png" alt="Spinbox Slider Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/spinbox_slider_wizard.png" alt="Spinbox Slider Wizard" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
   <div class="col-8">
     <p>Slider control for numeric input within a range.</p>
@@ -94,7 +94,7 @@ This ensures that inputs always respect physical limits and that the resulting d
 
 <div class="grid">
   <div class="col-4">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/list_numeric_wizard.png" alt="List Numeric Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/list_numeric_wizard.png" alt="List Numeric Wizard" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
   <div class="col-8">
     <p>Input control for lists of numeric values.</p>

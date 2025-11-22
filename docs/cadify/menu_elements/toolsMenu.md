@@ -70,7 +70,7 @@ The Control Hierarchy Resolver (CHR) is responsible for defining and maintaining
     <p>Only when both height and steps are known can the railing be determined.</p>
   </div>
   <div class="col-8" style="flex:0 0 35%; max-width:35%; box-sizing:border-box; text-align:center;">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/menu_elements/images/CalculationOrderForStaircase.png" alt="Textbox Wizard">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/menu_elements/images/CalculationOrderForStaircase.png" alt="Textbox Wizard" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
 </div>
 

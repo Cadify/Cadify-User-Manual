@@ -11,7 +11,7 @@ The Media Manager UI is divided into three main sections:
 - **Pictures**: Manage product images and associate them with controls.
 - **Models**: Solidworks product as downloadable files.
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/mediaManager/images/mediaManager.png" alt="MediaManager">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/mediaManager/images/mediaManager.png" alt="MediaManager" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 ## Excel Data Mapping
 
@@ -23,7 +23,7 @@ The configuration for each media type is stored in a structured format in the Ex
 
 The following example shows how these proxies are stored in the Excel workbook:
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/mediaManager/images/proxyInExcel.png" alt="ProxyInExcel">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/mediaManager/images/proxyInExcel.png" alt="ProxyInExcel" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 ---
 

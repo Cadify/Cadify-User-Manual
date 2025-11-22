@@ -5,7 +5,7 @@
     In Cadify, 3D models drive product definition, but drawings remain essential for turning designs into manufacturable products. They provide a clear, standardized way to communicate dimensions, tolerances, and specifications, ensuring accuracy across teams. Because drawings are universally understood, they serve as a common language between engineers, suppliers, and production staff. In Cadify, drawings stay dynamically connected to product data, so when a customization is made, the drawing updates automatically reduce errors, eliminating rework, and keeping the production process efficient.   
   </div>
   <div class="col-8" style="flex:0 0 38%; max-width:38%; box-sizing:border-box; text-align:center;">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/task_panes/images/img_002.png" alt="DrawingTab">
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/task_panes/images/img_002.png" alt="DrawingTab" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
 </div>
 

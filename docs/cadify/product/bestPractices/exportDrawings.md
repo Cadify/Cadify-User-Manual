@@ -20,11 +20,11 @@ For a detailed explanation of the 7 tab system and role-based access, see [Cadif
         - 7 SourceAdmin
 	- This setup determines which files are generated and where they will appear in the web store, based on the tab's role permissions.
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/drawingExport.png" alt="Drawing Settings Form" />
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/drawingExport.png" alt="Drawing Settings Form" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"/>
 
 > **Note:** When you check a box, Cadify creates a proxy entry in the Cadify table (Excel workbook) for that export.
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/exportProxy.png" alt="Drawing Exports" />
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/images/exportProxy.png" alt="Drawing Exports" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"/>
 
 Tabs without assigned content are hidden from the product page, ensuring only relevant files are shown to each user role.
 
