@@ -7,7 +7,7 @@ This document describes the Request‑for‑Quote (RFQ), Cancel and Order flows 
 ## Summary
 
     In Cadify, products can be either ERP-managed or standard (non-ERP), but both use the same project-based RFQ flow. From any product page, the user can either create a project with one-click RFQ or add the product as an item to a new or existing project and request a quote later. For ERP-managed products, the system automatically detects ERP items and adjusts the UI: the Cancel and Order buttons are hidden, while RFQ still works and is processed in the background. Status and history are maintained via ERP webhooks and are visible on the project page and in the project list. For non-ERP products, RFQ requests appear in the admin area, where the store owner can accept or cancel them. After acceptance, the customer sees that the quote is approved and can either place an order based on the quote or cancel the request.
-    
+
 - Views/components involved:
   - `Plugins/nopCommerce.Plugin.Cadify/Views/ShoppingCart/Project.cshtml` — project detail page
   - `Plugins/nopCommerce.Plugin.Cadify/Views/Project/_ProjectListDataTable.cshtml` — project list (DataTable) group headers
@@ -40,11 +40,15 @@ When a project contains any product with an ERP id (detected from the product's 
 
 - `Project` detail page (`Project.cshtml`)
   - RFQ button: `id="page-rfq-btn-{projectGuid}"` and attribute `data-has-erp="true|false"`.
+  <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/web/order/images/project_RFQ.png" alt="RFQ Button" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   - Cancel `page-cancel-btn-{projectGuid}` and Order `page-order-btn-{projectGuid}` are only rendered when `Model.HasErpProducts == false`.
+   <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/web/order/images/project_cancel.png" alt="RFQ Button" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   - Client JS polls `GET /Project/GetProjectRecord` and updates state — but the poller will not change RFQ visuals if `data-has-erp="true"`.
+  
 
 - `_ProjectListDataTable.cshtml` (DataTable)
   - Group header RFQ button: `id="rfq-btn-{projectGuid}"` with `data-has-erp`.
+   <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/web/order/images/project_list.png" alt="RFQ Button" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   - DataTable `startRender` uses `project.HasErpProducts` (server-sent) to decide whether to render Cancel/Order and what RFQ initial caption/class should be.
   - Client handlers (`handleRfqClick`, `postQuote`, `handleCancelClick`, `handleOrderClick`) still POST to the same endpoints; they skip local UI changes for ERP-managed projects.
 
@@ -109,8 +113,8 @@ When a project contains any product with an ERP id (detected from the product's 
 ## Screenshots / doc images
 
 Recommended paths:
-- `docs/images/project-page-rfq.png`
-- `docs/images/project-page-order-cancel.png`
+- `docs/images/project_RFQ.png`
+- `docs/images/project_admin_send.png`
 - `docs/images/project-list-datatable.png`
 - `docs/images/project-selector.png`
 - `docs/images/admin-customer-projects.png`
