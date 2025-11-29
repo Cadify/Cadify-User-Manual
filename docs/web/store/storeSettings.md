@@ -124,7 +124,7 @@ Open the App Console.
 
 Create a new Dropbox App.
 
-![Image 1](image-1.png)
+ <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/dropbox_login.png" alt="RFQ Button" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 Creating an app automatically creates a corresponding App Folder.
 
@@ -147,8 +147,6 @@ Main.Ovalas.No
 
 This name must exactly match the nopCommerce Substore name that will be created later.
 
-![Image 2](image-2.png)
-
 4.3. Redirect URIs  
 Redirect URIs connect Dropbox OAuth back to the correct Cadify instance. If they are wrong, authorization will fail.
 
@@ -160,7 +158,7 @@ For the main folder (global app), the Redirect URI is:
 
 For each client app, add its Redirect URI to the Dropbox app’s settings, matching the site’s Cadify configuration for “Authorize App Folder”.
 
-![Image 3](image-3.png)
+ <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/dropbox_redirect_uri.png" alt="RFQ Button" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 4.4. Permissions  
 Permissions control what the Cadify app is allowed to do inside the client’s Dropbox folder.
@@ -169,20 +167,16 @@ On the Permissions tab of the Dropbox app:
 
 Configure the required permissions (for example, app-folder–level read/write) according to Cadify’s security and data access requirements.
 
+ <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/dropbox_permissions_1.png" alt="RFQ Button" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
+
 On the permission tab of the app folder the different permissions must be set so that Cadify can upload, update and read product files, but cannot access other unrelated areas of the user’s Dropbox.
 
-![Image 4](image-4.png)
-
-![Image 5](image-5.png)
-
-![Image 6](image-6.png)
-
-![Image 7](image-7.png)
+ <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/dropbox_permissions_2.png" alt="RFQ Button" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 4.5. Copy and store App key and app secret of the main folder  
 You will need the App key and App secret later when configuring the store in nopCommerce, so store them in a secure but accessible place (for example, a password manager or secure config store).
 
-![Image 8](image-8.png)
+ <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/dropbox_setups.png" alt="RFQ Button" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 5. Configure Substore in nopCommerce  
 Here you create the nopCommerce Store that represents the client and link it to the Dropbox App you created in the previous step.
@@ -194,7 +188,7 @@ nopCommerce → Administration → Configuration → Stores → Add New
 
 Create a new Store.
 
-![Image 9](image-9.png)
+ <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/create_new_substore.png" alt="RFQ Button" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 The Store name must be identical to the Dropbox App Folder name:
 
@@ -216,7 +210,7 @@ Click **Authorize** to connect the Store to the Dropbox App Folder.
 
 This step establishes Cadify Authorization between the Store and the Dropbox folder. If authorization fails, double-check the app key/secret and Redirect URI settings.
 
-![Image 10](image-10.png)
+ <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/substore_dropbox_connection.png" alt="RFQ Button" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 6. Create a Vendor  
 The Vendor entity represents the Cadify Client inside nopCommerce and links the Store to the right customers and products.
@@ -234,8 +228,6 @@ the Substore name, and
 the Dropbox App Folder name (for example, Main.Ovalas.No).
 
 This Vendor will represent the Cadify Client for that Store and will be used for permission filtering and product ownership.
-
-![Image 11](image-11.png)
 
 7. Create an Account (Customer with Vendor Role)  
 Now you create the actual user accounts that the client’s admins will use to log in and manage their products.
@@ -259,8 +251,6 @@ With Vendor rights, they can:
 Manage products for their Store.
 
 Upload and manage product data synchronized with their Dropbox folder.
-
-![Image 12](image-12.png)
 
 8. Connecting Products and Customers via Vendor Roles  
 This section explains how the underlying nopCommerce data model uses Vendors to tie together customers, products and stores for permission control.
@@ -339,7 +329,6 @@ Secure file storage per client via Dropbox App Folders.
 
 Fine-grained permissions using Vendor-based filtering in nopCommerce.
 
-![Image 13](image-13.png)
 
 9. Create a domain name  
 In this step you configure the public domain that customers will use to access the new substore. The domain must point to the correct server and support HTTPS.
@@ -350,7 +339,7 @@ In nopCommerce, open the Store configuration and:
 - Set the **Store URL** to the desired domain (for example, `https://main.ovalas.no/`).  
 - Ensure **SSL enabled** is turned on so all traffic is served via HTTPS.
 
-![Image 14](image-14.png)
+ <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/create_new_substore.png" alt="RFQ Button" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 Set the binding in the IIS  
 Now you tell IIS which domain it should respond to for this nopCommerce instance.
@@ -360,16 +349,18 @@ Set the binding in the proper IIS in the given nopCommerce. Edit bindings of the
 Steps (on the IIS server):
 
 1. Open **IIS Manager**.  
-2. Locate the site hosting the nopCommerce application (e.g. *Cadify2*).  
+2. Locate the site hosting the nopCommerce application (e.g. *nopCommerce*).  
 3. Click **Bindings…** on the right-hand side.  
 4. Edit existing bindings if necessary, or add a new one for the new domain.
 
-![Image 15](image-15.png)
+
+ <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/edit
+ _IIS_binding.png" alt="RFQ Button" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 Add new binding. Set the new domain name for the host name. Set the port for 443. Set **Require Server Name Indication**.  
 Make sure you select the correct SSL certificate once it is created (see the Let’s Encrypt step later). This allows IIS to serve the site securely under the new domain.
 
-![Image 16](image-16.png)
+ <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/set_IIS_binding.png" alt="RFQ Button" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 10. Connect the store with domain name in ServeTheWorld  
 Now you configure DNS so that the public domain points to the server where IIS and nopCommerce are running.
@@ -382,20 +373,27 @@ my.servetheworld.net
 
 Products -> HTS-LRG (Web Hosting)
 
+ <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/STW_products_hst_lrg.png" alt="RFQ Button" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
+
 Product Details -> DNS Settings
+
+ <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/STW_products_dns_settings.png" alt="RFQ Button" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 Domain Aliases -> DNS Settings -> Select specific site
 
+ <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/STW_products_details.png" alt="RFQ Button" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
+
 Set the important main DNS settings  
 Configure the necessary DNS records (typically **A** or **CNAME** records) so that:
+
+ <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/STW_set_important_dns
+.png" alt="RFQ Button" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 - The main domain points to the server IP (e.g. `ovalas.no` → server IP).  
 - Any required substore domains (e.g. `main.ovalas.no`) also point to the correct IP.
 
 And the substore  
 Add an additional DNS entry for the substore hostname if it differs from the main domain. Once DNS is saved, allow some time for propagation before testing in the browser.
-
-![Image 17](image-17.png)
 
 11. Let’s Encrypt  
 In this final step you request and install a free SSL certificate so the domain can be accessed securely via HTTPS.
@@ -409,6 +407,8 @@ Download https://www.win-acme.com/ on the machine where IIS runs.
 On Ovalas.no  
 At ovalas.no start **Command Prompt** (as Administrator).
 
+ <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/letsencrypt_1.png" alt="RFQ Button" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
+
 Run the win-acme client and follow the interactive prompts:
 
 - Select **IIS** as the target.  
@@ -418,8 +418,7 @@ Run the win-acme client and follow the interactive prompts:
 Always use the default answer except that the **main host** must be set to `ovalas.no`.  
 After completion, verify in IIS that the new certificate is bound to port 443 for the new domain, and then test `https://<your-domain>` in a browser.
 
-![Image 18](image-18.png)
+ <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/letsencrypt_2.png" alt="RFQ Button" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
-![Image 19](image-19.png)
+ <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/letsencrypt_3.png" alt="RFQ Button" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
-![Image 20](image-20.png)
