@@ -114,6 +114,7 @@ nav:
       - Getting Started: web/index.md
       - Stores:
         - Overview: web/store/index.md
+        - CMS Store Front: web/store/cms-store-front.md
         - General Settings: web/store/storeSettings.md
         - Cadify Cloud: web/store/cadifyCloud.md           
       - Headless Web:
