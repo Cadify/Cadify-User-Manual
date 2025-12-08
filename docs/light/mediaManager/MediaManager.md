@@ -9,8 +9,9 @@ The Media Manager UI is divided into three main sections:
 - **Print from Excel**: Configure print areas from specified worksheets and ranges.
 - **PDF from File**: Set up downloadable PDF brochures for products.
 - **Pictures**: Manage product images and associate them with controls.
+- **Models**: Solidworks product as downloadable files.
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/mediaManager/images/mediaManager.png" alt="MediaManager" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/mediaManager/images/mediaManager.png" alt="MediaManager" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 ## Excel Data Mapping
 
@@ -18,10 +19,11 @@ The configuration for each media type is stored in a structured format in the Ex
 - `ProxyReport` for print areas
 - `ProxyBrochure` for PDF brochures
 - `ProxyPicture` for product images
+- `ProxyModel` for Solidworks files
 
 The following example shows how these proxies are stored in the Excel workbook:
 
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/mediaManager/images/proxyInExcel.png" alt="ProxyInExcel" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/mediaManager/images/proxyInExcel.png" alt="ProxyInExcel" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
 
 ---
 
@@ -44,6 +46,27 @@ Allows the user to specify a worksheet and range to define a printable area for 
 | Number of pages      | 1                 | How many pages to print                      |
 | Display order        | 10                | UI display order                             |
 
+### System Behavior
+
+#### Publish (Product Release)
+- AddIn generates all report PDFs.
+- Files are stored in the **published** folder on Dropbox.
+- nopCommerce imports and displays these PDFs on the product page.
+- These become the product’s **default published PDF outputs**.
+
+#### Calculation (Runtime Request)
+- When nopCommerce triggers a *Calculation*:
+  - Cadify Service regenerates all report PDFs.
+  - Files are uploaded to the **request** folder.
+- nopCommerce then fetches these request-specific files.
+
+#### Storage Summary
+| State | Behavior |
+|-------|----------|
+| **Raw** | No generated PDFs |
+| **Published** | Default PDFs created at Publish |
+| **Request** | Fresh reports regenerated per calculation |
+
 ---
 
 ## 2. PDF Brochure (`ProxyBrochure`)
@@ -58,6 +81,27 @@ Set up downloadable PDF files for products. The files are stored next to the wor
 | Destination tab   | 3 Brochures                                | Where the brochure info is stored                       |
 | Display order     | 10                                         | UI display order                                        |
 | Brochure name     | (blank)                                    | Optional brochure display name                          |
+
+### System Behavior
+
+#### Embedded Brochures
+- PDF stored **inside the Excel file** as binary.
+- Always included when the product is published.
+
+#### File-Based Brochures
+- Source file stored in the **raw** Dropbox folder.
+- At Publish:
+  - Copied to the **published** folder.
+  - nopCommerce receives and hosts the published version.
+
+#### Storage Summary
+| State | Embedded | File-Based |
+|--------|----------|-----------|
+| **Raw** | Stored inside Excel | Stored in raw folder |
+| **Published** | Published from Excel | Copied to published folder |
+| **Calculation** | Not regenerated | Not regenerated |
+
+Brochures are **static**; they do not change during runtime calculations.
 
 ---
 
@@ -77,8 +121,70 @@ Users can assign images as product pictures or connect them to Cadify Controls (
 | Picture Type           | ImageSquare / Product         | Type of image                                     |
 
 **Example Images Mapped in UI:**
+
 - `ImageSquare`: Used for selectable color squares (red, green, blue).
+
 - `Product`: Used for main product image (e.g., Cadify logo).
+
+### System Behavior
+
+#### Embedded Pictures
+- Stored as binary inside Excel.
+- Available only in the raw Excel file until Publish.
+
+#### File-Based Pictures
+- Stored in the **raw** folder on Dropbox.
+- Displayed inside the AddIn.
+
+#### Publish Behavior
+During Publish:
+
+- **All pictures** (embedded + file-based) are uploaded to the **nopCommerce Picture Manager**.
+
+- nopCommerce becomes the **hosting source** for images.
+
+- Dropbox picture files are no longer used on the live site.
+
+### Storage Summary
+| State | Embedded | File-Based |
+|--------|-----------|-----------|
+| **Raw** | Stored inside Excel | Stored in raw folder |
+| **Published** | Uploaded to nopCommerce | Uploaded to nopCommerce |
+| **Request** | Not regenerated | Not regenerated |
+
+---
+
+## 4. 3D model export data formats
+
+Digital manufacturing demands precise, machine ready data. Cadify builds a single source of truth from SolidWorks models and Excel rules, then outputs the right format for each process. From the configurator, validated parameters drive exports for CNC, laser cutting, and 3D printing, DXF for flat patterns and laser operations, STEP for milling, turning, and assemblies, STL or 3MF for additive workflows. Files stay consistent with the approved configuration, so machines receive exactly what they need the first time.
+
+This section explains how these exports are created, named, and version bound, and how they travel with the order. It also covers the optional proxy model path, where you provide either a complete SolidWorks Pack and Go ZIP archive of the full 3D model, or a specific 3D export such as STEP or 3MF.
+
+| Field                | Example Value      | Description                                  |
+|----------------------|-------------------|----------------------------------------------|
+| Destination tab      | 6 Fabricator / 7 SourceAdmin      | Where the result is stored   |
+| File format          | step / zip        | Output file format                           |
+| File name            | 3D_model_as_step.step / 3d_compressed.zip | Output file name     |
+| Prompt               | 3D model in STEP / 3D model in zip | Display name in UI          |
+| Display order        | 10 /20              | UI display order                           |
+
+### System Behavior
+
+#### Publish
+- AddIn generates all model exports.
+- Files placed in the **published** folder.
+- nopCommerce uses these files for product downloads.
+
+#### Calculation
+- Cadify Service regenerates 3D exports.
+- Files stored in the **request** folder.
+
+#### Storage Summary
+| State | Behavior |
+|--------|----------|
+| **Raw** | No models generated |
+| **Published** | Finalized 3D exports |
+| **Request** | Fresh calculation-specific models |
 
 ---
 
@@ -87,16 +193,9 @@ Users can assign images as product pictures or connect them to Cadify Controls (
 - **ProxyReport**: Defines Excel printing areas.
 - **ProxyBrochure**: Defines downloadable PDF brochures.
 - **ProxyPicture**: Defines product images and their attributes.
+- **ProxyModel**: Defines downloadable 3D model files.
 
 Each proxy is represented as a structured row in the Excel workbook, making it easy to configure and automate media management for products.
-
----
-
-### Workflow Summary
-
-1. **Configure print areas** in Excel via `ProxyReport`.
-2. **Add downloadable PDFs** via `ProxyBrochure`.
-3. **Assign and connect images** via `ProxyPicture` and link them to controls (e.g., ImageSquares).
 
 ---
 
@@ -105,6 +204,7 @@ Each proxy is represented as a structured row in the Excel workbook, making it e
 - **Add PDF print**: Add a new Excel print configuration.
 - **Add PDF as file**: Attach a downloadable PDF brochure.
 - **Add picture**: Add new product images and associate them with controls.
+- **Add model**: Add new downloadable 3D model output exported directly from Solidworks model.
 
 Buttons at the bottom allow users to validate and apply changes, ensuring the product's media settings are correctly saved.
 

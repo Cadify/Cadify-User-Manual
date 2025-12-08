@@ -46,6 +46,27 @@ Allows the user to specify a worksheet and range to define a printable area for 
 | Number of pages      | 1                 | How many pages to print                      |
 | Display order        | 10                | UI display order                             |
 
+### System Behavior
+
+#### Publish (Product Release)
+- AddIn generates all report PDFs.
+- Files are stored in the **published** folder on Dropbox.
+- nopCommerce imports and displays these PDFs on the product page.
+- These become the product’s **default published PDF outputs**.
+
+#### Calculation (Runtime Request)
+- When nopCommerce triggers a *Calculation*:
+  - Cadify Service regenerates all report PDFs.
+  - Files are uploaded to the **request** folder.
+- nopCommerce then fetches these request-specific files.
+
+#### Storage Summary
+| State | Behavior |
+|-------|----------|
+| **Raw** | No generated PDFs |
+| **Published** | Default PDFs created at Publish |
+| **Request** | Fresh reports regenerated per calculation |
+
 ---
 
 ## 2. PDF Brochure (`ProxyBrochure`)
@@ -60,6 +81,27 @@ Set up downloadable PDF files for products. The files are stored next to the wor
 | Destination tab   | 3 Brochures                                | Where the brochure info is stored                       |
 | Display order     | 10                                         | UI display order                                        |
 | Brochure name     | (blank)                                    | Optional brochure display name                          |
+
+### System Behavior
+
+#### Embedded Brochures
+- PDF stored **inside the Excel file** as binary.
+- Always included when the product is published.
+
+#### File-Based Brochures
+- Source file stored in the **raw** Dropbox folder.
+- At Publish:
+  - Copied to the **published** folder.
+  - nopCommerce receives and hosts the published version.
+
+#### Storage Summary
+| State | Embedded | File-Based |
+|--------|----------|-----------|
+| **Raw** | Stored inside Excel | Stored in raw folder |
+| **Published** | Published from Excel | Copied to published folder |
+| **Calculation** | Not regenerated | Not regenerated |
+
+Brochures are **static**; they do not change during runtime calculations.
 
 ---
 
@@ -79,8 +121,36 @@ Users can assign images as product pictures or connect them to Cadify Controls (
 | Picture Type           | ImageSquare / Product         | Type of image                                     |
 
 **Example Images Mapped in UI:**
+
 - `ImageSquare`: Used for selectable color squares (red, green, blue).
+
 - `Product`: Used for main product image (e.g., Cadify logo).
+
+### System Behavior
+
+#### Embedded Pictures
+- Stored as binary inside Excel.
+- Available only in the raw Excel file until Publish.
+
+#### File-Based Pictures
+- Stored in the **raw** folder on Dropbox.
+- Displayed inside the AddIn.
+
+#### Publish Behavior
+During Publish:
+
+- **All pictures** (embedded + file-based) are uploaded to the **nopCommerce Picture Manager**.
+
+- nopCommerce becomes the **hosting source** for images.
+
+- Dropbox picture files are no longer used on the live site.
+
+### Storage Summary
+| State | Embedded | File-Based |
+|--------|-----------|-----------|
+| **Raw** | Stored inside Excel | Stored in raw folder |
+| **Published** | Uploaded to nopCommerce | Uploaded to nopCommerce |
+| **Request** | Not regenerated | Not regenerated |
 
 ---
 
@@ -97,6 +167,24 @@ This section explains how these exports are created, named, and version bound, a
 | File name            | 3D_model_as_step.step / 3d_compressed.zip | Output file name     |
 | Prompt               | 3D model in STEP / 3D model in zip | Display name in UI          |
 | Display order        | 10 /20              | UI display order                           |
+
+### System Behavior
+
+#### Publish
+- AddIn generates all model exports.
+- Files placed in the **published** folder.
+- nopCommerce uses these files for product downloads.
+
+#### Calculation
+- Cadify Service regenerates 3D exports.
+- Files stored in the **request** folder.
+
+#### Storage Summary
+| State | Behavior |
+|--------|----------|
+| **Raw** | No models generated |
+| **Published** | Finalized 3D exports |
+| **Request** | Fresh calculation-specific models |
 
 ---
 
