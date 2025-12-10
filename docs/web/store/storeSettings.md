@@ -1,95 +1,75 @@
 # Cadify Substore System
 
-## Technical Overview
-
-This document describes the **full end-to-end setup of a Cadify Substore**, from **Dropbox configuration** through **nopCommerce setup** to **domain and SSL configuration**.  
-
-> **Follow the sections in order when onboarding a new Cadify Client.**
+## Technical Overview  
+This document describes the full end-to-end setup of a Cadify Substore, from Dropbox configuration through nopCommerce setup to domain and SSL configuration. Follow the sections in order when onboarding a new Cadify Client.
 
 ---
 
-## 1. Terminology
+## 1. Terminology  
+This section defines the key concepts (Client, Vendor, Store, etc.) that are used throughout the rest of the guide. Make sure these are clear before you start the technical steps.
 
-This section defines the **key concepts** (*Client, Vendor, Store, etc.*) used throughout the rest of the guide.  
-**Make sure these are clear before you start the technical steps.**
+### Cadify Client  
+A Cadify customer that owns a store and its products.  
+Previously called Store Owner (this term is deprecated).
 
-### 1.1 Cadify Client
+A Cadify Client can be either:  
+- a Company, or  
+- a Marketplace.
 
-A **Cadify Client** is a Cadify customer that **owns a store and its products**.
+### Vendor (nopCommerce term)  
+A Vendor is a nopCommerce user type used to manage store-specific admin pages.  
+Technically: a Customer with Vendor role in nopCommerce.
 
-> Previously called **Store Owner** (**this term is deprecated**).
+In Cadify:  
+- A Cadify Client is represented as a Vendor in nopCommerce so they can manage their store.  
+- The term Vendor is only used in the nopCommerce context.
 
-A Cadify Client can be either:
+### Cadify Store  
+A nopCommerce Store that belongs to a Cadify Client.  
+Each Cadify Store:  
+- Corresponds to a specific Cadify Client.  
+- Is connected to exactly one Dropbox App Folder.
 
-- a **Company**, or  
-- a **Marketplace**.
-
-### 1.2 Vendor (nopCommerce term)
-
-A **Vendor** is a nopCommerce user type used to **manage store-specific admin pages**.
-
-Technically: a **Customer with Vendor role** in nopCommerce.
-
-In Cadify:
-
-- A **Cadify Client is represented as a Vendor** in nopCommerce so they can manage their store.  
-- The term **Vendor** is only used in the **nopCommerce context**.
-
-### 1.3 Cadify Store
-
-A **Cadify Store** is a **nopCommerce Store that belongs to a Cadify Client**.
-
-Each Cadify Store:
-
-- **Corresponds to a specific Cadify Client.**  
-- Is connected to **exactly one Dropbox App Folder.**
-
-### 1.4 Dropbox App Folder
-
-A **Dropbox App Folder** is a dedicated Dropbox application folder used to store the **Cadify Client’s product files**.
-
-- It has **restricted access** and **cannot see any other client’s folders**.
+### Dropbox App Folder  
+A dedicated Dropbox application folder used to store the Cadify Client’s product files.  
+It has restricted access and cannot see any other client’s folders.
 
 Example path:  
-`Dropbox\Cadify\Apps\<ClientFolder>`
+`Dropbox/Cadify/Apps/<ClientFolder>`
 
-### 1.5 Cadify Authorization
+### Cadify Authorization  
+The mechanism that connects a specific Cadify Store in nopCommerce to a specific Dropbox App Folder.  
+**One Store ↔ One Dropbox App Folder**
 
-**Cadify Authorization** is the mechanism that connects a **specific Cadify Store in nopCommerce** to a **specific Dropbox App Folder**.
-
-The relationship is **1:1**:
-
-> **One Store ↔ One Dropbox App Folder**
-
-### 1.6 Site vs Store
-
-A **Site** is the domain environment (e.g., `ovalas.no`).  
-A **Store** is a nopCommerce instance under that site (e.g., `main.ovalas.no`).  
-A Site can contain many Stores.
+### Site vs Store  
+A Site (e.g. ovalas.no) can host multiple Stores, such as:  
+- main.ovalas.no  
+- anotherstore.ovalas.no
 
 ---
 
-## 2. Vendor Role and Entity Relationships
+## 2. Vendor Role and Entity Relationships  
 
-In nopCommerce, a **Cadify Client is represented as a Customer with the Vendor role**.  
-Cadify uses this structure to enforce **product, customer, and store permissions**.
+In nopCommerce, a Cadify Client is represented as a Customer with the Vendor role.  
+Key points:
 
-A Cadify Client must have:
+A Cadify Client must have:  
+- A nopCommerce Store (Cadify Store), and  
+- A connected Dropbox App Folder via Cadify Authorization.
 
-- a **nopCommerce Store (Cadify Store)**  
-- a **connected Dropbox App Folder via Cadify Authorization**
+While nopCommerce allows:  
+- One Store → Many Vendors,  
 
-Cadify simplifies structure:
+Cadify uses a simplified structure:  
+**One Store represents one Cadify Client and one Vendor.**
 
-> **One Store → One Vendor → One Client**
-
-A Site may have multiple Stores, each mapped to its own Dropbox App Folder.
+A Site can contain multiple Stores, each with its own Dropbox App Folder.
 
 ---
 
 ## 3. Client Onboarding Process (High-Level)
 
-The onboarding process has **four main steps**:
+The full process of setting up a new Cadify Client has four main steps:
 
 1. **Create the Client’s Dropbox App Folder**  
 2. **Create the Cadify Client & Vendor in nopCommerce**  
@@ -98,157 +78,140 @@ The onboarding process has **four main steps**:
 
 ---
 
-## 4. Create Client (Dropbox) Folder
+## 4. Create Client (Dropbox) Folder  
 
-This prepares the **per-client storage** in Dropbox.
+Cadify products are stored in per-client Dropbox folders:  
+`Dropbox/Cadify/Apps/<ClientFolder>`
 
-- Read **App Key** and **App Secret** from Dropbox Developers.  
-- Set redirect URIs.  
-- Folder path: `Dropbox\Cadify\Apps\<ClientFolder>`
+### 4.1 Create the Dropbox App (Client Folder)
 
-### 4.1 Create the Dropbox App
+Log in to Dropbox Developers:  
+https://www.dropbox.com/developers
 
-Steps:
+Open the App Console → Create a new Dropbox App.
 
-1. Log in: https://www.dropbox.com/developers  
-2. Open **App Console**  
-3. Create new app (this creates the App Folder)
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/dropbox_login.png" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
 
-### 4.2 Naming Convention
+Creating an app automatically creates the App Folder.
 
-Must match:
+⚠️ Be careful when creating apps. Mistakes affect file access.
 
-> **Store.Site.Country**  
-Example: `Main.Ovalas.No`
+### 4.2 Naming Convention  
+Use naming:  
+**Store.Site.Country**
 
-### 4.3 Redirect URIs
+Example:  
+`Main.Ovalas.No`
 
-Main folder redirect URI:
+Must match the nopCommerce Substore name.
 
-```
-Admin/ExtendedStore/AuthorizedAppFolderAuth
-```
+### 4.3 Redirect URIs  
+Main folder redirect URI:  
+`Admin/ExtendedStore/AuthorizedAppFolderAuth`
 
-### 4.4 Permissions
+Each client app must include its corresponding redirect URI.
 
-Set Dropbox **app-folder read/write**, restrict to client folder only.
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/dropbox_redirect_uri.png" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
 
-### 4.5 Store App Key and Secret
+### 4.4 Permissions  
 
-Save securely for nopCommerce configuration.
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/dropbox_permissions_1.png" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
 
----
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/dropbox_permissions_2.png" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
 
-## 5. Configure Substore in nopCommerce
+Set permissions so Cadify can upload/update/read files but cannot access unrelated folders.
 
-### 5.1 Create Substore
+### 4.5 Store App Key and Secret  
 
-Path:  
-`Administration → Configuration → Stores → Add New`
-
-Store name **must match Dropbox App name**, e.g. `Main.Ovalas.No`.
-
-### 5.2 Connect Dropbox in Cadify Plugin
-
-Enter:
-
-- App Key  
-- App Secret  
-
-Then click **Authorize**.
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/dropbox_setups.png" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
 
 ---
 
-## 6. Create a Vendor
+## 5. Configure Substore in nopCommerce  
 
-Vendor name must **match the Store name** and the **Dropbox App Folder name**.
+### 5.1 Create the Substore  
+Path: Administration → Configuration → Stores → Add New
 
-Used for:
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/create_new_substore.png" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
 
-- Permission filtering  
-- Store ownership  
-- Product assignment
+The Store name must match the Dropbox App Folder name.
+
+### 5.2 Configure Dropbox in Cadify Plugin  
+
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/substore_dropbox_connection.png" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
+
+Enter App Key & Secret → Click **Authorize**
 
 ---
 
-## 7. Create User Account (Customer with Vendor Role)
+## 6. Create a Vendor  
 
-Steps:
+Vendor name must match:  
+- Substore name  
+- Dropbox folder name  
 
+Represents the client and controls permissions.
+
+---
+
+## 7. Create an Account (Customer with Vendor Role)
+
+Steps:  
 1. Register customer  
-2. Assign **Vendor role**  
-3. Customer becomes Cadify Client admin
+2. Assign Vendor role  
+3. Customer becomes client admin
 
-Vendor customers can:
-
-- Manage products  
-- Sync data with Dropbox  
-- Access substore admin panel
+They can manage products and sync Dropbox data.
 
 ---
 
-## 8. Vendor Roles and Permissions
+## 8. Vendor Roles & Permissions  
 
-### 8.1 Data Model (Simplified)
+### 8.1 Data Model  
+Vendor → Customers (1:N)  
+Vendor → Products (1:N)
 
-**Vendor → Customers (1:N)**  
-**Vendor → Products (1:N)**  
-**Store → Products (1:N)**  
-**Store → Customers (1:N)**
+### 8.2 Vendor as Permission Filter  
+Ensures isolation between clients.
 
-### 8.2 Vendor Role as Permission Filter
-
-Controls:
-
-- Which products a client can see  
-- Which customers belong to which client  
-- Ensures isolation between clients
-
-### 8.3 Cadify-Specific Structure
-
-The **Store** is the central entity:
-
-- Each Store → One Dropbox Folder  
-- Each Store → One Vendor (typical Cadify usage)  
-- Each Store → Many Customers  
-- Each Vendor → Many Products
+### 8.3 Cadify Structure  
+Store is the central object mapping customers, products, and Dropbox folders.
 
 ---
 
-## 9. Create a Domain Name
+## 9. Create a Domain Name  
 
-In nopCommerce Store settings:
+In Store settings:  
+- Set Store URL  
+- Enable SSL
 
-- Set **Store URL** (e.g., `https://main.ovalas.no/`)  
-- Enable **SSL**
-
----
-
-## 10. Configure DNS in ServeTheWorld
-
-Log in:  
-https://my.servetheworld.net/login
-
-Set DNS records so:
-
-- Main domain → Server IP  
-- Substore domain → Server IP
-
-Allow propagation time.
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/create_new_substore.png" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
 
 ---
 
-## 11. Install SSL (Let’s Encrypt)
+## 10. DNS Setup in ServeTheWorld  
 
-Use **win-acme**:
+Login: https://my.servetheworld.net/login
 
-1. Run as Administrator  
-2. Select **IIS**  
-3. Pick domain binding  
-4. Generate certificate  
-5. Auto-install to IIS  
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/STW_products_hst_lrg.png" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
 
-Verify HTTPS works in browser.
+Navigate to DNS settings.
+
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/STW_products_dns_settings.png" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
+
+Set A or CNAME records to point domain → server IP.
+
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/STW_set_important_dns.png" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
 
 ---
+
+## 11. Let’s Encrypt SSL  
+
+Use win-acme to generate and install certificate.
+
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/letsencrypt_1.png" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
+
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/letsencrypt_2.png" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
+
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/letsencrypt_3.png" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
 
