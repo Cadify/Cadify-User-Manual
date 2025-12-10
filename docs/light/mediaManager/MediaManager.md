@@ -15,6 +15,7 @@ The Media Manager UI is divided into three main sections:
 ## Excel Data Mapping
 
 The configuration for each media type is stored in a structured format in the Excel workbook. Each section uses a proxy object:
+
 - `ProxyReport` for print areas
 - `ProxyBrochure` for PDF brochures
 - `ProxyPicture` for product images

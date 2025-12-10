@@ -17,7 +17,4 @@ This section collects best practices for working with Cadify product models, dra
 	Understand the recommended worksheet structure for scalable, traceable product models in Cadify.
 
 - [Drawing Types](drawingTypes.md):
-	(Coming soon) Overview of supported drawing types and their use in Cadify workflows.
-
-- [Library](library.md):
-	(Coming soon) Guidance on building and using part and template libraries in Cadify.
+	Overview of supported drawing types and their use in Cadify workflows.

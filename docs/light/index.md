@@ -10,7 +10,7 @@ This guide will help you get up and running with Cadify Light, covering registra
 
 Before using Cadify Light, you must register for an account:
 
-1. Visit [https://cadify.gratis](https://cadify.gratis).
+1. Visit <a href="https://cadify.gratis" target="_blank" rel="noopener noreferrer">cadify.gratis</a> page.
 2. Register using your email address.
 3. **Wait for Admin Approval:** Our admins will review your registration. Once approved, you’ll receive an email notification containing a download link for the Excel plugin installer.
 

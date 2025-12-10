@@ -7,7 +7,7 @@ This section provides documentation for creating and managing products in Cadify
 - [Creating a Product with Cadify SolidWorks Add-in](createProduct.md):
   Step-by-step guide to creating a new product, from logging in and preparing your model to saving and controlling parameters in the cloud.
 
-- [Create Drawing](drawing/drawings.md):
+- [Create Drawing](drawings.md):
   Learn how to create and manage drawings in the SolidWorks Task Pane with Cadify, including model/drawing dimensions, notes, and role-based distribution.
 
 - [Best Practices](bestPractices/index.md):

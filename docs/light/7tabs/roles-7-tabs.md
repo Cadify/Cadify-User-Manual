@@ -95,7 +95,7 @@ For **Cadify Web Controls only**; not assignable to tabs.
 ### Models
 Generate model files (e.g., STL, 3MF, ZIP) and place them on any tab.
 
-See more on [Media Manager details](/mediaManager/MediaManager)
+See more on [Media Manager details](../mediaManager/MediaManager.md)
 
 ## Web Controls for Specifications
 

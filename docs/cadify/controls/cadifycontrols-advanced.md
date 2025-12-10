@@ -44,6 +44,7 @@ To create a control you can use either method:
 
 ## Set up your first calculation
 To determine the available thicknesses based on the selected material, you will need to create your first formulas in 'Table Top Database':
+
 - Determine the selected index of available materials:
 
 | Target Cell        | Value       |
