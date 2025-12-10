@@ -63,121 +63,192 @@ The relationship is **1:1**:
 
 ### 1.6 Site vs Store
 
-This distinction is important when you work with **multiple subsites under the same domain or hosting environment**.
-
-Site example: `ovalas.no`
-
-A **Site** can host **multiple Stores**, for example:
-
-- `main.ovalas.no`  
-- `anotherstore.ovalas.no`
+A **Site** is the domain environment (e.g., `ovalas.no`).  
+A **Store** is a nopCommerce instance under that site (e.g., `main.ovalas.no`).  
+A Site can contain many Stores.
 
 ---
 
 ## 2. Vendor Role and Entity Relationships
 
-This section explains how **Vendors, Stores, Customers and Products** relate to each other in nopCommerce and how Cadify uses these relations to **enforce permissions**.
-
 In nopCommerce, a **Cadify Client is represented as a Customer with the Vendor role**.  
-In this document, **“Vendor” refers to this nopCommerce concept.**
-
-**Key points:**
+Cadify uses this structure to enforce **product, customer, and store permissions**.
 
 A Cadify Client must have:
 
-- a **nopCommerce Store (Cadify Store)**, and  
-- a **connected Dropbox App Folder via Cadify Authorization**.
+- a **nopCommerce Store (Cadify Store)**  
+- a **connected Dropbox App Folder via Cadify Authorization**
 
-While nopCommerce allows:
+Cadify simplifies structure:
 
-- **One Store → Many Vendors**,  
+> **One Store → One Vendor → One Client**
 
-Cadify currently uses a simplified structure where:
-
-> **One Store effectively represents one Cadify Client and one Vendor.**
-
-A Site (e.g. `ovalas.no`) can contain **multiple Stores (subsites)**, each connected to its own **Dropbox App Folder**.
+A Site may have multiple Stores, each mapped to its own Dropbox App Folder.
 
 ---
 
 ## 3. Client Onboarding Process (High-Level)
 
-This section gives you a **bird’s-eye view** of the onboarding steps.  
-Use it as a **checklist** before you dive into the detailed instructions.
-
-The full process of setting up a **new Cadify Client** has **four main steps**:
+The onboarding process has **four main steps**:
 
 1. **Create the Client’s Dropbox App Folder**  
-   Done via **Dropbox Developers** console.
-
 2. **Create the Cadify Client & Vendor in nopCommerce**  
-   Set up the **nopCommerce customer with Vendor role**.
-
 3. **Create and Configure the Substore in nopCommerce**  
-   Create the **Store** and configure the **Cadify plugin** with Dropbox app credentials.
-
-4. **Create the User Account(s) for the Client**  
-   Register customer accounts and **associate them with the Vendor role** to access and manage products.
-
-> **Details for each step follow.**
+4. **Create the User Account(s) for the Client**
 
 ---
 
 ## 4. Create Client (Dropbox) Folder
 
-In this step you prepare the **per-client storage in Dropbox**.  
-This folder will later be linked to the **nopCommerce Store via Cadify Authorization**.
+This prepares the **per-client storage** in Dropbox.
 
-- **Read App key and app secret** of the main folder and set Redirect URIs.  
-- The redirect URI for main folder is:  
-  `Admin/CadifyConfiguration/AuthorizedAppFolder`
+- Read **App Key** and **App Secret** from Dropbox Developers.  
+- Set redirect URIs.  
+- Folder path: `Dropbox\Cadify\Apps\<ClientFolder>`
 
-Cadify products are stored in **per-client Dropbox folders**:
+### 4.1 Create the Dropbox App
 
-`Dropbox\Cadify\Apps\<ClientFolder>`
+Steps:
 
-### 4.1 Create the Dropbox App (Client Folder)
-
-1. Log in to **Dropbox Developers**:  
-   https://www.dropbox.com/developers  
-
-2. Open the **App Console**.  
-3. **Create a new Dropbox App.**
-
-<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/dropbox_login.png" alt="Dropbox Login" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
-
-Creating an app **automatically creates a corresponding App Folder**.
-
-- This folder will become the **Client Folder for the new Cadify Store**.  
-- The app represents a folder under `C:\Dropbox\Cadify\Apps\`.  
-- This new app folder will be the **store of the new site**.  
-- Dropbox **App key and secret** can be found at `dropbox.com/developers`.
-
-> ⚠️ **This is a sensitive step.** You must be careful when creating and configuring apps, because **any mistake here will affect file access for that client.**
+1. Log in: https://www.dropbox.com/developers  
+2. Open **App Console**  
+3. Create new app (this creates the App Folder)
 
 ### 4.2 Naming Convention
 
-**Consistent naming** ensures that **Dropbox, nopCommerce, and Cadify** all point to the **same logical client**.
+Must match:
 
-The Dropbox app name (and thus folder name) must follow this convention:
-
-> **Store.Site.Country**
-
-Example:
-
-> `Main.Ovalas.No`
-
-This name must **exactly match** the **nopCommerce Substore name** that will be created later.
+> **Store.Site.Country**  
+Example: `Main.Ovalas.No`
 
 ### 4.3 Redirect URIs
 
-Redirect URIs connect **Dropbox OAuth** back to the **correct Cadify instance**.  
-If they are wrong, **authorization will fail**.
+Main folder redirect URI:
 
-Each Dropbox app must have a **Redirect URI** pointing back to the site’s **authorization endpoint**.  
-That points to the new site’s `AuthorizeAppFolderAuth` function.
-
-For the **main folder (global app)**, the Redirect URI is:
-
-```text
+```
 Admin/ExtendedStore/AuthorizedAppFolderAuth
+```
+
+### 4.4 Permissions
+
+Set Dropbox **app-folder read/write**, restrict to client folder only.
+
+### 4.5 Store App Key and Secret
+
+Save securely for nopCommerce configuration.
+
+---
+
+## 5. Configure Substore in nopCommerce
+
+### 5.1 Create Substore
+
+Path:  
+`Administration → Configuration → Stores → Add New`
+
+Store name **must match Dropbox App name**, e.g. `Main.Ovalas.No`.
+
+### 5.2 Connect Dropbox in Cadify Plugin
+
+Enter:
+
+- App Key  
+- App Secret  
+
+Then click **Authorize**.
+
+---
+
+## 6. Create a Vendor
+
+Vendor name must **match the Store name** and the **Dropbox App Folder name**.
+
+Used for:
+
+- Permission filtering  
+- Store ownership  
+- Product assignment
+
+---
+
+## 7. Create User Account (Customer with Vendor Role)
+
+Steps:
+
+1. Register customer  
+2. Assign **Vendor role**  
+3. Customer becomes Cadify Client admin
+
+Vendor customers can:
+
+- Manage products  
+- Sync data with Dropbox  
+- Access substore admin panel
+
+---
+
+## 8. Vendor Roles and Permissions
+
+### 8.1 Data Model (Simplified)
+
+**Vendor → Customers (1:N)**  
+**Vendor → Products (1:N)**  
+**Store → Products (1:N)**  
+**Store → Customers (1:N)**
+
+### 8.2 Vendor Role as Permission Filter
+
+Controls:
+
+- Which products a client can see  
+- Which customers belong to which client  
+- Ensures isolation between clients
+
+### 8.3 Cadify-Specific Structure
+
+The **Store** is the central entity:
+
+- Each Store → One Dropbox Folder  
+- Each Store → One Vendor (typical Cadify usage)  
+- Each Store → Many Customers  
+- Each Vendor → Many Products
+
+---
+
+## 9. Create a Domain Name
+
+In nopCommerce Store settings:
+
+- Set **Store URL** (e.g., `https://main.ovalas.no/`)  
+- Enable **SSL**
+
+---
+
+## 10. Configure DNS in ServeTheWorld
+
+Log in:  
+https://my.servetheworld.net/login
+
+Set DNS records so:
+
+- Main domain → Server IP  
+- Substore domain → Server IP
+
+Allow propagation time.
+
+---
+
+## 11. Install SSL (Let’s Encrypt)
+
+Use **win-acme**:
+
+1. Run as Administrator  
+2. Select **IIS**  
+3. Pick domain binding  
+4. Generate certificate  
+5. Auto-install to IIS  
+
+Verify HTTPS works in browser.
+
+---
+
