@@ -207,11 +207,22 @@ Set A or CNAME records to point domain → server IP.
 
 ## 11. Let’s Encrypt SSL  
 
-Use win-acme to generate and install certificate.
+Use win-acme to generate and install certificate. Start command prompt first.
 
 <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/letsencrypt_1.png" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
 
+Then run letsencrypt with wacs.exe.
+
 <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/letsencrypt_2.png" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
+
+Create new certificate (N).
 
 <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/letsencrypt_3.png" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
 
+Set the site identifier (main.ovalas.no -> 4). Then Pick all binding (A). It is important to create certificate for all bindings. Then select the main host (main.ovalas.no -> 5).
+
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/letsencrypt_4.png" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
+
+Then continue that selection (y), overwrite settings (y) and replace existing task (y).
+
+<img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/letsencrypt_6.png" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
