@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.e53b48f4.min.css">
       
       
 
@@ -769,6 +769,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Yellow Brick Road
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -780,6 +793,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      The principle
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3105,6 +3146,8 @@
       
         
       
+        
+      
     
     
     
@@ -3143,6 +3186,29 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../web/store/cms-store-front.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CMS Store Front
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -3560,6 +3626,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      The principle
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -3575,7 +3658,18 @@
 
 
 <h1 id="yellow-brick-road">Yellow Brick Road</h1>
-<p>The Yellow Brick Road is a best practice for structuring product databases in Cadify. It introduces a consistent worksheet layout, with row 40 marked in yellow as the reference line for the active variant. All tables are placed below, and all helper data above. This approach simplifies expansion of large models and makes it easier to trace changes and errors in shared workbooks.</p>
+<p>The Yellow Brick Road is a best practice for structuring product databases in Cadify. It introduces a consistent worksheet layout, with Row 40 marked in yellow as the reference line for the active variant. All tables are placed below Row 40, and all helper data is placed above it. Formulas are set up so the currently selected variant always appears on the yellow line, making yellow a clear visual indicator of what is active.</p>
+<p>This approach simplifies expansion of large models and makes it easier to trace changes and troubleshoot errors in shared workbooks.</p>
+<h3 id="the-principle">The principle</h3>
+<p>For each product, create a dedicated worksheet, for example Product DB (where Product is replaced by your product name). In this worksheet, highlight Row 40 in yellow.</p>
+<p>This yellow row acts as a clear reference line:</p>
+<ul>
+<li>All tables are placed below Row 40  </li>
+<li>All helper information is placed above Row 40  </li>
+<li>Formulas are set up so the currently selected variant is always shown on Row 40  </li>
+</ul>
+<p>The result is that the yellow line is the active variant. With a consistent layout across all product sheets, it becomes much easier to maintain, extend, and debug product databases, especially when multiple people collaborate on the same workbook.</p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/product/bestPractices/images/yellowBrickRoad.png" alt="CreateStatics" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 
 
 
@@ -3624,10 +3718,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>

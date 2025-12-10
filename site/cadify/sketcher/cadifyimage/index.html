@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.e53b48f4.min.css">
       
       
 
@@ -3561,6 +3561,8 @@
       
         
       
+        
+      
     
     
     
@@ -3599,6 +3601,29 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../web/store/cms-store-front.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CMS Store Front
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -4638,42 +4663,54 @@
 <li>The <strong>Current File Name</strong> must appear in the <strong>Image list</strong> parameter</li>
 </ul>
 <h3 id="caching-behavior">Caching Behavior</h3>
-<p>The function uses intelligent caching to improve performance:
-- If parameters haven't changed, the cached result is returned immediately
-- This prevents unnecessary recalculation and file access
-- Changing any parameter will trigger a full recalculation</p>
+<p>The function uses intelligent caching to improve performance:</p>
+<ul>
+<li>If parameters haven't changed, the cached result is returned immediately</li>
+<li>This prevents unnecessary recalculation and file access</li>
+<li>Changing any parameter will trigger a full recalculation</li>
+</ul>
 <h2 id="common-issues-solutions">Common Issues &amp; Solutions</h2>
 <h3 id="image-missing">"Image Missing"</h3>
 <p><strong>Cause</strong>: The image file cannot be found in the specified location.</p>
-<p><strong>Solutions</strong>:
-- Verify the image file exists in the library folder
-- Check that the file has a supported extension (.png, .jpg, etc.)
-- Ensure the library is synced to your local computer
-- Verify the file name matches exactly (case-sensitive)</p>
+<p><strong>Solutions</strong>:</p>
+<ul>
+<li>Verify the image file exists in the library folder</li>
+<li>Check that the file has a supported extension (.png, .jpg, etc.)</li>
+<li>Ensure the library is synced to your local computer</li>
+<li>Verify the file name matches exactly (case-sensitive)</li>
+</ul>
 <h3 id="name-is-duplicate">"Name is duplicate"</h3>
 <p><strong>Cause</strong>: Another CadifyImage function on the same worksheet is using the same image ID.</p>
-<p><strong>Solutions</strong>:
-- Choose a unique name for the <strong>Named Image</strong> parameter
-- Check for other CadifyImage functions with the same ID
-- Search the worksheet for duplicate image names</p>
+<p><strong>Solutions</strong>:</p>
+<ul>
+<li>Choose a unique name for the <strong>Named Image</strong> parameter</li>
+<li>Check for other CadifyImage functions with the same ID</li>
+<li>Search the worksheet for duplicate image names</li>
+</ul>
 <h3 id="image-is-not-in-image-list">"Image is not in Image List"</h3>
 <p><strong>Cause</strong>: The Current File Name doesn't appear in the Image list parameter.</p>
-<p><strong>Solutions</strong>:
-- Add the image name to the semicolon-separated image list
-- Check for typos in both parameters
-- Ensure exact name matching (including case)</p>
+<p><strong>Solutions</strong>:</p>
+<ul>
+<li>Add the image name to the semicolon-separated image list</li>
+<li>Check for typos in both parameters</li>
+<li>Ensure exact name matching (including case)</li>
+</ul>
 <h3 id="sheets-name-error">"Sheet's Name Error"</h3>
 <p><strong>Cause</strong>: The specified CadifySheet function cannot be found.</p>
-<p><strong>Solutions</strong>:
-- Verify a CadifySheet function exists with the specified name
-- Ensure the CadifySheet is on the same worksheet
-- Check the spelling of the sheet name parameter</p>
+<p><strong>Solutions</strong>:</p>
+<ul>
+<li>Verify a CadifySheet function exists with the specified name</li>
+<li>Ensure the CadifySheet is on the same worksheet</li>
+<li>Check the spelling of the sheet name parameter</li>
+</ul>
 <h3 id="image-folder-must-start-with-library">"Image folder must start with: Library:\""</h3>
 <p><strong>Cause</strong>: The folder path doesn't follow the required format.</p>
-<p><strong>Solutions</strong>:
-- Always start the path with <code>Library:\Sketcher\</code>
-- Example: <code>"Library:\Sketcher\ProductImages"</code>
-- Don't use local file paths or network paths</p>
+<p><strong>Solutions</strong>:</p>
+<ul>
+<li>Always start the path with <code>Library:\Sketcher\</code></li>
+<li>Example: <code>"Library:\Sketcher\ProductImages"</code></li>
+<li>Don't use local file paths or network paths</li>
+</ul>
 <h2 id="best-practices">Best Practices</h2>
 <h3 id="1-use-descriptive-names">1. Use Descriptive Names</h3>
 <p>Always use clear, descriptive names for the <strong>Named Image</strong> parameter:</p>
@@ -4727,11 +4764,13 @@ Foreground images: 21-30
 <li>The image is layered according to the z-order value</li>
 </ol>
 <h3 id="file-system-integration">File System Integration</h3>
-<p>The function integrates with the Cadify Library system:
-- <code>imageFolder</code> is converted from <code>Library:\</code> prefix to the actual local library path
-- <code>CommonFunction.GetFolderPath()</code> resolves the Library path to the local sync location
-- <code>CommonFunction.GetImagePath()</code> searches for the image file with various extensions
-- If the library isn't synced locally, images won't be found</p>
+<p>The function integrates with the Cadify Library system:</p>
+<ul>
+<li><code>imageFolder</code> is converted from <code>Library:\</code> prefix to the actual local library path</li>
+<li><code>CommonFunction.GetFolderPath()</code> resolves the Library path to the local sync location</li>
+<li><code>CommonFunction.GetImagePath()</code> searches for the image file with various extensions</li>
+<li>If the library isn't synced locally, images won't be found</li>
+</ul>
 <h3 id="performance-considerations">Performance Considerations</h3>
 <ul>
 <li><strong>Caching</strong>: Results are cached based on all input parameters</li>
@@ -4873,10 +4912,10 @@ A: Not directly, but you can use cell references for rotation and image name to 
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>

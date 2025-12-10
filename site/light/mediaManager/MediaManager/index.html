@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.e53b48f4.min.css">
       
       
 
@@ -2704,63 +2704,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-3d-model-export-data-formats" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. 3D model export data formats
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. 3D model export data formats">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#system-behavior_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      System Behavior
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="System Behavior">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#publish" class="md-nav__link">
-    <span class="md-ellipsis">
-      Publish
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#calculation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Calculation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#storage-summary_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Storage Summary
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#proxy-object-mapping" class="md-nav__link">
     <span class="md-ellipsis">
       Proxy Object Mapping
@@ -3406,6 +3349,8 @@
       
         
       
+        
+      
     
     
     
@@ -3444,6 +3389,29 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../web/store/cms-store-front.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CMS Store Front
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -4066,63 +4034,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-3d-model-export-data-formats" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. 3D model export data formats
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. 3D model export data formats">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#system-behavior_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      System Behavior
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="System Behavior">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#publish" class="md-nav__link">
-    <span class="md-ellipsis">
-      Publish
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#calculation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Calculation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#storage-summary_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Storage Summary
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#proxy-object-mapping" class="md-nav__link">
     <span class="md-ellipsis">
       Proxy Object Mapping
@@ -4157,24 +4068,22 @@
 
 
 <h1 id="media-manager-documentation">Media Manager Documentation</h1>
-<p>This document describes the Media Manager tool used for managing product-related media in Cadify. The Media Manager allows users to set up printing areas from Excel workbooks, configure downloadable PDF brochures, and manage product pictures—all controlled via proxy objects in the code and stored in structured Excel worksheets.</p>
+<p>This document describes the Media Manager tool used for managing product-related media in Cadify. The Media Manager allows users to set up printing areas from Excel workbooks, configure downloadable PDF brochures, and manage product pictures, all controlled via proxy objects in the code and stored in structured Excel worksheets.</p>
 <h2 id="overview">Overview</h2>
 <p>The Media Manager UI is divided into three main sections:</p>
 <ul>
 <li><strong>Print from Excel</strong>: Configure print areas from specified worksheets and ranges.</li>
 <li><strong>PDF from File</strong>: Set up downloadable PDF brochures for products.</li>
 <li><strong>Pictures</strong>: Manage product images and associate them with controls.</li>
-<li><strong>Models</strong>: Solidworks product as downloadable files.</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/mediaManager/images/mediaManager.png" alt="MediaManager" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/mediaManager/images/mediaManager.png" alt="MediaManager" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 <h2 id="excel-data-mapping">Excel Data Mapping</h2>
 <p>The configuration for each media type is stored in a structured format in the Excel workbook. Each section uses a proxy object:
 - <code>ProxyReport</code> for print areas
 - <code>ProxyBrochure</code> for PDF brochures
-- <code>ProxyPicture</code> for product images
-- <code>ProxyModel</code> for Solidworks files</p>
+- <code>ProxyPicture</code> for product images</p>
 <p>The following example shows how these proxies are stored in the Excel workbook:</p>
-<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/mediaManager/images/proxyInExcel.png" alt="ProxyInExcel" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
+<p><img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/mediaManager/images/proxyInExcel.png" alt="ProxyInExcel" style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"></p>
 <hr />
 <h2 id="1-print-from-excel-proxyreport">1. Print from Excel (<code>ProxyReport</code>)</h2>
 <p>This subchapter explains how Cadify generates reports as part of integrated quality assurance. Reports are created from Excel using defined print ranges and exported as standard PDF files. They may contain drawings, control points, or checklists, and are always linked to the product configuration. The following pages describe how report templates are prepared, how print ranges are managed, and how outputs are distributed.</p>
@@ -4478,87 +4387,11 @@
 </tbody>
 </table>
 <hr />
-<h2 id="4-3d-model-export-data-formats">4. 3D model export data formats</h2>
-<p>Digital manufacturing demands precise, machine ready data. Cadify builds a single source of truth from SolidWorks models and Excel rules, then outputs the right format for each process. From the configurator, validated parameters drive exports for CNC, laser cutting, and 3D printing, DXF for flat patterns and laser operations, STEP for milling, turning, and assemblies, STL or 3MF for additive workflows. Files stay consistent with the approved configuration, so machines receive exactly what they need the first time.</p>
-<p>This section explains how these exports are created, named, and version bound, and how they travel with the order. It also covers the optional proxy model path, where you provide either a complete SolidWorks Pack and Go ZIP archive of the full 3D model, or a specific 3D export such as STEP or 3MF.</p>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Example Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Destination tab</td>
-<td>6 Fabricator / 7 SourceAdmin</td>
-<td>Where the result is stored</td>
-</tr>
-<tr>
-<td>File format</td>
-<td>step / zip</td>
-<td>Output file format</td>
-</tr>
-<tr>
-<td>File name</td>
-<td>3D_model_as_step.step / 3d_compressed.zip</td>
-<td>Output file name</td>
-</tr>
-<tr>
-<td>Prompt</td>
-<td>3D model in STEP / 3D model in zip</td>
-<td>Display name in UI</td>
-</tr>
-<tr>
-<td>Display order</td>
-<td>10 /20</td>
-<td>UI display order</td>
-</tr>
-</tbody>
-</table>
-<h3 id="system-behavior_3">System Behavior</h3>
-<h4 id="publish">Publish</h4>
-<ul>
-<li>AddIn generates all model exports.</li>
-<li>Files placed in the <strong>published</strong> folder.</li>
-<li>nopCommerce uses these files for product downloads.</li>
-</ul>
-<h4 id="calculation">Calculation</h4>
-<ul>
-<li>Cadify Service regenerates 3D exports.</li>
-<li>Files stored in the <strong>request</strong> folder.</li>
-</ul>
-<h4 id="storage-summary_3">Storage Summary</h4>
-<table>
-<thead>
-<tr>
-<th>State</th>
-<th>Behavior</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Raw</strong></td>
-<td>No models generated</td>
-</tr>
-<tr>
-<td><strong>Published</strong></td>
-<td>Finalized 3D exports</td>
-</tr>
-<tr>
-<td><strong>Request</strong></td>
-<td>Fresh calculation-specific models</td>
-</tr>
-</tbody>
-</table>
-<hr />
 <h2 id="proxy-object-mapping">Proxy Object Mapping</h2>
 <ul>
 <li><strong>ProxyReport</strong>: Defines Excel printing areas.</li>
 <li><strong>ProxyBrochure</strong>: Defines downloadable PDF brochures.</li>
 <li><strong>ProxyPicture</strong>: Defines product images and their attributes.</li>
-<li><strong>ProxyModel</strong>: Defines downloadable 3D model files.</li>
 </ul>
 <p>Each proxy is represented as a structured row in the Excel workbook, making it easy to configure and automate media management for products.</p>
 <hr />
@@ -4567,7 +4400,6 @@
 <li><strong>Add PDF print</strong>: Add a new Excel print configuration.</li>
 <li><strong>Add PDF as file</strong>: Attach a downloadable PDF brochure.</li>
 <li><strong>Add picture</strong>: Add new product images and associate them with controls.</li>
-<li><strong>Add model</strong>: Add new downloadable 3D model output exported directly from Solidworks model.</li>
 </ul>
 <p>Buttons at the bottom allow users to validate and apply changes, ensuring the product's media settings are correctly saved.</p>
 <hr />
@@ -4620,10 +4452,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>

@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.e53b48f4.min.css">
       
       
 
@@ -1578,9 +1578,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#erpmesfocused-columns" class="md-nav__link">
+  <a href="#erpmes-focused-columns" class="md-nav__link">
     <span class="md-ellipsis">
-      ERP/MES‑Focused Columns
+      ERP/MES-Focused Columns
     </span>
   </a>
   
@@ -3301,6 +3301,8 @@
       
         
       
+        
+      
     
     
     
@@ -3339,6 +3341,29 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../web/store/cms-store-front.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CMS Store Front
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -3913,9 +3938,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#erpmesfocused-columns" class="md-nav__link">
+  <a href="#erpmes-focused-columns" class="md-nav__link">
     <span class="md-ellipsis">
-      ERP/MES‑Focused Columns
+      ERP/MES-Focused Columns
     </span>
   </a>
   
@@ -3947,15 +3972,15 @@
 
 
 <h1 id="bill-of-materials-bom-in-cadify">Bill of Materials (BOM) in Cadify</h1>
-<p>The Bill of Materials (BOM) in Cadify is a structured, living dataset that connects design, configuration, and production. Every BOM is generated from the product’s digital twin, ensuring correctness, completeness, and up‑to‑date information.</p>
-<p>Unlike static lists, the Cadify BOM adapts in real time when configuration rules or product parameters change. In addition to parts and quantities, it carries process information, dependencies, costs, and supporting documentation—making it the single source of truth for sales, engineering, and manufacturing.</p>
+<p>The Bill of Materials (BOM) in Cadify is a structured, living dataset that connects design, configuration, and production. Every BOM is generated from the product’s digital twin, ensuring correctness, completeness, and up-to-date information.</p>
+<p>Unlike static lists, the Cadify BOM adapts in real time when configuration rules or product parameters change. In addition to parts and quantities, it carries process information, dependencies, costs, and supporting documentation, making it the single source of truth for sales, engineering, and manufacturing.</p>
 <h2 id="core-columns">Core Columns</h2>
 <h3 id="level">Level</h3>
-<p>Defines the product structure in a multi‑level hierarchy. Uses a section numbering format (e.g., <code>1.1.2</code>) to make dependencies and relationships easy to follow.</p>
+<p>Defines the product structure in a multi-level hierarchy. Uses a section numbering format (e.g., <code>1.1.2</code>) to make dependencies and relationships easy to follow.</p>
 <h3 id="bom-type">BOM Type</h3>
 <p>Specifies the component type: <code>TopAssembly</code>, <code>SubAssembly</code>, or <code>Part</code>. Clarifies where each element belongs within the product structure.</p>
 <h3 id="name">Name</h3>
-<p>Human‑ and ERP‑readable component name for cross‑system identification.</p>
+<p>Human- and ERP-readable component name for cross-system identification.</p>
 <h3 id="description">Description</h3>
 <p>Additional information that supports ERP or manufacturing, e.g., function, design notes, production attributes.</p>
 <h3 id="amount">Amount</h3>
@@ -3965,9 +3990,9 @@
 <h3 id="part-number">Part number</h3>
 <p>Unique identifier for each component, critical for traceability and consistent referencing throughout the lifecycle.</p>
 <h3 id="part-number-alias">Part number alias</h3>
-<p>Links Cadify’s internal part numbers with external supplier/manufacturer part numbers to improve supply‑chain flexibility.</p>
+<p>Links Cadify’s internal part numbers with external supplier/manufacturer part numbers to improve supply-chain flexibility.</p>
 <h3 id="manufacturing">Manufacturing</h3>
-<p>Production‑related comments or instructions for clarity on tasks, special requirements, or operator guidance.</p>
+<p>Production-related comments or instructions for clarity on tasks, special requirements, or operator guidance.</p>
 <h3 id="activity-station">Activity Station</h3>
 <p>Required resource for production, either a process (e.g., welding) or a physical location (e.g., Assembly Line 2).</p>
 <h3 id="mfb-level-must-finish-before">MFB Level (Must Finish Before)</h3>
@@ -3977,25 +4002,25 @@
 <h3 id="labor-cost">Labor cost</h3>
 <p>Labor effort/cost associated with the component or process. Combined with material cost, provides full product economics.</p>
 <h3 id="attachment">Attachment</h3>
-<p>Links to drawings, technical sheets, or CAD data (via Cadify Proxies). Keeps customer‑facing and production documentation aligned.</p>
+<p>Links to drawings, technical sheets, or CAD data (via Cadify Proxies). Keeps customer-facing and production documentation aligned.</p>
 <h3 id="version">Version</h3>
 <p>Version number for traceability and change management throughout the lifecycle.</p>
-<h2 id="erpmesfocused-columns">ERP/MES‑Focused Columns</h2>
+<h2 id="erpmes-focused-columns">ERP/MES-Focused Columns</h2>
 <p>This subchapter introduces the Bill of Materials (BOM) as Cadify’s core connector between configuration and enterprise systems. Every customer choice generates a structured BOM that feeds ERP and MES with complete and traceable data. The following sections describe the BOM structure, column definitions, and how cost, process, and documentation fields secure a seamless digital flow from configurator to production</p>
 <p>When transferring the Cadify BOM via API to ERP/MES, some columns carry special importance for planning, scheduling, and execution:</p>
 <ul>
-<li><strong>Manufacturing</strong> — actionable production instructions (e.g., required treatments, process steps, or quality notes).</li>
-<li><strong>Activity Station</strong> — the machine/workstation/department for precise work‑order allocation.</li>
-<li><strong>MFB Level</strong> — dependencies for sequencing to avoid deadlocks and ensure correct order of operations.</li>
-<li><strong>Material cost</strong> — used in cost calculation, margin analysis, and purchasing.</li>
-<li><strong>Labor cost</strong> — used in job costing and efficiency analysis alongside material cost.</li>
-<li><strong>Attachment</strong> — machine‑ready files (drawings, datasheets, process instructions) available to work orders via API.</li>
-<li><strong>Version</strong> — essential to ensure production uses current data.</li>
+<li><strong>Manufacturing</strong>: actionable production instructions (e.g., required treatments, process steps, or quality notes).</li>
+<li><strong>Activity Station</strong>: the machine/workstation/department for precise work-order allocation.</li>
+<li><strong>MFB Level</strong>: dependencies for sequencing to avoid deadlocks and ensure correct order of operations.</li>
+<li><strong>Material cost</strong>: used in cost calculation, margin analysis, and purchasing.</li>
+<li><strong>Labor cost</strong>: used in job costing and efficiency analysis alongside material cost.</li>
+<li><strong>Attachment</strong>: machine-ready files (drawings, datasheets, process instructions) available to work orders via API.</li>
+<li><strong>Version</strong>: essential to ensure production uses current data.</li>
 </ul>
 <h2 id="cnc-laser-cutting-and-3d-printing">CNC, Laser Cutting, and 3D Printing</h2>
 <p>This section introduces Cadify’s support for CNC, laser cutting, and 3D printing. From each configuration, machine-ready formats such as DXF, STEP, and STL are generated together with the BOM. Files are complete, synchronized, and updated in real time, ensuring direct use in production without conversion or manual adjustments</p>
-<p>Cadify can generate production‑ready documentation and files (e.g., DXF, STEP, STL) directly from the configurator, together with the BOM. Because everything is updated in real time, machines can begin work immediately without manual conversion or error‑prone handoffs.</p>
-<p><strong>Attachment field (clarification):</strong> For digital manufacturing, this is where machine‑ready files (DXF, STEP, STL) are linked and transferred to ERP/MES.</p>
+<p>Cadify can generate production-ready documentation and files (e.g., DXF, STEP, STL) directly from the configurator, together with the BOM. Because everything is updated in real time, machines can begin work immediately without manual conversion or error-prone handoffs.</p>
+<p><strong>Attachment field (clarification):</strong> For digital manufacturing, this is where machine-ready files (DXF, STEP, STL) are linked and transferred to ERP/MES.</p>
 
 
 
@@ -4044,10 +4069,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>

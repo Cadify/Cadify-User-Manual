@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.e53b48f4.min.css">
       
       
 
@@ -964,15 +964,6 @@
   <a href="#sketches" class="md-nav__link">
     <span class="md-ellipsis">
       Sketches
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#shortcut-to-role-system-documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Shortcut to Role System Documentation
     </span>
   </a>
   
@@ -3399,6 +3390,8 @@
       
         
       
+        
+      
     
     
     
@@ -3437,6 +3430,29 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../web/store/cms-store-front.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CMS Store Front
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -4110,15 +4126,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#shortcut-to-role-system-documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Shortcut to Role System Documentation
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -4146,28 +4153,34 @@
 <p>The following sections describe the Drawing Task Pane, recommended workflows, approval options, and how drawing updates propagate safely through roles in 7 tabs.</p>
 <h2 id="creating-a-new-drawing">Creating a New Drawing</h2>
 <h3 id="start-a-new-drawing">Start a New Drawing</h3>
-<p>In <strong>SolidWorks Task Pane → Tools → Drawings → Settings for Drawings</strong>, click the <strong>“+”</strong> tab to create a drawing entry. Define:
-- Drawing title
-- Web store prompt
-- Format template &amp; margins
-- Role‑based distribution</p>
+<p>In <strong>SolidWorks Task Pane → Tools → Drawings → Settings for Drawings</strong>, click the <strong>“+”</strong> tab to create a drawing entry. Define:</p>
+<ul>
+<li>Drawing title</li>
+<li>Web store prompt</li>
+<li>Format template &amp; margins</li>
+<li>Role-based distribution</li>
+</ul>
 <p>Close the <strong>Drawing Settings</strong> window, then go to <strong>Task Pane → Drawings</strong> to structure and refine content.</p>
 <h3 id="accessing-drawing-task-pane-tabs">Accessing Drawing Task Pane Tabs</h3>
-<p>The <strong>Drawings</strong> tab includes four sub‑tabs:
-- <strong>Model Dimensions</strong> — exposes/manages parametric dimensions from the 3D model.
-- <strong>Drawing Dimensions</strong> — dimensions created directly in the drawing.
-- <strong>Notes</strong> — annotations, comments, metadata.
-- <strong>Sketches</strong> — auxiliary views or highlighting geometry (to be documented).</p>
-<p>Together, these tools configure drawing output end‑to‑end.</p>
+<p>The <strong>Drawings</strong> tab includes four sub-tabs:</p>
+<ul>
+<li><strong>Model Dimensions</strong>, which exposes/manages parametric dimensions from the 3D model.</li>
+<li><strong>Drawing Dimensions</strong>, dimensions created directly in the drawing.</li>
+<li><strong>Notes</strong>, including annotations, comments, and metadata.</li>
+<li><strong>Sketches</strong>, for auxiliary views or highlighting geometry (to be documented).</li>
+</ul>
+<p>Together, these tools configure drawing output end-to-end.</p>
 <h2 id="drawing-task-pane">Drawing Task Pane</h2>
 <h3 id="model-dimensions">Model Dimensions</h3>
 <h4 id="purpose">Purpose</h4>
-<p>Transfers dimensions defined in the 3D CAD model to the drawing, preserving design intent and avoiding manual re‑entry. Updates in the model propagate to the drawing.</p>
+<p>Transfers dimensions defined in the 3D CAD model to the drawing, preserving design intent and avoiding manual re-entry. Updates in the model propagate to the drawing.</p>
 <h4 id="structure">Structure</h4>
-<p>A hierarchical tree linked to the selected model:
-- <strong>Global Variables</strong> — parameters controlling model‑wide behavior.
-- <strong>Layout Sketches</strong> — sketches with geometric definitions and dimension sets.
-- <strong>Features and Parts</strong> — parametric elements with their dimensions.</p>
+<p>A hierarchical tree linked to the selected model:</p>
+<ul>
+<li><strong>Global Variables</strong>, parameters controlling model-wide behavior.</li>
+<li><strong>Layout Sketches</strong>, sketches with geometric definitions and dimension sets.</li>
+<li><strong>Features and Parts</strong>, parametric elements with their dimensions.</li>
+</ul>
 <p>Items expand to reveal named dimensions with references and values.</p>
 <h4 id="available-elements">Available Elements</h4>
 <ul>
@@ -4180,7 +4193,7 @@
 <li>Extension line gaps (before/after)</li>
 <li>Font family, size, underline</li>
 </ul>
-<p>Checked dimensions are shown in the drawing and stored in <strong>Cadify MASTER (Excel)</strong> in the correct API map. Selecting a model dimension opens a sub‑dialog to place it in the most appropriate view; the original view is highlighted in green and can be overridden.</p>
+<p>Checked dimensions are shown in the drawing and stored in <strong>Cadify MASTER (Excel)</strong> in the correct API map. Selecting a model dimension opens a sub-dialog to place it in the most appropriate view; the original view is highlighted in green and can be overridden.</p>
 <h4 id="workflow">Workflow</h4>
 <ul>
 <li>Select target model, expand relevant sketches/features.</li>
@@ -4193,15 +4206,15 @@
 <h4 id="best-practices">Best Practices</h4>
 <ul>
 <li>Use consistent naming conventions.</li>
-<li>Keep default SolidWorks names for feature‑based sketches; give meaningful names to top‑level layout/drawing sketches.</li>
+<li>Keep default SolidWorks names for feature-based sketches; give meaningful names to top-level layout/drawing sketches.</li>
 <li>Expose only relevant dimensions for the audience.</li>
-<li>Avoid over‑crowding; use overrides sparingly.</li>
+<li>Avoid over-crowding; use overrides sparingly.</li>
 </ul>
 <h3 id="drawing-dimensions">Drawing Dimensions</h3>
 <h4 id="purpose_1">Purpose</h4>
 <p>Dimensions created directly in the drawing to clarify intent or highlight otherwise unshown measurements.</p>
 <h4 id="structure_1">Structure</h4>
-<p>Lists user‑created drawing dimensions with identifiers, references, and values. Also stored in <strong>Cadify MASTER (Excel)</strong>.</p>
+<p>Lists user-created drawing dimensions with identifiers, references, and values. Also stored in <strong>Cadify MASTER (Excel)</strong>.</p>
 <h4 id="available-elements_1">Available Elements</h4>
 <ul>
 <li>Show/hide</li>
@@ -4210,7 +4223,7 @@
 <li>Value override</li>
 <li>Extension line gaps</li>
 <li>Font family, size, underline</li>
-<li><strong>Delete</strong> — permanently removes the dimension from the drawing and the Cadify MASTER/API.</li>
+<li><strong>Delete</strong>, which permanently removes the dimension from the drawing and the Cadify MASTER/API.</li>
 </ul>
 <h4 id="workflow_1">Workflow</h4>
 <ul>
@@ -4231,9 +4244,9 @@
 <p>Manages textual annotations (BOM info, process instructions, comments). Integrated with <strong>Cadify MASTER (Excel)</strong> so text can update from system data.</p>
 <h4 id="structure_2">Structure</h4>
 <ul>
-<li><strong>Header Notes</strong> — global notes across the drawing</li>
-<li><strong>Fixed Notes</strong> — fixed sheet position</li>
-<li><strong>Relative Notes</strong> — attached to geometry with an arrow</li>
+<li><strong>Header Notes</strong>, global notes across the drawing</li>
+<li><strong>Fixed Notes</strong>, fixed sheet position</li>
+<li><strong>Relative Notes</strong>, attached to geometry with an arrow</li>
 </ul>
 <p>Each note has an identifier, text, and formatting options.</p>
 <h4 id="available-elements_2">Available Elements</h4>
@@ -4242,7 +4255,7 @@
 <li>Delete (removes from drawing and API)</li>
 <li>Position fixed notes by X/Y coordinates</li>
 <li>Anchor relative notes to geometry</li>
-<li>Multi‑line text editing</li>
+<li>Multi-line text editing</li>
 <li>Font, size, underline</li>
 </ul>
 <h4 id="fixed-notes">Fixed Notes</h4>
@@ -4261,13 +4274,11 @@
 <ul>
 <li>Use fixed notes for BOM and title blocks.</li>
 <li>Use relative notes when annotation must follow geometry.</li>
-<li>Prefer Cadify‑driven updates; minimize manual edits.</li>
+<li>Prefer Cadify-driven updates; minimize manual edits.</li>
 <li>Use <strong>Delete</strong> to remove from drawing and API.</li>
 </ul>
 <h3 id="sketches">Sketches</h3>
 <p><em>(To be completed later.)</em> Will cover adding auxiliary geometry, section outlines, and highlight features.</p>
-<h3 id="shortcut-to-role-system-documentation">Shortcut to Role System Documentation</h3>
-<p>A placeholder button in this manual links to <strong>Cadify 7‑Tab Role System – Documentation</strong> for quick reference on role‑based visibility. It exists only in the manual (not in the Task Pane UI).</p>
 
 
 
@@ -4316,10 +4327,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>

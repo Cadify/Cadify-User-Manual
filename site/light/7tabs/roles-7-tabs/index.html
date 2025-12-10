@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.e53b48f4.min.css">
       
       
 
@@ -2607,19 +2607,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#rolebased-visibility-and-access" class="md-nav__link">
+  <a href="#role-based-visibility-and-access" class="md-nav__link">
     <span class="md-ellipsis">
-      Role‑Based Visibility and Access
+      Role-Based Visibility and Access
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Role‑Based Visibility and Access">
+    <nav class="md-nav" aria-label="Role-Based Visibility and Access">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#tabrole-mapping" class="md-nav__link">
+  <a href="#tab-role-mapping" class="md-nav__link">
     <span class="md-ellipsis">
-      Tab–Role Mapping
+      Tab-Role Mapping
     </span>
   </a>
   
@@ -3625,6 +3625,8 @@
       
         
       
+        
+      
     
     
     
@@ -3663,6 +3665,29 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../web/store/cms-store-front.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CMS Store Front
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -4165,19 +4190,19 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#rolebased-visibility-and-access" class="md-nav__link">
+  <a href="#role-based-visibility-and-access" class="md-nav__link">
     <span class="md-ellipsis">
-      Role‑Based Visibility and Access
+      Role-Based Visibility and Access
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Role‑Based Visibility and Access">
+    <nav class="md-nav" aria-label="Role-Based Visibility and Access">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#tabrole-mapping" class="md-nav__link">
+  <a href="#tab-role-mapping" class="md-nav__link">
     <span class="md-ellipsis">
-      Tab–Role Mapping
+      Tab-Role Mapping
     </span>
   </a>
   
@@ -4606,17 +4631,17 @@
 <h3 id="4-customers">4 Customers</h3>
 <p>Holds reports/files generated from Cadify Master Excel or CAD process intended for end customers.</p>
 <h3 id="5-partner">5 Partner</h3>
-<p>Holds files generated from the Cadify 3D model intended for partner‑level sharing.</p>
+<p>Holds files generated from the Cadify 3D model intended for partner-level sharing.</p>
 <h3 id="6-fabricator">6 Fabricator</h3>
 <p>Contains files intended for manufacturing vendors (e.g., CNC files, flat patterns, BOM reports).</p>
 <h3 id="7-sourceadmin">7 SourceAdmin</h3>
-<p>Reserved for sensitive/core files such as SolidWorks Pack‑and‑Go archives or the Cadify Master Excel file. Access is restricted to <strong>SourceAdmin</strong> and <strong>Store Owners</strong>.</p>
-<h2 id="rolebased-visibility-and-access">Role‑Based Visibility and Access</h2>
-<h3 id="tabrole-mapping">Tab–Role Mapping</h3>
+<p>Reserved for sensitive/core files such as SolidWorks Pack-and-Go archives or the Cadify Master Excel file. Access is restricted to <strong>SourceAdmin</strong> and <strong>Store Owners</strong>.</p>
+<h2 id="role-based-visibility-and-access">Role-Based Visibility and Access</h2>
+<h3 id="tab-role-mapping">Tab-Role Mapping</h3>
 <p>Each tab corresponds to a nopCommerce role of the same name for controlled access.</p>
 <h3 id="role-defaults">Role Defaults</h3>
 <ul>
-<li><strong>Public:</strong> Tabs 1–3 (Description, Specifications, Brochures)</li>
+<li><strong>Public:</strong> Tabs 1-3 (Description, Specifications, Brochures)</li>
 <li><strong>Customers:</strong> Tab 4 + Store Owner</li>
 <li><strong>Partner:</strong> Tab 5 + Store Owner</li>
 <li><strong>Fabricator:</strong> Tab 6 + Store Owner</li>
@@ -4636,14 +4661,16 @@
 <p>Tab names can be translated or renamed using nopCommerce language packs.</p>
 <h2 id="content-management-structure">Content Management Structure</h2>
 <h3 id="introduction">Introduction</h3>
-<p>Cadify aligns customer choices, engineering rules, and production requirements across seven fixed tabs:
-1. <strong>Description</strong> — full description
-2. <strong>Specifications</strong> — output attributes (web controls)
-3. <strong>Brochures</strong> — static brochures/reference docs
-4. <strong>Customers</strong> — customer‑facing reports
-5. <strong>Partner</strong> — partner collaboration files
-6. <strong>Fabricator</strong> — vendor/manufacturing files
-7. <strong>SourceAdmin</strong> — restricted source files</p>
+<p>Cadify aligns customer choices, engineering rules, and production requirements across seven fixed tabs:</p>
+<ol>
+<li><strong>Description</strong>: full description</li>
+<li><strong>Specifications</strong>: output attributes (web controls)</li>
+<li><strong>Brochures</strong>: static brochures/reference docs</li>
+<li><strong>Customers</strong>: customer-facing reports</li>
+<li><strong>Partner</strong>: partner collaboration files</li>
+<li><strong>Fabricator</strong>: vendor/manufacturing files</li>
+<li><strong>SourceAdmin</strong>: restricted source files</li>
+</ol>
 <p>Tabs present only relevant information to each stakeholder and ensure consistent, updated inputs for production.</p>
 <h3 id="file-assignment">File Assignment</h3>
 <p>Any file can be assigned to none, any, or all of the seven tabs by the document creator (Proxy or Task Pane UI).</p>
@@ -4665,14 +4692,16 @@
 <p>See more on <a href="/mediaManager/MediaManager">Media Manager details</a></p>
 <h2 id="web-controls-for-specifications">Web Controls for Specifications</h2>
 <h3 id="output-controls">Output Controls</h3>
-<p>Each Output control defines:
-- Output attribute name
-- Value
-- Display order
-- Description (HTML supported)
-- Optional/required
-- Filtering rules
-- Optional graphic</p>
+<p>Each Output control defines:</p>
+<ul>
+<li>Output attribute name</li>
+<li>Value</li>
+<li>Display order</li>
+<li>Description (HTML supported)</li>
+<li>Optional/required</li>
+<li>Filtering rules</li>
+<li>Optional graphic</li>
+</ul>
 <h3 id="inputoutputcheckout">Input/Output/Checkout</h3>
 <p>Only <strong>Output</strong> controls appear in <strong>Specifications</strong>.</p>
 <h3 id="checkout-controls">Checkout Controls</h3>
@@ -4704,9 +4733,9 @@
 <p>Engineers control the sequence of drawings within selected tabs.</p>
 <h2 id="customer-role-assignment-in-store-admin">Customer Role Assignment in Store Admin</h2>
 <h3 id="ui_1">UI</h3>
-<p>In <strong>nopCommerce Admin → Customers → Select Customer</strong>, the Store Owner assigns roles; the Cadify Plugin adds roles for Tabs 4–7.</p>
+<p>In <strong>nopCommerce Admin → Customers → Select Customer</strong>, the Store Owner assigns roles; the Cadify Plugin adds roles for Tabs 4-7.</p>
 <h3 id="store-owner-label">Store Owner Label</h3>
-<p>Store Owner roles are substore‑specific, e.g., <code>substore.cadify.no</code>.</p>
+<p>Store Owner roles are substore-specific, e.g., <code>substore.cadify.no</code>.</p>
 <h3 id="separation-of-responsibility">Separation of Responsibility</h3>
 <ul>
 <li><strong>Document creator:</strong> Chooses tab placement for each file/report/drawing.</li>
@@ -4715,7 +4744,7 @@
 <h2 id="implementation-notes">Implementation Notes</h2>
 <h3 id="database-structure">Database Structure</h3>
 <ul>
-<li><strong>Tabs</strong> table stores definitions for Tabs 2–7. (Tab 1 is implicit.)</li>
+<li><strong>Tabs</strong> table stores definitions for Tabs 2-7. (Tab 1 is implicit.)</li>
 <li><strong>CustomerRoleTabMapping</strong> links products, roles, and tabs for visibility control.</li>
 </ul>
 <h3 id="defaults">Defaults</h3>
@@ -4772,10 +4801,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>
