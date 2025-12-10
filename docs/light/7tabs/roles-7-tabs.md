@@ -17,21 +17,22 @@ Contains static documents (e.g., PDF brochures/manuals). A document may be assig
 Holds reports/files generated from Cadify Master Excel or CAD process intended for end customers.
 
 ### 5 Partner
-Holds files generated from the Cadify 3D model intended for partner‑level sharing.
+Holds files generated from the Cadify 3D model intended for partner-level sharing.
 
 ### 6 Fabricator
 Contains files intended for manufacturing vendors (e.g., CNC files, flat patterns, BOM reports).
 
 ### 7 SourceAdmin
-Reserved for sensitive/core files such as SolidWorks Pack‑and‑Go archives or the Cadify Master Excel file. Access is restricted to **SourceAdmin** and **Store Owners**.
+Reserved for sensitive/core files such as SolidWorks Pack-and-Go archives or the Cadify Master Excel file. Access is restricted to **SourceAdmin** and **Store Owners**.
 
-## Role‑Based Visibility and Access
+## Role-Based Visibility and Access
 
-### Tab–Role Mapping
+### Tab-Role Mapping
 Each tab corresponds to a nopCommerce role of the same name for controlled access.
 
 ### Role Defaults
-- **Public:** Tabs 1–3 (Description, Specifications, Brochures)
+
+- **Public:** Tabs 1-3 (Description, Specifications, Brochures)
 - **Customers:** Tab 4 + Store Owner
 - **Partner:** Tab 5 + Store Owner
 - **Fabricator:** Tab 6 + Store Owner
@@ -41,6 +42,7 @@ Each tab corresponds to a nopCommerce role of the same name for controlled acces
 Roles with tab access can both view **and** download files.
 
 ### Admin vs Store Owner
+
 - **Admin:** Unlimited access across all stores and admin functions; implicitly has all Store Owner rights.
 - **Store Owner:** Admin of a single store/substore (e.g., `substore.cadify.no`); unlimited number of substores.
 
@@ -56,13 +58,14 @@ Tab names can be translated or renamed using nopCommerce language packs.
 
 ### Introduction
 Cadify aligns customer choices, engineering rules, and production requirements across seven fixed tabs:
-1. **Description** — full description
-2. **Specifications** — output attributes (web controls)
-3. **Brochures** — static brochures/reference docs
-4. **Customers** — customer‑facing reports
-5. **Partner** — partner collaboration files
-6. **Fabricator** — vendor/manufacturing files
-7. **SourceAdmin** — restricted source files
+
+1. **Description**: full description
+2. **Specifications**: output attributes (web controls)
+3. **Brochures**: static brochures/reference docs
+4. **Customers**: customer-facing reports
+5. **Partner**: partner collaboration files
+6. **Fabricator**: vendor/manufacturing files
+7. **SourceAdmin**: restricted source files
 
 Tabs present only relevant information to each stakeholder and ensure consistent, updated inputs for production.
 
@@ -98,6 +101,7 @@ See more on [Media Manager details](/mediaManager/MediaManager)
 
 ### Output Controls
 Each Output control defines:
+
 - Output attribute name
 - Value
 - Display order
@@ -118,6 +122,7 @@ Used for ordering workflows only; not tied to tab roles/content.
 Defined by the SW Engineer in **Task Pane → Tools → Product Settings → General Information**.
 
 ### Fields
+
 - Product name
 - Short description
 - **Full description** (Tab 1 content)
@@ -134,6 +139,7 @@ In **Task Pane → Tools → Drawings → Settings for Drawings**, configure out
 For each drawing, select any/all roles (Customers, Partner, Fabricator, SourceAdmin) and assign document types (DWG, DXF, PDF) to tabs.
 
 ### Drawing Files
+
 - A drawing may include unlimited sheets.
 - All sheets are managed within a single file.
 - Styles, margins, prompts are defined in this UI.
@@ -144,19 +150,21 @@ Engineers control the sequence of drawings within selected tabs.
 ## Customer Role Assignment in Store Admin
 
 ### UI
-In **nopCommerce Admin → Customers → Select Customer**, the Store Owner assigns roles; the Cadify Plugin adds roles for Tabs 4–7.
+In **nopCommerce Admin → Customers → Select Customer**, the Store Owner assigns roles; the Cadify Plugin adds roles for Tabs 4-7.
 
 ### Store Owner Label
-Store Owner roles are substore‑specific, e.g., `substore.cadify.no`.
+Store Owner roles are substore-specific, e.g., `substore.cadify.no`.
 
 ### Separation of Responsibility
+
 - **Document creator:** Chooses tab placement for each file/report/drawing.
 - **Store Owner:** Assigns customer roles to determine access.
 
 ## Implementation Notes
 
 ### Database Structure
-- **Tabs** table stores definitions for Tabs 2–7. (Tab 1 is implicit.)
+
+- **Tabs** table stores definitions for Tabs 2-7. (Tab 1 is implicit.)
 - **CustomerRoleTabMapping** links products, roles, and tabs for visibility control.
 
 ### Defaults
@@ -167,4 +175,3 @@ nopCommerce admin **Customer Roles** are extended with tab access checkboxes.
 
 ### Frontend Display
 Tabs render only if they contain content **and** the current user role has access.
-

@@ -30,8 +30,11 @@ The **File** menu in the Cadify AddIn for SolidWorks provides all essential comm
 ---
 
 **Quick Tips:**
+
 - Login is required for saving, opening, or publishing products.
+
 - The cloud icon indicates actions that interact with your online storage.
+
 - Publishing a product will validate your project before it goes live.
 
 ---

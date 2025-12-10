@@ -14,7 +14,9 @@ The **Test** section contains advanced and diagnostic tools. Some features may b
 ---
 
 **Quick Tips:**
+
 - Use "Save Product to Machine Learning JSON" to integrate with AI or automation workflows.
+
 - "Apply from JSON" is useful for restoring or simulating different product configurations.
 
 ---

@@ -82,6 +82,7 @@ Create an image that won't be displayed:
 ### Caching Behavior
 
 The function uses intelligent caching to improve performance:
+
 - If parameters haven't changed, the cached result is returned immediately
 - This prevents unnecessary recalculation and file access
 - Changing any parameter will trigger a full recalculation
@@ -92,6 +93,7 @@ The function uses intelligent caching to improve performance:
 **Cause**: The image file cannot be found in the specified location.
 
 **Solutions**:
+
 - Verify the image file exists in the library folder
 - Check that the file has a supported extension (.png, .jpg, etc.)
 - Ensure the library is synced to your local computer
@@ -101,6 +103,7 @@ The function uses intelligent caching to improve performance:
 **Cause**: Another CadifyImage function on the same worksheet is using the same image ID.
 
 **Solutions**:
+
 - Choose a unique name for the **Named Image** parameter
 - Check for other CadifyImage functions with the same ID
 - Search the worksheet for duplicate image names
@@ -109,6 +112,7 @@ The function uses intelligent caching to improve performance:
 **Cause**: The Current File Name doesn't appear in the Image list parameter.
 
 **Solutions**:
+
 - Add the image name to the semicolon-separated image list
 - Check for typos in both parameters
 - Ensure exact name matching (including case)
@@ -117,6 +121,7 @@ The function uses intelligent caching to improve performance:
 **Cause**: The specified CadifySheet function cannot be found.
 
 **Solutions**:
+
 - Verify a CadifySheet function exists with the specified name
 - Ensure the CadifySheet is on the same worksheet
 - Check the spelling of the sheet name parameter
@@ -125,6 +130,7 @@ The function uses intelligent caching to improve performance:
 **Cause**: The folder path doesn't follow the required format.
 
 **Solutions**:
+
 - Always start the path with `Library:\Sketcher\`
 - Example: `"Library:\Sketcher\ProductImages"`
 - Don't use local file paths or network paths
@@ -216,6 +222,7 @@ Where cell A1 contains a value from 0 to 360.
 ### File System Integration
 
 The function integrates with the Cadify Library system:
+
 - `imageFolder` is converted from `Library:\` prefix to the actual local library path
 - `CommonFunction.GetFolderPath()` resolves the Library path to the local sync location
 - `CommonFunction.GetImagePath()` searches for the image file with various extensions

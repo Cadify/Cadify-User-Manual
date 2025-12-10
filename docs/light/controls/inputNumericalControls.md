@@ -2,7 +2,7 @@
 
 <p>This document provides an overview of the various <strong>Numerical</strong> Web Control types that you can create to manipulate your product. Each control includes a preview that will be shown both in the Task Pane and on the published product in nopCommerce. Once you've created a control, you can set up references to dynamically update your Excel formulas.</p>
 
-<p>You can download sample products from the <a href="https://github.com/Cadify/Cadify-User-Manual/tree/main/samples">samples folder</a>.</p>
+<p>You can download sample products from the <a href="https://github.com/Cadify/Cadify-User-Manual/tree/main/samples" target="_blank" rel="noopener noreferrer">samples folder</a>.</p>
 
 ---
 

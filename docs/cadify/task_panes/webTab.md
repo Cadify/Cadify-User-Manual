@@ -17,7 +17,7 @@ Additionally, here are also the settings for our media files: Reports, Brochures
 
 <div class="grid">
   <div class="col-4">
-    <a href="/Cadify-User-Manual/cadify/controls/inputCadifyControls" style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px; text-decoration:none;font-weight:600;line-height:1.2;">
+    <a href="/Cadify-User-Manual/cadify/controls" style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px; text-decoration:none;font-weight:600;line-height:1.2;">
       Cadify Web Controls
   </a> 
   </div>

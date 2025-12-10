@@ -1,6 +1,6 @@
 # Media Manager Documentation
 
-This document describes the Media Manager tool used for managing product-related media in Cadify. The Media Manager allows users to set up printing areas from Excel workbooks, configure downloadable PDF brochures, and manage product pictures—all controlled via proxy objects in the code and stored in structured Excel worksheets.
+This document describes the Media Manager tool used for managing product-related media in Cadify. The Media Manager allows users to set up printing areas from Excel workbooks, configure downloadable PDF brochures, and manage product pictures, all controlled via proxy objects in the code and stored in structured Excel worksheets.
 
 ## Overview
 

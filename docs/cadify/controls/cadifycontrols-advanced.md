@@ -21,13 +21,13 @@ To create a control you can use either method:
 <div style="display:flex; gap:16px; flex-wrap:wrap; margin-top:12px;">
 
   <div style="flex:1 1 45%; text-align:center;">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/library/images/createControlMenu.png"
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createControlMenu.png"
          alt="Control List Placeholder"
          style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
 
   <div style="flex:1 1 45%; text-align:center;">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/library/images/createControlButton.png"
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createControlButton.png"
          alt="Control Properties Placeholder"
          style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>

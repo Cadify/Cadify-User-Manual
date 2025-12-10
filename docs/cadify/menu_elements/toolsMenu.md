@@ -54,13 +54,13 @@ Reloads the currently active model in SolidWorks. **Disabled if no product is op
 
 Adds a new Cadify control element to the project. **Disabled if no product is open.**
 
-### Control Hierarchy Resolver
+### The Resolver
 
-The Control Hierarchy Resolver (CHR) is the Cadify function that organizes calculation order inside configuration workbooks. After changes in logic or parameters, CHR evaluates dependencies between formulas and inputs, then regenerates the correct sequence. This prevents circular references and ensures consistent updates. In this section, the manual explains how CHR operates, where it is applied, and the procedures for using it effectively.
+The Resolver is the Cadify function that organizes calculation order inside configuration workbooks. After changes in logic or parameters, it evaluates dependencies between formulas and inputs, then regenerates the correct sequence. This prevents circular references and ensures consistent updates. In this section, the manual explains how this tool operates, where it is applied, and the procedures for using it effectively.
 
 #### Functional Description
 
-The Control Hierarchy Resolver (CHR) is responsible for defining and maintaining the correct calculation sequence in Cadify configuration workbooks. When logic or parameters change, CHR systematically reviews dependencies between formulas and inputs, ensuring that each step is processed in the right order.
+The Resolver is responsible for defining and maintaining the correct calculation sequence in Cadify configuration workbooks. When logic or parameters change, it systematically reviews dependencies between formulas and inputs, ensuring that each step is processed in the right order.
 
 <div class="grid" style="display:flex; align-items:flex-start; gap:12px; flex-wrap:nowrap;">
   <div class="col-4" style="flex:0 0 65%; max-width:65%; box-sizing:border-box; padding-right:12px;">
@@ -74,7 +74,7 @@ The Control Hierarchy Resolver (CHR) is responsible for defining and maintaining
   </div>
 </div>
 
-Without CHR, these dependencies risk being processed in the wrong sequence, leading to circular references or stalled calculations. With CHR, the workbook logic is re-evaluated after every change, placing each calculation in its correct order. This guarantees stable updates, reliable outputs, and a seamless translation of customer choices into consistent engineering and production data.
+Without The Resolver, these dependencies risk being processed in the wrong sequence, leading to circular references or stalled calculations. By re-evaluating the workbook logic after every change, it places each calculation in its correct order. This guarantees stable updates, reliable outputs, and a seamless translation of customer choices into consistent engineering and production data.
 
 ---
 

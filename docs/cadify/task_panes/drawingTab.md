@@ -20,7 +20,7 @@ The Cadify Drawing task pane makes it easy to manage drawing annotations. You ca
 
 <div class="grid">
   <div class="col-4">
-    <a href="/Cadify-User-Manual/cadify/controls/inputCadifyControls"
+    <a href="/Cadify-User-Manual/cadify/product/drawings/#drawing-dimensions"
    style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px;
           text-decoration:none;font-weight:600;line-height:1.2;">
   Drawing dimensions and notes
