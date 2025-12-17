@@ -2,8 +2,7 @@
 
 Welcome to the Cadify product manual. Built with the same partnership mindset as our platform, this guide is here to help you succeed from day one. Inside, you’ll find clear instructions and practical examples to make Cadify work for you—so you can focus on delivering value to your customers, because your customer is our core.
 
-
-Getting Started with Cadify
+## Getting Started with Cadify
 
 This manual is your technical reference for working with Cadify. It provides the knowledge you need to configure products, manage CAD logic, and ensure production data is correct from the start.
 

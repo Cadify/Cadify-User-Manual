@@ -1,4 +1,4 @@
-# Service Core Components
+# Core Components
 
 ## Cadify Desktop
 A SolidWorks add-in with Excel integration. Engineers define rules and models in a single workbook per product. Drawings and 3D models are governed together and always regenerate correctly.

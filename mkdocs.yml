@@ -3,135 +3,138 @@ site_name: Cadify User Manuals
 theme:
   name: material
   features:
-    - navigation.indexes   # make each section title a real page
+    - navigation.indexes # make each section title a real page
 
 nav:
   - Getting Started with Cadify: index.md
 
-  - Cadify:
+  - Overview:
+      - Introduction: overview/index.md
+      - Core Components: overview/core_components.md
+      - Architecture: overview/architecture.md
+
+  - Cadify SolidWorks AddIn:
       - Getting Started: cadify/index.md
       - Scalable Production: cadify/scalableProduction.md
       - Menu Elements:
-        - Overview: cadify/menu_elements/index.md
-        - File: cadify/menu_elements/filemenus.md
-        - Tools: cadify/menu_elements/toolsMenu.md
-        - Test: cadify/menu_elements/testMenu.md
+          - Overview: cadify/menu_elements/index.md
+          - File: cadify/menu_elements/filemenus.md
+          - Tools: cadify/menu_elements/toolsMenu.md
+          - Test: cadify/menu_elements/testMenu.md
       - Task Panes:
-        - Overview: cadify/task_panes/index.md
-        - 3D Model Tab: cadify/task_panes/modelTab.md
-        - Drawing Tab: cadify/task_panes/drawingTab.md
-        - Web Tab: cadify/task_panes/webTab.md
+          - Overview: cadify/task_panes/index.md
+          - 3D Model Tab: cadify/task_panes/modelTab.md
+          - Drawing Tab: cadify/task_panes/drawingTab.md
+          - Web Tab: cadify/task_panes/webTab.md
       - Cadify Product:
-        - Overview: cadify/product/index.md
-        - Create product: cadify/product/createProduct.md
-        - Create drawing: cadify/product/drawings.md
-        - Best practices:
-          - Overview: cadify/product/bestPractices/index.md
-          - Yellow Brick Road: cadify/product/bestPractices/yellowBrickRoad.md
-          - Five Formulas: cadify/product/bestPractices/fiveFormulas.md
-          - Drawing Types: cadify/product/bestPractices/drawingTypes.md
-          - Export Drawings: cadify/product/bestPractices/exportDrawings.md
-          - SKU & Revision Management: cadify/product/bestPractices/sku.md
-          - Flexible Standardization: cadify/product/bestPractices/flexibleStandardization.md
+          - Overview: cadify/product/index.md
+          - Create product: cadify/product/createProduct.md
+          - Create drawing: cadify/product/drawings.md
+          - Best practices:
+              - Overview: cadify/product/bestPractices/index.md
+              - Yellow Brick Road: cadify/product/bestPractices/yellowBrickRoad.md
+              - Five Formulas: cadify/product/bestPractices/fiveFormulas.md
+              - Drawing Types: cadify/product/bestPractices/drawingTypes.md
+              - Export Drawings: cadify/product/bestPractices/exportDrawings.md
+              - SKU & Revision Management: cadify/product/bestPractices/sku.md
+              - Flexible Standardization: cadify/product/bestPractices/flexibleStandardization.md
       - Web Controls:
-        - Overview: cadify/controls/index.md  
-        - Input Web Controls:
-          - List Controls: cadify/controls/inputListControls.md
-          - Numerical Controls: cadify/controls/inputNumericalControls.md
-          - Other Controls: cadify/controls/inputOtherControls.md
-        - Output Web Controls: cadify/controls/outputControls.md
-        - Checkout Web Control: cadify/controls/checkoutControls.md
-        - Linking Sketcher Output: cadify/controls/linkSketcher.md
-        - Best practices: cadify/controls/cadifycontrols-advanced.md        
+          - Overview: cadify/controls/index.md
+          - Input Web Controls:
+              - List Controls: cadify/controls/inputListControls.md
+              - Numerical Controls: cadify/controls/inputNumericalControls.md
+              - Other Controls: cadify/controls/inputOtherControls.md
+          - Output Web Controls: cadify/controls/outputControls.md
+          - Checkout Web Control: cadify/controls/checkoutControls.md
+          - Linking Sketcher Output: cadify/controls/linkSketcher.md
+          - Best practices: cadify/controls/cadifycontrols-advanced.md
       - Media Manager: cadify/mediaManager/MediaManager.md
       - Library:
-        - Library Overview: cadify/library/index.md
-        - Parts: cadify/library/parts.md
-        - Textures: cadify/library/textures.md
-        - Weldments: cadify/library/weldments.md
+          - Library Overview: cadify/library/index.md
+          - Parts: cadify/library/parts.md
+          - Textures: cadify/library/textures.md
+          - Weldments: cadify/library/weldments.md
       - 7 Tabs Management: cadify/7tabs/roles-7-tabs.md
       - Bill of Materials: cadify/bom/bom.md
       - Sketcher:
-        - Overview: cadify/sketcher/index.md
-        - Best practices:
-          - Sketcher Scroll-By: cadify/sketcher/advanced-sketcher-scrollby.md
-        - CadifySheet: cadify/sketcher/cadifysheet.md
-        - CadifyLine: cadify/sketcher/cadifyline.md
-        - CadifyRectangle: cadify/sketcher/cadifyrectangle.md
-        - CadifyEllipse: cadify/sketcher/cadifyellipse.md
-        - CadifyHoles: cadify/sketcher/cadifyholes.md
-        - CadifyImage: cadify/sketcher/cadifyimage.md
-        - CadifyDim: cadify/sketcher/cadifydim.md
-        - CadifyText: cadify/sketcher/cadifytext.md
-        - CadifyBezier: cadify/sketcher/cadifybezier.md
-        - CadifySvg: cadify/sketcher/cadifysvg.md
-        - CadifyJson: cadify/sketcher/cadifyjson.md
-        - CadifyDartJson: cadify/sketcher/cadifydartjson.md
-        - CadifyDartImage: cadify/sketcher/cadifydartimage.md
-        - Making Sketcher Visible Online: cadify/sketcher/addSketcher.md
+          - Overview: cadify/sketcher/index.md
+          - Best practices:
+              - Sketcher Scroll-By: cadify/sketcher/advanced-sketcher-scrollby.md
+          - CadifySheet: cadify/sketcher/cadifysheet.md
+          - CadifyLine: cadify/sketcher/cadifyline.md
+          - CadifyRectangle: cadify/sketcher/cadifyrectangle.md
+          - CadifyEllipse: cadify/sketcher/cadifyellipse.md
+          - CadifyHoles: cadify/sketcher/cadifyholes.md
+          - CadifyImage: cadify/sketcher/cadifyimage.md
+          - CadifyDim: cadify/sketcher/cadifydim.md
+          - CadifyText: cadify/sketcher/cadifytext.md
+          - CadifyBezier: cadify/sketcher/cadifybezier.md
+          - CadifySvg: cadify/sketcher/cadifysvg.md
+          - CadifyJson: cadify/sketcher/cadifyjson.md
+          - CadifyDartJson: cadify/sketcher/cadifydartjson.md
+          - CadifyDartImage: cadify/sketcher/cadifydartimage.md
+          - Making Sketcher Visible Online: cadify/sketcher/addSketcher.md
   - Cadify Light:
       - Getting Started: light/index.md
       - Menu Elements: light/menu_elements.md
       - Task Pane Overview: light/taskPane/task_pane.md
       - Cadify Light Product:
-        - Overview: light/product/index.md
-        - Create product: light/product/createProduct.md
-        - Best practices:
-          - Overview: light/product/bestPractices/index.md
-          - Yellow Brick Road: light/product/bestPractices/yellowBrickRoad.md
-          - Five Formulas: light/product/bestPractices/fiveFormulas.md
+          - Overview: light/product/index.md
+          - Create product: light/product/createProduct.md
+          - Best practices:
+              - Overview: light/product/bestPractices/index.md
+              - Yellow Brick Road: light/product/bestPractices/yellowBrickRoad.md
+              - Five Formulas: light/product/bestPractices/fiveFormulas.md
       - Web Controls:
-        - Input Web Controls:
-          - List Controls: light/controls/inputListControls.md
-          - Numerical Controls: light/controls/inputNumericalControls.md
-          - Other Controls: light/controls/inputOtherControls.md
-        - Output Web Controls: light/controls/outputControls.md
-        - Linking Sketcher Output: light/controls/linkSketcher.md
-        - Best practices: light/controls/cadifycontrols-advanced.md
+          - Input Web Controls:
+              - List Controls: light/controls/inputListControls.md
+              - Numerical Controls: light/controls/inputNumericalControls.md
+              - Other Controls: light/controls/inputOtherControls.md
+          - Output Web Controls: light/controls/outputControls.md
+          - Linking Sketcher Output: light/controls/linkSketcher.md
+          - Best practices: light/controls/cadifycontrols-advanced.md
       - Media Manager: light/mediaManager/MediaManager.md
       - 7 Tabs Management: light/7tabs/roles-7-tabs.md
       - Bill of Materials: light/bom/bom.md
       - Sketcher:
-        - Sketcher Overview: light/sketcher/index.md
-        - Best practices:
-          - Sketcher Scroll-By: light/sketcher/advanced-sketcher-scrollby.md
-        - CadifySheet: light/sketcher/cadifysheet.md
-        - CadifyLine: light/sketcher/cadifyline.md
-        - CadifyRectangle: light/sketcher/cadifyrectangle.md
-        - CadifyEllipse: light/sketcher/cadifyellipse.md
-        - CadifyHoles: light/sketcher/cadifyholes.md
-        - CadifyImage: light/sketcher/cadifyimage.md
-        - CadifyDim: light/sketcher/cadifydim.md
-        - CadifyText: light/sketcher/cadifytext.md
-        - CadifyBezier: light/sketcher/cadifybezier.md
-        - CadifySvg: light/sketcher/cadifysvg.md
-        - CadifyJson: light/sketcher/cadifyjson.md
-        - CadifyDartJson: light/sketcher/cadifydartjson.md
-        - CadifyDartImage: light/sketcher/cadifydartimage.md
-        - Making Sketcher Visible Online: light/sketcher/addSketcher.md
+          - Sketcher Overview: light/sketcher/index.md
+          - Best practices:
+              - Sketcher Scroll-By: light/sketcher/advanced-sketcher-scrollby.md
+          - CadifySheet: light/sketcher/cadifysheet.md
+          - CadifyLine: light/sketcher/cadifyline.md
+          - CadifyRectangle: light/sketcher/cadifyrectangle.md
+          - CadifyEllipse: light/sketcher/cadifyellipse.md
+          - CadifyHoles: light/sketcher/cadifyholes.md
+          - CadifyImage: light/sketcher/cadifyimage.md
+          - CadifyDim: light/sketcher/cadifydim.md
+          - CadifyText: light/sketcher/cadifytext.md
+          - CadifyBezier: light/sketcher/cadifybezier.md
+          - CadifySvg: light/sketcher/cadifysvg.md
+          - CadifyJson: light/sketcher/cadifyjson.md
+          - CadifyDartJson: light/sketcher/cadifydartjson.md
+          - CadifyDartImage: light/sketcher/cadifydartimage.md
+          - Making Sketcher Visible Online: light/sketcher/addSketcher.md
 
   - Cadify Web:
       - Getting Started: web/index.md
       - Stores:
-        - Overview: web/store/index.md
-        - CMS Store Front: web/store/cms-store-front.md
-        - General Settings: web/store/storeSettings.md
-        - Cadify Cloud: web/store/cadifyCloud.md           
+          - Overview: web/store/index.md
+          - CMS Store Front: web/store/cms-store-front.md
+          - General Settings: web/store/storeSettings.md
+          - Cadify Cloud: web/store/cadifyCloud.md
       - Headless Web:
-        - Overview: web/headlessAPI/index.md
-      - ERP Connection: 
-        - Overview: web/erpConnection/index.md
+          - Overview: web/headlessAPI/index.md
+      - ERP Connection:
+          - Overview: web/erpConnection/index.md
       - Order:
-        - Overview: web/order/index.md
+          - Overview: web/order/index.md
       - Drop Shipping:
-        - Overview: web/dropShipping/index.md
+          - Overview: web/dropShipping/index.md
 
   - Cadify Service:
-      - Service Introduction: service/index.md
-      - Service Core Components: service/core_components.md
-      - Service Architecture: service/service_architecture.md
+      - Getting Started: service/index.md
 
-use_directory_urls: true  
+use_directory_urls: true
 
 markdown_extensions:
   - admonition
@@ -139,4 +142,4 @@ markdown_extensions:
   - pymdownx.superfences
   - tables
   - attr_list
-  - md_in_html  
+  - md_in_html

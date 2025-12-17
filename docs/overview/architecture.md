@@ -1,4 +1,4 @@
-# Service Architecture
+# Architecture
 
 This chapter describes the overall architecture of Cadify. It explains how the different components interact, how product instances are identified, and how data flows from design in SolidWorks to production in ERP and MES systems. The goal is to provide a clear overview that connects engineering, operations, and business needs.
 
