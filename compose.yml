@@ -1,0 +1,11 @@
+services:
+  mkdocs:
+    container_name: mkdocs
+    build:
+      context: .
+    volumes:
+      - ./docs:/app/docs
+      - ./samples:/app/samples
+      - ./mkdocs.yml:/app/mkdocs.yml
+    ports:
+      - 8000:8000
