@@ -1,8 +1,25 @@
-## 📘 Cadify User Manual
+# 📘 Cadify User Manual
 
 This repository is hosted as a GitHub Pages site:  
 👉 [Open Cadify User Manual](https://cadify.github.io/Cadify-User-Manual/)
 
+## Development
+
+The manual can be served for development either via its container or with mkdocs installed locally.
+
+### Container
+
+1. Install Docker or Podman and make sure it works.
+2. Install Docker Compose.
+3. Run the container with `docker compose up -d`.
+4. The manual will be available at `http://localhost:8000`.
+
+### Mkdocs
+
+1. Install Python 3 and make sure it works.
+2. Install the dependencies in `requirements.txt`. Watch out for the correct version of `mkdocs-material` as hot reload may not work in newer versions.
+3. Start the development server with `mkdocs serve`.
+4. The manual will be available at `http://localhost:8000`.
 
 # Bilingual search index (NO + EN) for CMS (WordPress)
 
