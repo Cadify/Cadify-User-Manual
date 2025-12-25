@@ -8,7 +8,7 @@ theme:
 nav:
   - Getting Started with Cadify: index.md
 
-  - Overview:
+  - Cadify:
       - Introduction: overview/index.md
       - Core Components: overview/core_components.md
       - Architecture: overview/architecture.md
@@ -74,6 +74,7 @@ nav:
           - CadifyDartJson: cadify/sketcher/cadifydartjson.md
           - CadifyDartImage: cadify/sketcher/cadifydartimage.md
           - Making Sketcher Visible Online: cadify/sketcher/addSketcher.md
+
   - Cadify Light:
       - Getting Started: light/index.md
       - Menu Elements: light/menu_elements.md
@@ -133,6 +134,10 @@ nav:
 
   - Cadify Service:
       - Getting Started: service/index.md
+      - Connecting to a Store: service/login.md
+      - Job Manager: service/jobman.md
+      - Authorization: service/auth.md
+      - Settings: service/settings.md
 
 use_directory_urls: true
 
