@@ -46,3 +46,7 @@ Once installed, Cadify Service can be started anytime by launching it from the S
 Cadify Service typically uses status text and notification messages to communicate with the user. The current state of the service can be accessed by hovering over its notification icon. If the service needs special user attention, it triggers a system notification:
 
 ![Cadify Service first system notification](./images/02-login-notification.jpg)
+
+Users can access most Cadify Service functionality through the tray icon's context menu, available by left-clicking on it:
+
+![Cadify Service context menu](./images/03-tray-menu.jpg)
