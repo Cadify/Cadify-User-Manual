@@ -32,3 +32,9 @@ Once Cadify Service is done with synchrnoziation, it triggers a service started 
 ![Cadify Service started system notification](./images/08-running-notification.jpg)
 
 > Product and library files are kept in sync (resynchronized) while Cadify Service is running if a change is detected. During these smaller synchrnoziation events, jobs are paused.
+
+## Authorization
+
+When Cadify Service starts, it prompts for a new PIN code with a form window. This is called **operator PIN**, and is required to authenticate an authorized operator later. For more information about the PIN mechanism and its rationale, please read the [Authorization](./auth.md) page.
+
+![Cadify Service new PIN window](./images/07-pin-setup.jpg)

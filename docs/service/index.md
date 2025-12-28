@@ -47,6 +47,6 @@ Cadify Service typically uses status text and notification messages to communica
 
 ![Cadify Service first system notification](./images/02-login-notification.jpg)
 
-Users can access most Cadify Service functionality through the tray icon's context menu, available by left-clicking on it:
+Users can access most Cadify Service functionality through the tray icon's **context menu**, available by left-clicking on it:
 
 ![Cadify Service context menu](./images/03-tray-menu.jpg)
