@@ -9,6 +9,7 @@ The central dashboard of Cadify Service is called **Job Manager**, and can be ac
 ## Job list
 
 The Job Manager's main GUI element is the job list showing active and past jobs in a tabular view. Every row is a separate job, not necessarily completed by the current Cadify Service. Every item has the following properties on display:
+
 - **Store URL**: The URL of the Cadify Web store the job is originating from.
 - **Product**: The product's name in the Cadify Web store the job must create a new configuration instance for.
 - **SKU**: The product's SKU in the Cadify Web store the job must create a new configuration instance for.
@@ -19,6 +20,7 @@ The Job Manager's main GUI element is the job list showing active and past jobs 
 - **Priority**: An integer indicating the priority of the current job amongst all jobs in the queue. High-priority jobs are started before jobs with lower priority values.
 
 Jobs can take the following states depending on various factors:
+
 - **In Queue**: The job has been registered, but not started yet.
 - **Other Service**: The job has been started by another Cadify Service before this one could start it.
 - **Cancelled**: The job has been cancelled either from the Cadify Service or from the Cadfiy Web product page.
@@ -35,6 +37,7 @@ When a generation request is made on Cadify Web, connected Cadify Service applic
 ![New item in Job Manager](./images/10-new-job.jpg)
 
 There are three action buttons operators can use to control how Cadify Service treats the job:
+
 - **Authorize**: marks the job as runnable. For more information, please read the [Authorization](./auth.md) page.
 - **Set Next**: raises the priority of the job above the current highest priority.
 - **Cancel**: marks the job as cancelled to prevent it from running.

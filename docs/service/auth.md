@@ -13,6 +13,7 @@ The rationale of using a separate PIN code is password sensitivity. Since Cadify
 ![Cadify Service new PIN window](./images/07-pin-setup.jpg)
 
 The new PIN window form hosts the following inputs:
+
 - **PIN code**: The PIN code to be used by the operators.
 - **Confirm**: The same PIN code to avoid typos.
 - **Save PIN**: Save the PIN code for later use. If the PIN code is saved, the previous form fields get filled automatically next time.

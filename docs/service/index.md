@@ -7,6 +7,7 @@ This guide will help you get up and running with Cadify Service, covering nopCom
 ## Requirements
 
 Cadify Service is a Windows desktop application set up with a 64-bit installer. It connects Excel-based Cadify Tables to parametrized SolidWorks CAD models, therefore, the minimum system requirements are the following:
+
 - A PC meeting SolidWorks' minimum system requirements.
 - A 64-bit Windows operating system with active support.
 - Microsoft Office 365 or compatible Microsoft Office (e.g. 2016).
@@ -16,6 +17,7 @@ Cadify Service is a Windows desktop application set up with a 64-bit installer. 
 ## Installation
 
 After getting an installer file from our private channels, installation is pretty straightforward. The installation wizard configures everything it needs for Cadify to work as intended. The installer version with Cadify Service included installs the followng components:
+
 - Cadify SolidWorks AddIn
 - Cadify Excel plugin
 - Cadify Service

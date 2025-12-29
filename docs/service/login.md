@@ -13,6 +13,7 @@ If there is no logged in user, the Cadify Service context menu's **Log in** menu
 > Login credentials in the form are for presentation purposes only, they do not belong to a real Cadify store backed with Cadify Service.
 
 The login window's form hosts the following inputs:
+
 - **Webstore URL**: A URL pointing to a Cadify Web store. The URL does not need to be a base URL, but the page it points to must be part of a Cadify Web store.
 - **Email address**: The Cadify Web user's email address or user name. The user must have appropriate roles to start Cadify Service. The user is authorized by Cadify Web, not Cadify Service.
 - **Password**: The Cadify Web user's password. Visibility of the password can be toggled with the eye icon on the right side of the input field.
