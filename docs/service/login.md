@@ -25,6 +25,7 @@ The login window's form gives visual validation feedback. If an input field's bo
 ## On a successful login
 
 If a user manages to successfully log into a Cadify Web store, Cadify Service gains access to the store's Cadify Cloud storage. It starts synchronizing the necessary files immediately. During synchronization, Cadify Service starts enqueuing jobs, but it cannot start model generations yet. Cadify Service synchrnozies the following resources:
+
 - Product files. Cadify Models and Cadify Tables related to products.
 - Library files. Shared parts, assemblies, images, and other sketcher resources used in model generations.
 

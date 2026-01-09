@@ -52,3 +52,16 @@ Cadify Service typically uses status text and notification messages to communica
 Users can access most Cadify Service functionality through the tray icon's **context menu**, available by left-clicking on it:
 
 ![Cadify Service context menu](./images/03-tray-menu.jpg)
+
+## Cadify Service lifecycle
+
+Cadify Service is built with an internal state management system with several lifecycle states. Each state defines the current capabilities of Cadify Service: what can it do at the moment and what is forbidden. The following states have special meaning to the user and reflected through the tray icon:
+
+- **Stopped**: The service is stopped and not connected to any Cadify Web store.
+- **Idle**: The service is awaiting a new job request.
+- **Working**: The service is actively working on a job.
+- **Paused**: The service is temporarily paused by an operator and will resume later. Until then it enqueues new requests but won't start them.
+- **Starting**: The service is in its starting routine. It can enqueue new job requests, but it cannot run jobs yet.
+- **Stopping**: The service is requested to be halted, but it is currently busy with either synchronization or executing a job. It will stop as soon as possible.
+
+> When Cadify Service stops or exits, it needs to wait for the current job (if any) to finish in order to prevent incomplete generations, possibly leading to unsatisfied customers.
