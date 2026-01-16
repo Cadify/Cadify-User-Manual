@@ -12,211 +12,223 @@
  *   Soft Orange:   #f8a680 / RGB(248, 166, 128)
  *   Medium Orange: #f37e50 / RGB(243, 126, 80)
  *   Cream:         #fef3ec / RGB(254, 243, 236)
+ * 
+ * HEADER COLOR:
+ *   Dark Slate:    #465a6a
  */
 
-/* =====================================================
-   CSS Custom Properties (Variables)
-   ===================================================== */
+/* =============================================================================
+   CSS Custom Properties
+   ============================================================================= */
 
 :root {
-  /* Primary Cadify Colors */
+  /* Primary */
   --cadify-primary: #ef5128;
   --cadify-primary-light: #f37e50;
   --cadify-primary-dark: #d94520;
   
-  /* Header/Navigation Color (Dark Slate Blue-Gray) */
-  --cadify-header: #465a6a;
-  --cadify-header-dark: #3d4f5f;
-  --cadify-header-light: #526b7a;
+  /* Header/Navigation */  
+  --cadify-header: #343f4a;
+  --cadify-header-dark: #3E4958;
+  --cadify-header-light: #4a5668;
   
-  /* Secondary Colors */
+  /* Secondary */
   --cadify-peach: #fcd0b9;
   --cadify-soft-orange: #f8a680;
   --cadify-cream: #fef3ec;
   
-  /* Neutral Colors */
+  /* Neutrals */
   --cadify-dark: #1e1e1e;
   --cadify-gray: #4a4a4a;
   --cadify-light-gray: #f5f5f5;
   --cadify-white: #ffffff;
   
-  /* Status Colors */
+  /* Status */
   --cadify-success: #2e7d32;
   --cadify-warning: #f9a825;
   --cadify-error: #c62828;
   --cadify-info: #1565c0;
 }
 
-/* =====================================================
-   Material Theme Color Overrides (Light Mode)
-   ===================================================== */
+/* =============================================================================
+   Material Theme Variables - Light Mode
+   ============================================================================= */
 
 [data-md-color-scheme="default"] {
-  /* Primary color palette - Header uses slate, accents use orange */
-  --md-primary-fg-color: #465a6a;
-  --md-primary-fg-color--light: #526b7a;
-  --md-primary-fg-color--dark: #3d4f5f;
-  --md-primary-bg-color: #ffffff;
-  --md-primary-bg-color--light: #fef3ec;
+  --md-primary-fg-color: var(--cadify-header);
+  --md-primary-fg-color--light: var(--cadify-header-light);
+  --md-primary-fg-color--dark: var(--cadify-header-dark);
+  --md-primary-bg-color: var(--cadify-white);
+  --md-primary-bg-color--light: var(--cadify-cream);
   
-  /* Accent color - Cadify Orange for links and highlights */
-  --md-accent-fg-color: #ef5128;
+  --md-accent-fg-color: var(--cadify-primary);
   --md-accent-fg-color--transparent: rgba(239, 81, 40, 0.1);
-  --md-accent-bg-color: #ffffff;
-  --md-accent-bg-color--light: #fcd0b9;
+  --md-accent-bg-color: var(--cadify-white);
+  --md-accent-bg-color--light: var(--cadify-peach);
   
-  /* Link colors - Orange */
-  --md-typeset-a-color: #ef5128;
+  --md-typeset-a-color: var(--cadify-primary);
   
-  /* Code colors */
-  --md-code-bg-color: #fef3ec;
-  --md-code-fg-color: #1e1e1e;
+  --md-code-bg-color: var(--cadify-cream);
+  --md-code-fg-color: var(--cadify-dark);
   
-  /* Footer */
-  --md-footer-bg-color: #465a6a;
-  --md-footer-bg-color--dark: #3d4f5f;
-  --md-footer-fg-color: #ffffff;
+  --md-footer-bg-color: var(--cadify-header);
+  --md-footer-bg-color--dark: var(--cadify-header-dark);
+  --md-footer-fg-color: var(--cadify-white);
   --md-footer-fg-color--light: #cccccc;
   --md-footer-fg-color--lighter: #999999;
 }
 
-/* =====================================================
-   Material Theme Color Overrides (Dark Mode)
-   ===================================================== */
+/* =============================================================================
+   Material Theme Variables - Dark Mode
+   ============================================================================= */
 
 [data-md-color-scheme="slate"] {
-  /* Primary color palette for dark mode - Header slate (same as light) */
-  --md-primary-fg-color: #465a6a;
-  --md-primary-fg-color--light: #526b7a;
-  --md-primary-fg-color--dark: #3d4f5f;
-  --md-primary-bg-color: #1e1e1e;
+  --md-primary-fg-color: var(--cadify-header);
+  --md-primary-fg-color--light: var(--cadify-header-light);
+  --md-primary-fg-color--dark: var(--cadify-header-dark);
+  --md-primary-bg-color: var(--cadify-dark);
   --md-primary-bg-color--light: #2d2d2d;
   
-  /* Accent color - Orange for highlights */
-  --md-accent-fg-color: #ef5128;
+  --md-accent-fg-color: var(--cadify-primary);
   --md-accent-fg-color--transparent: rgba(239, 81, 40, 0.2);
-  --md-accent-bg-color: #1e1e1e;
+  --md-accent-bg-color: var(--cadify-dark);
   --md-accent-bg-color--light: #2d2d2d;
   
-  /* Link colors - same orange as light mode */
-  --md-typeset-a-color: #ef5128;
+  --md-typeset-a-color: var(--cadify-primary);
   
-  /* Code colors */
   --md-code-bg-color: #2d2d2d;
   --md-code-fg-color: #f5f5f5;
   
-  /* Footer - same as header */
-  --md-footer-bg-color: #465a6a;
-  --md-footer-bg-color--dark: #3d4f5f;
-  --md-footer-fg-color: #ffffff;
+  --md-footer-bg-color: var(--cadify-header);
+  --md-footer-bg-color--dark: var(--cadify-header-dark);
+  --md-footer-fg-color: var(--cadify-white);
   --md-footer-fg-color--light: #cccccc;
   --md-footer-fg-color--lighter: #999999;
   
-  /* Default background */
-  --md-default-bg-color: #1e1e1e;
+  --md-default-bg-color: var(--cadify-dark);
 }
 
-/* =====================================================
-   Header Styling (Both Light and Dark Mode)
-   ===================================================== */
+/* =============================================================================
+   Header
+   ============================================================================= */
 
-.md-header {
-  background-color: #465a6a !important;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+html [data-md-color-scheme="default"] .md-header,
+html [data-md-color-scheme="slate"] .md-header {
+  background-color: var(--cadify-header);
 }
 
-/* Logo */
-.md-header__button.md-logo {
+html [data-md-color-scheme="default"] .md-header .md-header__button.md-logo,
+html [data-md-color-scheme="slate"] .md-header .md-header__button.md-logo {
   margin: 0.2rem;
   padding: 0.2rem;
 }
 
-.md-header__button.md-logo img {
+html [data-md-color-scheme="default"] .md-header .md-header__button.md-logo img,
+html [data-md-color-scheme="slate"] .md-header .md-header__button.md-logo img {
   height: 1.5rem;
   width: auto;
 }
 
-/* Header title */
-.md-header__title {
-  color: #ffffff !important;
+html [data-md-color-scheme="default"] .md-header .md-header__title,
+html [data-md-color-scheme="slate"] .md-header .md-header__title {
+  color: var(--cadify-white);
 }
 
-/* Header icons (theme toggle, search, etc.) */
-.md-header__button {
-  color: #ffffff !important;
+html [data-md-color-scheme="default"] .md-header .md-header__button,
+html [data-md-color-scheme="slate"] .md-header .md-header__button {
+  color: var(--cadify-white);
 }
 
-.md-header__button:hover {
-  color: #ef5128 !important;
+html [data-md-color-scheme="default"] .md-header .md-header__button:hover,
+html [data-md-color-scheme="slate"] .md-header .md-header__button:hover {
+  color: var(--cadify-primary);
 }
 
-/* Search input in header */
-.md-search__input {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  color: #ffffff !important;
+/* =============================================================================
+   Search
+   ============================================================================= */
+
+html [data-md-color-scheme="default"] .md-header .md-search__input,
+html [data-md-color-scheme="slate"] .md-header .md-search__input {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--cadify-white);
 }
 
-.md-search__input::placeholder {
-  color: rgba(255, 255, 255, 0.7) !important;
+html [data-md-color-scheme="default"] .md-header .md-search__input::placeholder,
+html [data-md-color-scheme="slate"] .md-header .md-search__input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.md-search__icon {
-  color: #ffffff !important;
+html [data-md-color-scheme="default"] .md-header .md-search__icon,
+html [data-md-color-scheme="slate"] .md-header .md-search__icon {
+  color: var(--cadify-white);
 }
 
-/* Navigation tabs */
-.md-tabs {
-  background-color: #3d4f5f !important;
+[data-md-toggle="search"]:checked ~ .md-header .md-search__input {
+  background-color: var(--cadify-white);
+  color: var(--cadify-dark);
 }
 
-.md-tabs__link {
-  color: rgba(255, 255, 255, 0.8) !important;
+.md-search-result mark {
+  background-color: var(--cadify-peach);
+  color: var(--cadify-dark);
 }
 
-.md-tabs__link:hover,
-.md-tabs__link--active {
-  color: #ffffff !important;
+/* =============================================================================
+   Navigation Tabs
+   ============================================================================= */
+
+html [data-md-color-scheme="default"] .md-tabs,
+html [data-md-color-scheme="slate"] .md-tabs {
+  background-color: var(--cadify-header-dark);
+  box-shadow: none;
 }
 
-/* =====================================================
-   Navigation Styling
-   ===================================================== */
+html [data-md-color-scheme="default"] .md-tabs__link,
+html [data-md-color-scheme="slate"] .md-tabs__link {
+  color: rgba(255, 255, 255, 0.8);
+}
 
-/* Active navigation item */
+html [data-md-color-scheme="default"] .md-tabs__link:hover,
+html [data-md-color-scheme="default"] .md-tabs__link--active,
+html [data-md-color-scheme="slate"] .md-tabs__link:hover,
+html [data-md-color-scheme="slate"] .md-tabs__link--active {
+  color: var(--cadify-white);
+}
+
+/* =============================================================================
+   Sidebar Navigation
+   ============================================================================= */
+
 .md-nav__link--active {
-  color: var(--cadify-primary) !important;
+  color: var(--cadify-primary);
   font-weight: 600;
 }
 
-/* Navigation hover */
 .md-nav__link:hover {
   color: var(--cadify-primary);
 }
 
-/* Table of contents active */
-.md-nav__link:focus,
-.md-nav__link--active {
+.md-nav__link:focus {
   color: var(--cadify-primary);
 }
 
-/* =====================================================
-   Content Styling
-   ===================================================== */
+/* =============================================================================
+   Content Typography
+   ============================================================================= */
 
-/* Links */
-.md-typeset a {
+.md-typeset a:not(.md-button):not(.md-nav__link):not(.cadify-btn) {
   color: var(--cadify-primary);
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s ease;
 }
 
-.md-typeset a:hover {
+.md-typeset a:not(.md-button):not(.md-nav__link):not(.cadify-btn):hover {
   color: var(--cadify-primary-dark);
   border-bottom-color: var(--cadify-primary);
 }
 
-/* Headers */
 .md-typeset h1,
 .md-typeset h2 {
   font-weight: 700;
@@ -227,43 +239,39 @@
   padding-bottom: 0.5rem;
 }
 
-/* Light mode heading colors */
 [data-md-color-scheme="default"] .md-typeset h1,
 [data-md-color-scheme="default"] .md-typeset h2 {
   color: var(--cadify-dark);
 }
 
-/* Dark mode heading colors - same orange underline, light text */
 [data-md-color-scheme="slate"] .md-typeset h1,
 [data-md-color-scheme="slate"] .md-typeset h2 {
-  color: #ffffff;
+  color: var(--cadify-white);
 }
 
 [data-md-color-scheme="slate"] .md-typeset h1 {
-  border-bottom: 3px solid var(--cadify-primary);
+  border-bottom-color: var(--cadify-primary);
 }
 
-/* =====================================================
-   Button Styling
-   ===================================================== */
+/* =============================================================================
+   Buttons
+   ============================================================================= */
 
-/* Primary button style */
-.md-button--primary {
+.md-typeset .md-button--primary {
   background-color: var(--cadify-primary);
   border-color: var(--cadify-primary);
   color: var(--cadify-white);
 }
 
-.md-button--primary:hover {
+.md-typeset .md-button--primary:hover {
   background-color: var(--cadify-primary-dark);
   border-color: var(--cadify-primary-dark);
 }
 
-/* =====================================================
-   Admonition (Callout) Styling
-   ===================================================== */
+/* =============================================================================
+   Admonitions
+   ============================================================================= */
 
-/* Note admonition with Cadify colors */
 .md-typeset .admonition.note,
 .md-typeset details.note {
   border-color: var(--cadify-primary);
@@ -280,7 +288,6 @@
   background-color: var(--cadify-primary);
 }
 
-/* Tip admonition */
 .md-typeset .admonition.tip,
 .md-typeset details.tip {
   border-color: var(--cadify-soft-orange);
@@ -291,9 +298,9 @@
   background-color: rgba(248, 166, 128, 0.2);
 }
 
-/* =====================================================
-   Code Block Styling
-   ===================================================== */
+/* =============================================================================
+   Code
+   ============================================================================= */
 
 .md-typeset code {
   background-color: var(--cadify-cream);
@@ -307,7 +314,6 @@
   color: #f5f5f5;
 }
 
-/* Code copy button */
 .md-clipboard {
   color: var(--cadify-primary);
 }
@@ -316,9 +322,9 @@
   color: var(--cadify-primary-dark);
 }
 
-/* =====================================================
-   Table Styling
-   ===================================================== */
+/* =============================================================================
+   Tables
+   ============================================================================= */
 
 .md-typeset table:not([class]) {
   border: 1px solid var(--cadify-light-gray);
@@ -336,31 +342,9 @@
   background-color: var(--cadify-cream);
 }
 
-/* =====================================================
-   Search Styling
-   ===================================================== */
-
-.md-search__input {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.md-search__input::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-[data-md-toggle="search"]:checked ~ .md-header .md-search__input {
-  background-color: var(--cadify-white);
-}
-
-/* Search result highlighting */
-.md-search-result mark {
-  background-color: var(--cadify-peach);
-  color: var(--cadify-dark);
-}
-
-/* =====================================================
-   Footer Styling
-   ===================================================== */
+/* =============================================================================
+   Footer
+   ============================================================================= */
 
 .md-footer {
   background-color: var(--cadify-header);
@@ -370,9 +354,9 @@
   background-color: var(--cadify-header-dark);
 }
 
-/* =====================================================
-   Scrollbar Styling (WebKit browsers)
-   ===================================================== */
+/* =============================================================================
+   Scrollbar (WebKit)
+   ============================================================================= */
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -392,20 +376,19 @@
   background-color: var(--cadify-primary-dark);
 }
 
-/* =====================================================
-   Selection Styling
-   ===================================================== */
+/* =============================================================================
+   Selection
+   ============================================================================= */
 
 ::selection {
   background-color: var(--cadify-peach);
   color: var(--cadify-dark);
 }
 
-/* =====================================================
-   Custom Cadify Components
-   ===================================================== */
+/* =============================================================================
+   Custom Components
+   ============================================================================= */
 
-/* Hero section styling */
 .cadify-hero {
   background: linear-gradient(135deg, var(--cadify-primary) 0%, var(--cadify-primary-dark) 100%);
   color: var(--cadify-white);
@@ -414,7 +397,6 @@
   margin-bottom: 2rem;
 }
 
-/* Feature card styling */
 .cadify-card {
   background-color: var(--cadify-white);
   border: 1px solid var(--cadify-light-gray);
@@ -429,7 +411,6 @@
   transform: translateY(-2px);
 }
 
-/* Badge styling */
 .cadify-badge {
   display: inline-block;
   background-color: var(--cadify-primary);
@@ -446,9 +427,116 @@
   color: var(--cadify-primary);
 }
 
-/* =====================================================
-   Print Styling
-   ===================================================== */
+/* =============================================================================
+   Back to Top Button
+   ============================================================================= */
+html body .md-top {
+  position: fixed !important;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  top: auto !important;
+
+  width: 2.25rem;
+  height: 2.25rem;
+  min-height: 2.25rem;
+  max-height: 2.25rem;
+
+  padding: 0;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cadify-primary);
+  color: var(--cadify-white);
+
+  font-size: 0;
+}
+
+html body .md-top span,
+html body .md-top .md-tooltip {
+  display: none !important;
+}
+
+html body .md-top::before {
+  content: "^";
+  font-size: 1.1rem;
+  line-height: 1;
+  margin: 0;
+}
+
+html body .md-top:hover {
+  background-color: var(--cadify-primary-dark);
+}
+
+html body .md-top svg {
+  display: none;
+}
+
+/* On narrow screens place the button back to bottom-right to avoid header overlap */
+@media (max-width: 900px) {
+  html body .md-top.md-top.md-top {
+    /* already bottom-right by default; keep for compatibility */
+    top: auto;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}
+
+/* =============================================================================
+   Cadify Link Buttons
+   ============================================================================= */
+
+/* Light Mode - Outline style */
+[data-md-color-scheme="default"] .md-typeset a.cadify-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid var(--cadify-primary);
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  background-color: transparent;
+  color: var(--cadify-primary);
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+[data-md-color-scheme="default"] .md-typeset a.cadify-btn:hover {
+  color: var(--cadify-header);
+  border-bottom-color: var(--cadify-primary);
+}
+
+/* Dark Mode - Filled style */
+[data-md-color-scheme="slate"] .md-typeset a.cadify-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid var(--cadify-primary);
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  background-color: var(--cadify-primary);
+  color: var(--cadify-white);
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a.cadify-btn:hover {
+  background-color: var(--cadify-primary-dark);
+  border-color: var(--cadify-primary-dark);
+  color: var(--cadify-white);
+}
+
+/* =============================================================================
+   Print
+   ============================================================================= */
 
 @media print {
   .md-header,
@@ -461,84 +549,4 @@
     color: var(--cadify-dark);
     text-decoration: underline;
   }
-}
-
-/* =====================================================
-   Back to Top Button - Lower Right Corner (Squircle with Arrow)
-   ===================================================== */
-
-.md-top {
-  position: fixed !important;
-  bottom: 1.5rem !important;
-  right: 1.5rem !important;
-  top: auto !important;
-  left: auto !important;
-  background-color: #ef5128 !important;
-  color: #ffffff !important;
-  border-radius: 8px !important;
-  width: 2.25rem !important;
-  height: 2.25rem !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25) !important;
-  z-index: 100 !important;
-  font-size: 0 !important;
-  padding: 0 !important;
-  transition: background-color 0.2s ease !important;
-}
-
-.md-top::before {
-  content: "^";
-  font-size: 1.1rem;
-  font-weight: normal;
-  color: #ffffff;
-  line-height: 1;
-  margin-top: 8px;
-}
-
-.md-top:hover {
-  background-color: #d94520 !important;
-}
-
-.md-top svg {
-  display: none !important;
-}
-
-/* =====================================================
-   Cadify Link Buttons (filled orange, white text)
-   ===================================================== */
-
-.cadify-btn {
-  display: inline-block;
-  padding: 12px 24px;
-  border: 2px solid #ef5128 !important;
-  border-radius: 4px;
-  text-decoration: none !important;
-  font-weight: 400;
-  line-height: 1.2;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  letter-spacing: 0.5px;
-  background-color: transparent !important;
-  color: #ef5128 !important;
-  transition: all 0.2s ease;
-  text-align: center;
-}
-
-.cadify-btn:hover {
-  color: #3E4958 !important;
-}
-
-/* Dark mode - filled orange background */
-[data-md-color-scheme="slate"] .cadify-btn {
-  border-color: #ef5128 !important;
-  background-color: #ef5128 !important;
-  color: #ffffff !important;
-}
-
-[data-md-color-scheme="slate"] .cadify-btn:hover {
-  background-color: #d94520 !important;
-  border-color: #d94520 !important;
-  color: #ffffff !important;
 }
