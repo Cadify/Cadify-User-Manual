@@ -14,16 +14,12 @@ The Cadify 3D model Task Pane layout is designed to mirror the SolidWorks Featur
 
 <div class="grid">
   <div class="col-4">
-    <a href="/Cadify-User-Manual/cadify/controls/inputCadifyControls"
-   style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px;
-          text-decoration:none;font-weight:600;line-height:1.2;">
+    <a href="/Cadify-User-Manual/cadify/controls/inputCadifyControls" class="cadify-btn">
   Connect 3D model to Cadify MASTER
 </a>  
   </div>
   <div class="col-8">
-    <a href="/Cadify-User-Manual/cadify/controls/inputCadifyControls"
-   style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px;
-          text-decoration:none;font-weight:600;line-height:1.2;">
+    <a href="/Cadify-User-Manual/cadify/controls/inputCadifyControls" class="cadify-btn">
   Tutorial: Connect Web Controls
 </a>
   </div>

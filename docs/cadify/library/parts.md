@@ -109,9 +109,7 @@ FileName:    ExampleA.SLDPRT
 
 ### 3. Create a simple control to manage selected library element
 
-<a href="/Cadify-User-Manual/cadify/controls"
-   style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px;
-          text-decoration:none;font-weight:600;line-height:1.2;">
+<a href="/Cadify-User-Manual/cadify/controls" class="cadify-btn">
   See how to create a Control
 </a>
 
