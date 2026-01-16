@@ -9,9 +9,7 @@
   </div>
 </div>
 
-<a href="/Cadify-User-Manual/cadify/controls/inputCadifyControls"
-   style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px;
-          text-decoration:none;font-weight:600;line-height:1.2;">
+<a href="/Cadify-User-Manual/cadify/controls/inputCadifyControls" class="cadify-btn">
   One-click drawing
 </a>
 
@@ -20,16 +18,12 @@ The Cadify Drawing task pane makes it easy to manage drawing annotations. You ca
 
 <div class="grid">
   <div class="col-4">
-    <a href="/Cadify-User-Manual/cadify/product/drawings/#drawing-dimensions"
-   style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px;
-          text-decoration:none;font-weight:600;line-height:1.2;">
+    <a href="/Cadify-User-Manual/cadify/product/drawings/#drawing-dimensions" class="cadify-btn">
   Drawing dimensions and notes
 </a>  
   </div>
   <div class="col-8">
-    <a href="/Cadify-User-Manual/cadify/controls/inputCadifyControls"
-   style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px;
-          text-decoration:none;font-weight:600;line-height:1.2;">
+    <a href="/Cadify-User-Manual/cadify/controls/inputCadifyControls" class="cadify-btn">
   Tutorial: Manage variants and standards
 </a>
   </div>

@@ -8,9 +8,7 @@ Cadify is a digital platform that combines 3D modeling, CAD automation, and digi
 
 Every drawing, BOM, and machine file is automatically updated when product parameters change. This eliminates manual rework and ensures that the first version is always correct. Cadify links engineering knowledge directly to production data, turning complexity into flow.
 
-<a href="/Cadify-User-Manual/cadify/task_panes/drawingTab"
-   style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px;
-          text-decoration:none;font-weight:600;line-height:1.2;">
+<a href="/Cadify-User-Manual/cadify/task_panes/drawingTab" class="cadify-btn">
   See how scalable production works in Drawing Tab
 </a>
 
@@ -20,12 +18,12 @@ The Bill of Materials is generated directly from the digital twin and updated in
 
 <div class="grid">
   <div class="col-4">
-    <a href="/Cadify-User-Manual/cadify/bom/bom/" style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px; text-decoration:none;font-weight:600;line-height:1.2; text-align:center;">
+    <a href="/Cadify-User-Manual/cadify/bom/bom/" class="cadify-btn">
       See how scalable production works in BOM Tab
   </a> 
   </div>
   <div class="col-8">
-    <a href="/Cadify-User-Manual/cadify/mediaManager/MediaManager/#1-print-from-excel-proxyreport" style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px; text-decoration:none;font-weight:600;line-height:1.2; text-align:center;">
+    <a href="/Cadify-User-Manual/cadify/mediaManager/MediaManager/#1-print-from-excel-proxyreport" class="cadify-btn">
       See how scalable production works in Report Tab
     </a>
   </div>
@@ -35,9 +33,7 @@ The Bill of Materials is generated directly from the digital twin and updated in
 
 Cadify integrates with ERP and MES systems to deliver complete order data automatically. This enables capacity planning without manual coordination. Whether scaling up or down, production stays aligned with available resources and customer demand, maintaining both flow and profitability.
 
-<a href="/Cadify-User-Manual/cadify/bom/bom/#erpmesfocused-columns"
-   style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px;
-          text-decoration:none;font-weight:600;line-height:1.2;">
+<a href="/Cadify-User-Manual/cadify/bom/bom/#erpmesfocused-columns" class="cadify-btn">
   See how scalable production works in ERP Connections
 </a>
 

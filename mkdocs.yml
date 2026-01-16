@@ -4,6 +4,34 @@ theme:
   name: material
   features:
     - navigation.indexes # make each section title a real page
+    - navigation.tabs     # top-level sections as tabs
+    - navigation.top      # back to top button
+    - search.highlight    # highlight search terms
+    - search.suggest      # search suggestions
+    - content.code.copy   # code copy button
+  palette:
+    # Light mode (default)
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  logo: web/mainWebPage/logo/png/logo_ikon.png
+  favicon: web/mainWebPage/logo/png/logo_ikon.png
+
+extra_css:
+  - stylesheets/cadify-theme.css
 
 nav:
   - Getting Started with Cadify: index.md

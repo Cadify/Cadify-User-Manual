@@ -41,8 +41,6 @@
 
 This table clearly shows how Cadify can embed industry formulas directly into a worksheet, linking geometric and material parameters with standardized calculations. Engineers set up the model once, and every customer configuration will calculate safely within these certified boundaries. The result is a consistent baseline for engineering integrity, combined with the flexibility to meet customer needs and production efficiency.
 
-<a href="/Cadify-User-Manual/cadify/mediaManager/MediaManager/#1-print-from-excel-proxyreport"
-   style="display:inline-block;padding:8px 14px;border:1px solid #222;border-radius:8px;
-          text-decoration:none;font-weight:600;line-height:1.2;">
+<a href="/Cadify-User-Manual/cadify/mediaManager/MediaManager/#1-print-from-excel-proxyreport" class="cadify-btn">
   Setting up Excel Report in Media Manager
 </a>
