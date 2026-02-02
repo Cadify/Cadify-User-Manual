@@ -62,8 +62,7 @@ Outputs are delivered to the storefront as clean text, grid, svg and graphs for 
     - [CadifyBezier](cadifybezier.md)
     - [CadifySvg](cadifysvg.md)
     - [CadifyJson](cadifyjson.md)
-    - [CadifyDartJson](cadifydartjson.md)
-    - [CadifyDartImage](cadifydartimage.md)   
+    - [CadifyDart](cadifydart.md)   
 
 ---
 

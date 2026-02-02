@@ -99,8 +99,7 @@ nav:
           - CadifyBezier: cadify/sketcher/cadifybezier.md
           - CadifySvg: cadify/sketcher/cadifysvg.md
           - CadifyJson: cadify/sketcher/cadifyjson.md
-          - CadifyDartJson: cadify/sketcher/cadifydartjson.md
-          - CadifyDartImage: cadify/sketcher/cadifydartimage.md
+          - CadifyDart: cadify/sketcher/cadifydart.md
           - Making Sketcher Visible Online: cadify/sketcher/addSketcher.md
 
   - Cadify Light:
@@ -140,8 +139,7 @@ nav:
           - CadifyBezier: light/sketcher/cadifybezier.md
           - CadifySvg: light/sketcher/cadifysvg.md
           - CadifyJson: light/sketcher/cadifyjson.md
-          - CadifyDartJson: light/sketcher/cadifydartjson.md
-          - CadifyDartImage: light/sketcher/cadifydartimage.md
+          - CadifyDart: light/sketcher/cadifydart.md
           - Making Sketcher Visible Online: light/sketcher/addSketcher.md
 
   - Cadify Web:
