@@ -40,6 +40,13 @@ nav:
       - Introduction: overview/index.md
       - Core Components: overview/core_components.md
       - Architecture: overview/architecture.md
+      - Billing:
+        - Overivew: overview/billing/index.md
+        - Infrastructure: overview/billing/infrastructure.md
+        - Process Time: overview/billing/process-time.md
+        - Storage: overview/billing/storage.md
+        - Aggregation: overview/billing/aggregation.md
+        - Validation: overview/billing/validation.md
 
   - Cadify SolidWorks AddIn:
       - Getting Started: cadify/index.md
