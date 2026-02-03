@@ -149,6 +149,7 @@ nav:
           - CMS Store Front: web/store/cms-store-front.md
           - General Settings: web/store/storeSettings.md
           - Cadify Substore System: web/store/cadifyCloud.md
+          - Cadify Silos: web/store/silos.md
       - Headless Web:
           - Overview: web/headlessAPI/index.md
       - ERP Connection:
@@ -164,6 +165,11 @@ nav:
       - Job Manager: service/jobman.md
       - Authorization: service/auth.md
       - Settings: service/settings.md
+  
+  - Release Notes: 
+      - Overview: releaseNotes/index.md
+     
+
 
 use_directory_urls: true
 
