@@ -164,6 +164,11 @@ nav:
       - Job Manager: service/jobman.md
       - Authorization: service/auth.md
       - Settings: service/settings.md
+  
+  - Release Notes: 
+      - Cadify Web: releaseNotes/CadifyWeb/index.md
+      - Cadify Addin: releaseNotes/CadifyAddin/index.md
+
 
 use_directory_urls: true
 
