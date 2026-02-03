@@ -166,8 +166,10 @@ nav:
       - Settings: service/settings.md
   
   - Release Notes: 
-      - Cadify Web: releaseNotes/CadifyWeb/index.md
-      - Cadify Addin: releaseNotes/CadifyAddin/index.md
+      - Cadify Web: 
+            - Overview: releaseNotes/CadifyWeb/index.md
+      - Cadify Addin: 
+            - Overview: releaseNotes/CadifyAddin/index.md
 
 
 use_directory_urls: true
