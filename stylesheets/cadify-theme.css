@@ -1,0 +1,552 @@
+/*
+ * Cadify Custom Theme
+ * Brand Color Specifications extracted from logo files
+ * 
+ * PRIMARY COLORS:
+ *   Cadify Orange: #ef5128 / RGB(239, 81, 40)
+ *   Orange Alt:    #f05825 / RGB(240, 88, 37)
+ *   Orange Dark:   #ef5026 / RGB(239, 80, 38)
+ * 
+ * SECONDARY COLORS:
+ *   Light Peach:   #fcd0b9 / RGB(252, 208, 185)
+ *   Soft Orange:   #f8a680 / RGB(248, 166, 128)
+ *   Medium Orange: #f37e50 / RGB(243, 126, 80)
+ *   Cream:         #fef3ec / RGB(254, 243, 236)
+ * 
+ * HEADER COLOR:
+ *   Dark Slate:    #465a6a
+ */
+
+/* =============================================================================
+   CSS Custom Properties
+   ============================================================================= */
+
+:root {
+  /* Primary */
+  --cadify-primary: #ef5128;
+  --cadify-primary-light: #f37e50;
+  --cadify-primary-dark: #d94520;
+  
+  /* Header/Navigation */  
+  --cadify-header: #343f4a;
+  --cadify-header-dark: #3E4958;
+  --cadify-header-light: #4a5668;
+  
+  /* Secondary */
+  --cadify-peach: #fcd0b9;
+  --cadify-soft-orange: #f8a680;
+  --cadify-cream: #fef3ec;
+  
+  /* Neutrals */
+  --cadify-dark: #1e1e1e;
+  --cadify-gray: #4a4a4a;
+  --cadify-light-gray: #f5f5f5;
+  --cadify-white: #ffffff;
+  
+  /* Status */
+  --cadify-success: #2e7d32;
+  --cadify-warning: #f9a825;
+  --cadify-error: #c62828;
+  --cadify-info: #1565c0;
+}
+
+/* =============================================================================
+   Material Theme Variables - Light Mode
+   ============================================================================= */
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--cadify-header);
+  --md-primary-fg-color--light: var(--cadify-header-light);
+  --md-primary-fg-color--dark: var(--cadify-header-dark);
+  --md-primary-bg-color: var(--cadify-white);
+  --md-primary-bg-color--light: var(--cadify-cream);
+  
+  --md-accent-fg-color: var(--cadify-primary);
+  --md-accent-fg-color--transparent: rgba(239, 81, 40, 0.1);
+  --md-accent-bg-color: var(--cadify-white);
+  --md-accent-bg-color--light: var(--cadify-peach);
+  
+  --md-typeset-a-color: var(--cadify-primary);
+  
+  --md-code-bg-color: var(--cadify-cream);
+  --md-code-fg-color: var(--cadify-dark);
+  
+  --md-footer-bg-color: var(--cadify-header);
+  --md-footer-bg-color--dark: var(--cadify-header-dark);
+  --md-footer-fg-color: var(--cadify-white);
+  --md-footer-fg-color--light: #cccccc;
+  --md-footer-fg-color--lighter: #999999;
+}
+
+/* =============================================================================
+   Material Theme Variables - Dark Mode
+   ============================================================================= */
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--cadify-header);
+  --md-primary-fg-color--light: var(--cadify-header-light);
+  --md-primary-fg-color--dark: var(--cadify-header-dark);
+  --md-primary-bg-color: var(--cadify-dark);
+  --md-primary-bg-color--light: #2d2d2d;
+  
+  --md-accent-fg-color: var(--cadify-primary);
+  --md-accent-fg-color--transparent: rgba(239, 81, 40, 0.2);
+  --md-accent-bg-color: var(--cadify-dark);
+  --md-accent-bg-color--light: #2d2d2d;
+  
+  --md-typeset-a-color: var(--cadify-primary);
+  
+  --md-code-bg-color: #2d2d2d;
+  --md-code-fg-color: #f5f5f5;
+  
+  --md-footer-bg-color: var(--cadify-header);
+  --md-footer-bg-color--dark: var(--cadify-header-dark);
+  --md-footer-fg-color: var(--cadify-white);
+  --md-footer-fg-color--light: #cccccc;
+  --md-footer-fg-color--lighter: #999999;
+  
+  --md-default-bg-color: var(--cadify-dark);
+}
+
+/* =============================================================================
+   Header
+   ============================================================================= */
+
+html [data-md-color-scheme="default"] .md-header,
+html [data-md-color-scheme="slate"] .md-header {
+  background-color: var(--cadify-header);
+}
+
+html [data-md-color-scheme="default"] .md-header .md-header__button.md-logo,
+html [data-md-color-scheme="slate"] .md-header .md-header__button.md-logo {
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+
+html [data-md-color-scheme="default"] .md-header .md-header__button.md-logo img,
+html [data-md-color-scheme="slate"] .md-header .md-header__button.md-logo img {
+  height: 1.5rem;
+  width: auto;
+}
+
+html [data-md-color-scheme="default"] .md-header .md-header__title,
+html [data-md-color-scheme="slate"] .md-header .md-header__title {
+  color: var(--cadify-white);
+}
+
+html [data-md-color-scheme="default"] .md-header .md-header__button,
+html [data-md-color-scheme="slate"] .md-header .md-header__button {
+  color: var(--cadify-white);
+}
+
+html [data-md-color-scheme="default"] .md-header .md-header__button:hover,
+html [data-md-color-scheme="slate"] .md-header .md-header__button:hover {
+  color: var(--cadify-primary);
+}
+
+/* =============================================================================
+   Search
+   ============================================================================= */
+
+html [data-md-color-scheme="default"] .md-header .md-search__input,
+html [data-md-color-scheme="slate"] .md-header .md-search__input {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--cadify-white);
+}
+
+html [data-md-color-scheme="default"] .md-header .md-search__input::placeholder,
+html [data-md-color-scheme="slate"] .md-header .md-search__input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+html [data-md-color-scheme="default"] .md-header .md-search__icon,
+html [data-md-color-scheme="slate"] .md-header .md-search__icon {
+  color: var(--cadify-white);
+}
+
+[data-md-toggle="search"]:checked ~ .md-header .md-search__input {
+  background-color: var(--cadify-white);
+  color: var(--cadify-dark);
+}
+
+.md-search-result mark {
+  background-color: var(--cadify-peach);
+  color: var(--cadify-dark);
+}
+
+/* =============================================================================
+   Navigation Tabs
+   ============================================================================= */
+
+html [data-md-color-scheme="default"] .md-tabs,
+html [data-md-color-scheme="slate"] .md-tabs {
+  background-color: var(--cadify-header-dark);
+  box-shadow: none;
+}
+
+html [data-md-color-scheme="default"] .md-tabs__link,
+html [data-md-color-scheme="slate"] .md-tabs__link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+html [data-md-color-scheme="default"] .md-tabs__link:hover,
+html [data-md-color-scheme="default"] .md-tabs__link--active,
+html [data-md-color-scheme="slate"] .md-tabs__link:hover,
+html [data-md-color-scheme="slate"] .md-tabs__link--active {
+  color: var(--cadify-white);
+}
+
+/* =============================================================================
+   Sidebar Navigation
+   ============================================================================= */
+
+.md-nav__link--active {
+  color: var(--cadify-primary);
+  font-weight: 600;
+}
+
+.md-nav__link:hover {
+  color: var(--cadify-primary);
+}
+
+.md-nav__link:focus {
+  color: var(--cadify-primary);
+}
+
+/* =============================================================================
+   Content Typography
+   ============================================================================= */
+
+.md-typeset a:not(.md-button):not(.md-nav__link):not(.cadify-btn) {
+  color: var(--cadify-primary);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.md-typeset a:not(.md-button):not(.md-nav__link):not(.cadify-btn):hover {
+  color: var(--cadify-primary-dark);
+  border-bottom-color: var(--cadify-primary);
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  font-weight: 700;
+}
+
+.md-typeset h1 {
+  border-bottom: 3px solid var(--cadify-primary);
+  padding-bottom: 0.5rem;
+}
+
+[data-md-color-scheme="default"] .md-typeset h1,
+[data-md-color-scheme="default"] .md-typeset h2 {
+  color: var(--cadify-dark);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  color: var(--cadify-white);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  border-bottom-color: var(--cadify-primary);
+}
+
+/* =============================================================================
+   Buttons
+   ============================================================================= */
+
+.md-typeset .md-button--primary {
+  background-color: var(--cadify-primary);
+  border-color: var(--cadify-primary);
+  color: var(--cadify-white);
+}
+
+.md-typeset .md-button--primary:hover {
+  background-color: var(--cadify-primary-dark);
+  border-color: var(--cadify-primary-dark);
+}
+
+/* =============================================================================
+   Admonitions
+   ============================================================================= */
+
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-color: var(--cadify-primary);
+}
+
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary {
+  background-color: rgba(239, 81, 40, 0.1);
+  border-color: var(--cadify-primary);
+}
+
+.md-typeset .note > .admonition-title::before,
+.md-typeset .note > summary::before {
+  background-color: var(--cadify-primary);
+}
+
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-color: var(--cadify-soft-orange);
+}
+
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary {
+  background-color: rgba(248, 166, 128, 0.2);
+}
+
+/* =============================================================================
+   Code
+   ============================================================================= */
+
+.md-typeset code {
+  background-color: var(--cadify-cream);
+  color: var(--cadify-dark);
+  padding: 0.1em 0.3em;
+  border-radius: 0.2rem;
+}
+
+.md-typeset pre > code {
+  background-color: #2d2d2d;
+  color: #f5f5f5;
+}
+
+.md-clipboard {
+  color: var(--cadify-primary);
+}
+
+.md-clipboard:hover {
+  color: var(--cadify-primary-dark);
+}
+
+/* =============================================================================
+   Tables
+   ============================================================================= */
+
+.md-typeset table:not([class]) {
+  border: 1px solid var(--cadify-light-gray);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--cadify-header);
+  color: var(--cadify-white);
+  font-weight: 600;
+}
+
+.md-typeset table:not([class]) tr:hover {
+  background-color: var(--cadify-cream);
+}
+
+/* =============================================================================
+   Footer
+   ============================================================================= */
+
+.md-footer {
+  background-color: var(--cadify-header);
+}
+
+.md-footer-meta {
+  background-color: var(--cadify-header-dark);
+}
+
+/* =============================================================================
+   Scrollbar (WebKit)
+   ============================================================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cadify-light-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--cadify-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--cadify-primary-dark);
+}
+
+/* =============================================================================
+   Selection
+   ============================================================================= */
+
+::selection {
+  background-color: var(--cadify-peach);
+  color: var(--cadify-dark);
+}
+
+/* =============================================================================
+   Custom Components
+   ============================================================================= */
+
+.cadify-hero {
+  background: linear-gradient(135deg, var(--cadify-primary) 0%, var(--cadify-primary-dark) 100%);
+  color: var(--cadify-white);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.cadify-card {
+  background-color: var(--cadify-white);
+  border: 1px solid var(--cadify-light-gray);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.cadify-card:hover {
+  box-shadow: 0 4px 16px rgba(239, 81, 40, 0.15);
+  transform: translateY(-2px);
+}
+
+.cadify-badge {
+  display: inline-block;
+  background-color: var(--cadify-primary);
+  color: var(--cadify-white);
+  padding: 0.2rem 0.6rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.cadify-badge--light {
+  background-color: var(--cadify-cream);
+  color: var(--cadify-primary);
+}
+
+/* =============================================================================
+   Back to Top Button
+   ============================================================================= */
+html body .md-top {
+  position: fixed !important;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  top: auto !important;
+
+  width: 2.25rem;
+  height: 2.25rem;
+  min-height: 2.25rem;
+  max-height: 2.25rem;
+
+  padding: 0;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cadify-primary);
+  color: var(--cadify-white);
+
+  font-size: 0;
+}
+
+html body .md-top span,
+html body .md-top .md-tooltip {
+  display: none !important;
+}
+
+html body .md-top::before {
+  content: "^";
+  font-size: 1.1rem;
+  line-height: 1;
+  margin: 0;
+}
+
+html body .md-top:hover {
+  background-color: var(--cadify-primary-dark);
+}
+
+html body .md-top svg {
+  display: none;
+}
+
+/* On narrow screens place the button back to bottom-right to avoid header overlap */
+@media (max-width: 900px) {
+  html body .md-top.md-top.md-top {
+    /* already bottom-right by default; keep for compatibility */
+    top: auto;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+}
+
+/* =============================================================================
+   Cadify Link Buttons
+   ============================================================================= */
+
+/* Light Mode - Outline style */
+[data-md-color-scheme="default"] .md-typeset a.cadify-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid var(--cadify-primary);
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  background-color: transparent;
+  color: var(--cadify-primary);
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+[data-md-color-scheme="default"] .md-typeset a.cadify-btn:hover {
+  color: var(--cadify-header);
+  border-bottom-color: var(--cadify-primary);
+}
+
+/* Dark Mode - Filled style */
+[data-md-color-scheme="slate"] .md-typeset a.cadify-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid var(--cadify-primary);
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  background-color: var(--cadify-primary);
+  color: var(--cadify-white);
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a.cadify-btn:hover {
+  background-color: var(--cadify-primary-dark);
+  border-color: var(--cadify-primary-dark);
+  color: var(--cadify-white);
+}
+
+/* =============================================================================
+   Print
+   ============================================================================= */
+
+@media print {
+  .md-header,
+  .md-footer,
+  .md-sidebar {
+    display: none;
+  }
+  
+  .md-typeset a {
+    color: var(--cadify-dark);
+    text-decoration: underline;
+  }
+}
