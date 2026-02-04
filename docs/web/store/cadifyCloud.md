@@ -6,51 +6,82 @@ This document describes the full end-to-end setup of a Cadify Substore, from Dro
 ---
 
 ## 1. Terminology  
-This section defines the key concepts (Client, Vendor, Store, etc.) that are used throughout the rest of the guide. Make sure these are clear before you start the technical steps.
+This section defines the key concepts (Client, Store, etc.) that are used throughout the rest of the guide. Make sure these are clear before you start the technical steps.
 
 ### Cadify Client  
 A Cadify customer that owns a store and its products.  
-Previously called Store Owner (this term is deprecated).
 
 A Cadify Client can be either:  
 - a Company, or  
 - a Marketplace.
 
-### Vendor (nopCommerce term)  
-A Vendor is a nopCommerce user type used to manage store-specific admin pages.  
-Technically: a Customer with Vendor role in nopCommerce.
+### Store Role  
+A Store Role is a nopCommerce Role.  
+Technically: a Customer with Store specific Role in nopCommerce.
 
 In Cadify:  
-- A Cadify Client is represented as a Vendor in nopCommerce so they can manage their store.  
-- The term Vendor is only used in the nopCommerce context.
+- A Cadify Client is represented as a  Customer with Store specific Role in nopCommerce so they can manage their store.  
 
-### Cadify Store  
-A nopCommerce Store that belongs to a Cadify Client.  
-Each Cadify Store:  
-- Corresponds to a specific Cadify Client.  
-- Is connected to exactly one Dropbox App Folder.
+### Cadify Store
+A **nopCommerce Store** that belongs to a **Cadify Client**.
 
-### Dropbox App Folder  
-A dedicated Dropbox application folder used to store the Cadify Client’s product files.  
-It has restricted access and cannot see any other client’s folders.
+- Each **Cadify Store**:
+  - corresponds to a specific **Cadify Client**
+  - is connected to **exactly one** **Dropbox App Folder**
 
-Example path:  
-`Dropbox/Cadify/Apps/<ClientFolder>`
+### Cadify Service
+A windows background applications which serves user requests.
 
-### Cadify Authorization  
-The mechanism that connects a specific Cadify Store in nopCommerce to a specific Dropbox App Folder.  
-**One Store ↔ One Dropbox App Folder**
+- Each **Cadify Service**:
+  - corresponds to a specific **Cadify Site**
+  - is connected to **one or more** **Dropbox App Folder**
+  - continuously observes those Dropbox folders
+  - supply the requests with **MS Excel** and **Solidworks**
+  - generates the requested files
 
-### Site vs Store  
-A Site (e.g. ovalas.no) can host multiple Stores, such as:  
-- main.ovalas.no  
-- anotherstore.ovalas.no
+### Cadify Addin
+A Solidworks extension.
+
+- Each **Cadify Addin**:
+  - corresponds to a specific **Cadify Site**
+  - is connected to **one or more** **Dropbox App Folder**
+  - an engineer can design a product with it
+  - product can be published to the **Cadify Store**
+
+### Site vs Store
+- **Site** example: `ovalas.no`
+- A **Site** can host multiple **Stores**, for example:
+  - `main.ovalas.no`
+  - `anotherstore.ovalas.no`
+
+### Dropbox App Folder
+A dedicated Dropbox application folder used to store the **Cadify Client’s product files**.
+
+- Has restricted access and cannot see any other client’s folders.
+- Example path:
+
+  `Dropbox\Cadify\Apps\<ClientFolder>`
+
+### Silo 
+A **Silo** is a software package
+
+- With the **Customer Role** a **Cadify Client** can use
+  - a **Cadify Store**
+  - a **Cadify Service** (with Solidworks and Dropbox background)
+  - a **Cadify Addin** (in Solidworks)
+
+### Cadify Authorization
+The mechanism that connects a specific **Cadify Store** in **nopCommerce** to a specific **Dropbox App Folder**.
+
+- The relationship is **1:1**:
+  - **One Store ↔ One Dropbox App Folder**
+
 
 ---
 
 ## 2. Vendor Role and Entity Relationships  
 
-In nopCommerce, a Cadify Client is represented as a Customer with the Vendor role.  
+In nopCommerce, a Cadify Client is represented as a Customer with the Store role.  
 Key points:
 
 A Cadify Client must have:  
@@ -72,7 +103,7 @@ A Site can contain multiple Stores, each with its own Dropbox App Folder.
 The full process of setting up a new Cadify Client has four main steps:
 
 1. **Create the Client’s Dropbox App Folder**  
-2. **Create the Cadify Client & Vendor in nopCommerce**  
+2. **Create the Cadify Client in nopCommerce**  
 3. **Create and Configure the Substore in nopCommerce**  
 4. **Create the User Account(s) for the Client**
 
@@ -144,9 +175,9 @@ Enter App Key & Secret → Click **Authorize**
 
 ---
 
-## 6. Create a Vendor  
+## 6. Create a Store Role  
 
-Vendor name must match:  
+**Store Role** name must match:  
 - Substore name  
 - Dropbox folder name  
 
@@ -158,20 +189,20 @@ Represents the client and controls permissions.
 
 Steps:  
 1. Register customer  
-2. Assign Vendor role  
+2. Assign Store role  
 3. Customer becomes client admin
 
 They can manage products and sync Dropbox data.
 
 ---
 
-## 8. Vendor Roles & Permissions  
+## 8. Store Roles & Permissions  
 
 ### 8.1 Data Model  
-Vendor → Customers (1:N)  
-Vendor → Products (1:N)
+Store Role → Customers (1:N)  
+Store Role → Products (1:N)
 
-### 8.2 Vendor as Permission Filter  
+### 8.2 Store Role as Permission Filter  
 Ensures isolation between clients.
 
 ### 8.3 Cadify Structure  

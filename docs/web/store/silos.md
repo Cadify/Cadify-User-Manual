@@ -1,45 +1,6 @@
-# Cadify Terminology & Store Relationships
+# Cadify Terminology 
 
-## 1. Terminology
-
-### Silo (Cadify Client)
-A **Cadify customer** that owns a store and its products.
-
-- Previously called **Store Owner** (this term is deprecated).
-- A **Cadify Client** can be either:
-  - a **Company**, or
-  - a **Marketplace**.
-
-### Cadify Store
-A **nopCommerce Store** that belongs to a **Cadify Client**.
-
-- Each **Cadify Store**:
-  - corresponds to a specific **Cadify Client**
-  - is connected to **exactly one** **Dropbox App Folder**
-
-### Dropbox App Folder
-A dedicated Dropbox application folder used to store the **Cadify Client’s product files**.
-
-- Has restricted access and cannot see any other client’s folders.
-- Example path:
-
-  `Dropbox\Cadify\Apps\<ClientFolder>`
-
-### Cadify Authorization
-The mechanism that connects a specific **Cadify Store** in **nopCommerce** to a specific **Dropbox App Folder**.
-
-- The relationship is **1:1**:
-  - **One Store ↔ One Dropbox App Folder**
-
-### Site vs Store
-- **Site** example: `ovalas.no`
-- A **Site** can host multiple **Stores**, for example:
-  - `main.ovalas.no`
-  - `anotherstore.ovalas.no`
-
----
-
-## 2. Silo and Store Role Relationship
+# Silo and Store Role Relationship
 
 <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/silos.png" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
 
