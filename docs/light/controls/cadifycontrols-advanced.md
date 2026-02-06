@@ -12,27 +12,19 @@ This guide shows how to build Web Controls for a TableTop product directly and w
 ## Create the first Control
 Create a control to manage material selection, name it 'Select Material,' and set up the values list to the material list created on the 'Table Top Database' tab.
 
-To create a control you can use either method:
-
-1. Open the **Tools** menu and select **Add Cadify Control**  
-2. Or open the **Web** tab in the Task Pane and click **Add**  
+To create a control you can click **Add**  
    *(Add a new Cadify Control)*
-
 <div style="display:flex; gap:16px; flex-wrap:wrap; margin-top:12px;">
 
   <div style="flex:1 1 45%; text-align:center;">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createControlMenu.png"
+    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/controls/images/addControl.png"
          alt="Control List Placeholder"
          style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
   </div>
-
-  <div style="flex:1 1 45%; text-align:center;">
-    <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/cadify/controls/images/createControlButton.png"
-         alt="Control Properties Placeholder"
-         style="max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;">
-  </div>
-
 </div>
+
+After creation, the new control will appear in the Task Pane.  
+From there you can edit properties, link data, and preview the control output.
 
 | Parameter        | Value       |
 |------------------|-------------|

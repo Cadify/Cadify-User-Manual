@@ -21,10 +21,12 @@ Additionally, here are also the settings for our media files: Reports, Brochures
       Cadify Web Controls
   </a> 
   </div>
+  <!-- 
   <div class="col-8">
     <a href="/Cadify-User-Manual/cadify/controls/inputCadifyControls" class="cadify-btn">
       Tutorial: Create dynamic reports
     </a>
   </div>
+  --->
 </div>
 

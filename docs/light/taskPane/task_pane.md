@@ -9,21 +9,19 @@ The Cadify Light Task Pane is your central workspace for configuring product con
 
 - Located at the very top.
 - Main menu (`File`, `Tools`), shows your login state (e.g., your email).
-- See [Menu Elements](/light/menu_elements) for a breakdown.
+- See [Menu Elements](../menu_elements.md) for a breakdown.
 
 ---
 
 ## 2. Icon Buttons (Below Menu)
 
 - <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/AddWebControl.png" alt="AddWebControl" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"> **Add Control**: Lets you create a new Web Control.  
-  You can choose to create Input or Output Web Controls.</br>
-  </br>See [Input Control creation details](/light/controls/inputCadifyControls)
-  </br>See [Output Control creation details](/light/controls/outputControls)
+  You can choose to create Input or Output Web Controls.
 
-</br>
+    See [Cadify Controls Introduction](../controls/index.md)
 
 - <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/mediaManager.png" alt="MediaManager" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"> **Open Media Manager**: Opens the Media Manager for product media configuration.  
-  See [Media Manager details](mediaManager/MediaManager).
+  See [Media Manager details](../mediaManager/MediaManager.md).
 
 ---
 

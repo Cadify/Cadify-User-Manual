@@ -9,7 +9,7 @@
   </div>
 </div>
 
-<a href="/Cadify-User-Manual/cadify/controls/inputCadifyControls" class="cadify-btn">
+<a href="/Cadify-User-Manual/cadify/product/oneClickDrawing/" class="cadify-btn">
   One-click drawing
 </a>
 
@@ -22,9 +22,11 @@ The Cadify Drawing task pane makes it easy to manage drawing annotations. You ca
   Drawing dimensions and notes
 </a>  
   </div>
+  <!-- 
   <div class="col-8">
     <a href="/Cadify-User-Manual/cadify/controls/inputCadifyControls" class="cadify-btn">
   Tutorial: Manage variants and standards
 </a>
+--->
   </div>
 </div>

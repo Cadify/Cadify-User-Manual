@@ -58,6 +58,7 @@ nav:
           - Overview: cadify/product/index.md
           - Create product: cadify/product/createProduct.md
           - Create drawing: cadify/product/drawings.md
+          - One-click Drawing: cadify/product/oneClickDrawing.md
           - Best practices:
               - Overview: cadify/product/bestPractices/index.md
               - Yellow Brick Road: cadify/product/bestPractices/yellowBrickRoad.md
@@ -114,11 +115,13 @@ nav:
               - Yellow Brick Road: light/product/bestPractices/yellowBrickRoad.md
               - Five Formulas: light/product/bestPractices/fiveFormulas.md
       - Web Controls:
+          - Overview: light/controls/index.md
           - Input Web Controls:
               - List Controls: light/controls/inputListControls.md
               - Numerical Controls: light/controls/inputNumericalControls.md
               - Other Controls: light/controls/inputOtherControls.md
           - Output Web Controls: light/controls/outputControls.md
+          - Checkout Web Control: light/controls/checkoutControls.md
           - Linking Sketcher Output: light/controls/linkSketcher.md
           - Best practices: light/controls/cadifycontrols-advanced.md
       - Media Manager: light/mediaManager/MediaManager.md

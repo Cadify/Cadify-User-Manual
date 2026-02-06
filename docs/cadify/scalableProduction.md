@@ -32,8 +32,7 @@ The Bill of Materials is generated directly from the digital twin and updated in
 ## Capacity Management and Integration
 
 Cadify integrates with ERP and MES systems to deliver complete order data automatically. This enables capacity planning without manual coordination. Whether scaling up or down, production stays aligned with available resources and customer demand, maintaining both flow and profitability.
-
-<a href="/Cadify-User-Manual/cadify/bom/bom/#erpmesfocused-columns" class="cadify-btn">
+<a href="/Cadify-User-Manual/cadify/bom/bom/#erpmes-focused-columns" class="cadify-btn">
   See how scalable production works in ERP Connections
 </a>
 

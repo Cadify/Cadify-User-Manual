@@ -1,4 +1,4 @@
-# Best Practice: SKU and Revision Management
+# SKU and Revisions
 
 ## Introduction
 
