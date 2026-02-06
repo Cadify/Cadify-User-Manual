@@ -35,6 +35,9 @@ Before installing Cadify.AddIn, ensure you have the following:
 4. **Start SolidWorks.**  
    You should see a new "Cadify" tab/ribbon in your SolidWorks interface.
 
+!!! tip "Missing the Cadify tab?"
+    If you don't see the Cadify tab after installation, please refer to the [Troubleshooting](../troubleshooting.md) section.
+
 ---
 
 ## 🏁 First Steps

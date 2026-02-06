@@ -22,6 +22,9 @@ Before using Cadify Light, you must register for an account:
 2. Run the installer and follow the setup instructions.
 3. After installation, open Microsoft Excel. You should now see a **"Cadify"** tab in your Excel ribbon.
 
+!!! tip "Missing the Cadify tab?"
+    If you don't see the Cadify tab after installation, please refer to the [Troubleshooting](../troubleshooting.md) section.
+
 ---
 
 ## 3. Launch Cadify Light

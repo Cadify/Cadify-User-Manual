@@ -102,6 +102,7 @@ nav:
           - CadifyJson: cadify/sketcher/cadifyjson.md
           - CadifyDart: cadify/sketcher/cadifydart.md
           - Making Sketcher Visible Online: cadify/sketcher/addSketcher.md
+      - Troubleshooting: troubleshooting.md
 
   - Cadify Light:
       - Getting Started: light/index.md
@@ -144,6 +145,7 @@ nav:
           - CadifyJson: light/sketcher/cadifyjson.md
           - CadifyDart: light/sketcher/cadifydart.md
           - Making Sketcher Visible Online: light/sketcher/addSketcher.md
+      - Troubleshooting: troubleshooting.md
 
   - Cadify Web:
       - Getting Started: web/index.md
