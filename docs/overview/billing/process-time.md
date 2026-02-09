@@ -26,7 +26,7 @@ Cadify distinguishes between different types of services when measuring process 
 
 ## RFQ - Request For Quote
 
-RFQ process time is generated when a user submits a **Request For Quote**.
+RFQ process time is generated when a user submits a **request for quote**.
 
 This includes the processing required to:
 
@@ -45,6 +45,7 @@ This typically includes:
 - Parameter evaluation
 - Rule execution
 - Model-related calculations triggered by configuration changes
+- Model regenerations with their associated technical documentations and drawings
 
 Product Calculate represents the core computational workload associated with product configuration and is often the dominant source of process time usage.
 
@@ -74,7 +75,7 @@ Process time is recorded at execution level and aggregated over time.
 
 Usage is summarized on a **weekly basis**, forming part of the weekly usage data for a Store. These weekly measurements are later combined into monthly invoice summaries, together with infrastructure and storage components.
 
-The aggregation model is explained further in the Weekly Usage and Monthly Invoicing section.
+The aggregation model is explained further in the [Weekly Usage and Monthly Invoicing](./aggregation.md) section.
 
 ## Why process time is used
 

@@ -54,13 +54,13 @@ Process time represents the measured execution time, in seconds, consumed by Cad
 
 Cadify currently distinguishes between the following service categories:
 
-- **RFQ - Request For Quote**: Processing triggered when a user submits an RFQ.
-- **Product Calculate**: Processing triggered by product configuration and calculation requests.
+- **RFQ - request for quote**: Processing triggered when a user submits an RFQ.
+- **Product calculation**: Processing triggered by product configuration and calculation requests.
 - **Service monitoring**: Background processing related to monitoring, synchronization, and service health.
 
 Each category represents a different type of workload and may be billed differently, but all are measured using the same underlying principle: **actual process time consumed**.
 
-Further details are described in the Measured Usage (Process Time) section.
+Further details are described in the [Measured Usage (Process Time)](./process-time.md) section.
 
 ## Cloud storage usage
 

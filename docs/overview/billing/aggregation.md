@@ -50,9 +50,11 @@ Because monthly invoices are built from weekly usage records, there is a clear t
 - Individual executed services and stored data
 
     to
+
 - Weekly usage summaries
 
     to
+
 - Monthly invoice totals
 
 This layered approach supports transparency and makes it possible to understand how invoiced amounts relate to actual platform usage, without exposing internal execution details.

@@ -24,6 +24,8 @@ Cloud storage usage is measured on a **weekly basis**.
 
 For each week, Cadify records the **average cloud storage usage during that week**. Using an average value smooths short-term fluctuations and provides a fair representation of sustained storage consumption.
 
+The weekly average is calculated from a varying number of data points, with at least one data point collected every day. The number of measurements is dynamically defined in accordance with the amount of fluctuation in Cadify cloud.
+
 Weekly measurement ensures that storage usage is captured continuously, even when data volumes change over time.
 
 ## Monthly invoicing based on weekly data
