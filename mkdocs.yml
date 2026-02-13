@@ -59,6 +59,7 @@ nav:
           - Create product: cadify/product/createProduct.md
           - Create drawing: cadify/product/drawings.md
           - One-click Drawing: cadify/product/oneClickDrawing.md
+          - Cadify Dart: cadify/product/dartTraining.md
           - Best practices:
               - Overview: cadify/product/bestPractices/index.md
               - Yellow Brick Road: cadify/product/bestPractices/yellowBrickRoad.md

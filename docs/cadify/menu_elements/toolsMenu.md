@@ -18,6 +18,19 @@ Opens and manages an additional Excel file with extra parameters.
 
 Helps generate mate references for assembly components.
 
+### DART Training
+
+Opens the DART (Design AI Rendering Tool) Training interface for managing machine learning model training and image generation. This tool allows you to:
+
+- Train AI models on your product configurations
+- Generate product visualizations using trained models
+- Manage training datasets and model parameters
+- Test and validate AI-generated images
+
+The DART function integrates with generative AI services to create visual representations of your products based on configuration data. See the [CadifyDart documentation](../sketcher/cadifydart.md) for more details on using DART in Excel formulas.
+
+**Disabled if no product is open.**
+
 ---
 
 ## Product settings
@@ -56,7 +69,7 @@ Adds a new Cadify control element to the project. **Disabled if no product is op
 
 ### The Resolver
 
-The Resolver is the Cadify function that organizes calculation order inside configuration workbooks. After changes in logic or parameters, it evaluates dependencies between formulas and inputs, then regenerates the correct sequence. This prevents circular references and ensures consistent updates. In this section, the manual explains how this tool operates, where it is applied, and the procedures for using it effectively.
+The Resolver is the Cadify function that organizes calculation order inside configuration workbooks. After changes in logic or parameters, it evaluates dependencies between formulas and inputs, then regenerates the correct sequence. This prevents circular references and ensures consistent updates. In this section, the manual explains how this tool operates, where it is applied, and the procedures for using it effectively. **Disabled if no product is open.**
 
 #### Functional Description
 
@@ -99,3 +112,19 @@ Deletes a drawing from the current project.
 ### Settings for drawing
 
 Opens the drawing settings page to customize drawing output. **Disabled if no product is open.**
+
+---
+
+## View
+
+### Expand windows
+
+Expands and manages the visibility of Cadify windows and panels within the SolidWorks interface. This allows you to arrange your workspace layout for optimal productivity.
+
+---
+
+## Help
+
+### About
+
+Displays information about the Cadify add-in, including version number, licensing details, and contact information.
