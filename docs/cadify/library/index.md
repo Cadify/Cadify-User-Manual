@@ -10,6 +10,12 @@ This page explains, in simple terms, how Cadify keeps library files synchronized
   - Files and folders added or changed on Cadify Cloud are downloaded to the local library.
 - Folder structure is preserved. Files are compared by content, so unchanged files are not re uploaded.
 
+## Dropbox Account and Beta Context
+
+Cadify Cloud currently operates using a Dropbox Plus subscription held by KODE15 AS. The platform is in closed beta, privately financed, with invited beta customers only, and no commercial deployment. All storage and synchronization are used solely for internal development and testing activities. End users do not connect their own Dropbox accounts.
+
+Within this non-commercial context, the use of Dropbox Plus is proportionate and aligned with Dropbox’s consumer terms. This setup supports validation and development only. Prior to any commercial launch or onboarding of paying customers, Cadify will transition to an appropriate Dropbox Business subscription and comply with applicable Dropbox Developer and Business agreements.
+
 ## Where files live in Cadify Cloud
 
 Cadify connects the local library for each nopCommerce store to a matching **Cadify Cloud client workspace**.
