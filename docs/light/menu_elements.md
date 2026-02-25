@@ -11,11 +11,11 @@ The Task Pane is the main user interface for the Cadify Light Excel Add-in.
   *Enabled only if a user is logged in and no product is currently open.*
 
 - **Open Raw**  
-  Open a raw product from Dropbox.  
+  Open a raw product from Cadify Cloud.  
   *Enabled only if a user is logged in and no product is currently open.*
 
 - **Open Published**  
-  Open a published product from Dropbox.  
+  Open a published product from Cadify Cloud.  
   *Enabled only if a user is logged in and no product is currently open.*
 
 - **Save**  
@@ -30,7 +30,7 @@ The Task Pane is the main user interface for the Cadify Light Excel Add-in.
   *Button label changes based on product type. Enabled only if a product is open.*
 
 - **Delete Raw(s)**  
-  Delete one or more raw products from Dropbox.
+  Delete one or more raw products from Cadify Cloud.
 
 - **Close**  
   Close the current product, with options to save changes.  

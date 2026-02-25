@@ -1,7 +1,7 @@
 # Cadify Substore System
 
 ## Technical Overview  
-This document describes the full end-to-end setup of a Cadify Substore, from Dropbox configuration through nopCommerce setup to domain and SSL configuration. Follow the sections in order when onboarding a new Cadify Client.
+This document describes the full end-to-end setup of a Cadify Substore, from Cadify Cloud configuration through nopCommerce setup to domain and SSL configuration. Follow the sections in order when onboarding a new Cadify Client.
 
 ---
 
@@ -27,15 +27,15 @@ A **nopCommerce Store** that belongs to a **Cadify Client**.
 
 - Each **Cadify Store**:
   - corresponds to a specific **Cadify Client**
-  - is connected to **exactly one** **Dropbox App Folder**
+  - is connected to **exactly one** **Cadify Cloud workspace**
 
 ### Cadify Service
 A windows background applications which serves user requests.
 
 - Each **Cadify Service**:
   - corresponds to a specific **Cadify Site**
-  - is connected to **one or more** **Dropbox App Folder**
-  - continuously observes those Dropbox folders
+  - is connected to **one or more** **Cadify Cloud workspace**
+  - continuously observes those Cadify Cloud workspaces
   - supply the requests with **MS Excel** and **Solidworks**
   - generates the requested files
 
@@ -44,7 +44,7 @@ A Solidworks extension.
 
 - Each **Cadify Addin**:
   - corresponds to a specific **Cadify Site**
-  - is connected to **one or more** **Dropbox App Folder**
+  - is connected to **one or more** **Cadify Cloud workspace**
   - an engineer can design a product with it
   - product can be published to the **Cadify Store**
 
@@ -54,27 +54,27 @@ A Solidworks extension.
   - `main.ovalas.no`
   - `anotherstore.ovalas.no`
 
-### Dropbox App Folder
-A dedicated Dropbox application folder used to store the **Cadify Client’s product files**.
+### Cadify Cloud workspace
+A dedicated storage area in Cadify Cloud used to store the **Cadify Client’s product files**.
 
 - Has restricted access and cannot see any other client’s folders.
 - Example path:
 
-  `Dropbox\Cadify\Apps\<ClientFolder>`
+  `Apps\<ClientFolder>`
 
 ### Silo 
 A **Silo** is a software package
 
 - With the **Customer Role** a **Cadify Client** can use
   - a **Cadify Store**
-  - a **Cadify Service** (with Solidworks and Dropbox background)
+  - a **Cadify Service** (with Solidworks and Cadify Cloud in the background)
   - a **Cadify Addin** (in Solidworks)
 
 ### Cadify Authorization
-The mechanism that connects a specific **Cadify Store** in **nopCommerce** to a specific **Dropbox App Folder**.
+The mechanism that connects a specific **Cadify Store** in **nopCommerce** to a specific **Cadify Cloud workspace**.
 
 - The relationship is **1:1**:
-  - **One Store ↔ One Dropbox App Folder**
+  - **One Store ↔ One Cadify Cloud workspace**
 
 
 ---
@@ -86,7 +86,7 @@ Key points:
 
 A Cadify Client must have:  
 - A nopCommerce Store (Cadify Store), and  
-- A connected Dropbox App Folder via Cadify Authorization.
+- A connected Cadify Cloud workspace via Cadify Authorization.
 
 While nopCommerce allows:  
 - One Store → Many Vendors,  
@@ -94,7 +94,7 @@ While nopCommerce allows:
 Cadify uses a simplified structure:  
 **One Store represents one Cadify Client and one Vendor.**
 
-A Site can contain multiple Stores, each with its own Dropbox App Folder.
+A Site can contain multiple Stores, each with its own Cadify Cloud workspace.
 
 ---
 
@@ -102,19 +102,19 @@ A Site can contain multiple Stores, each with its own Dropbox App Folder.
 
 The full process of setting up a new Cadify Client has four main steps:
 
-1. **Create the Client’s Dropbox App Folder**  
+1. **Create the Client’s Cadify Cloud workspace**  
 2. **Create the Cadify Client in nopCommerce**  
 3. **Create and Configure the Substore in nopCommerce**  
 4. **Create the User Account(s) for the Client**
 
 ---
 
-## 4. Create Client (Dropbox) Folder  
+## 4. Create Client (Cadify Cloud) workspace  
 
-Cadify products are stored in per-client Dropbox folders:  
+Cadify Cloud currently operates using Dropbox for creating client workspaces:
 `Dropbox/Cadify/Apps/<ClientFolder>`
 
-### 4.1 Create the Dropbox App (Client Folder)
+### 4.1 Create a new Dropbox App (workspace)
 
 Log in to Dropbox Developers:  
 https://www.dropbox.com/developers
@@ -165,9 +165,9 @@ Path: Administration → Configuration → Stores → Add New
 
 <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/create_new_substore.png" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
 
-The Store name must match the Dropbox App Folder name.
+The Store name must match the Cadify Cloud workspace name.
 
-### 5.2 Configure Dropbox in Cadify Plugin  
+### 5.2 Configure Cadify Cloud in Cadify Plugin  
 
 <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/web/store/images/substore_dropbox_connection.png" style="max-width:100%; border:1px solid #ccc; border-radius:6px;">
 
@@ -179,7 +179,7 @@ Enter App Key & Secret → Click **Authorize**
 
 **Store Role** name must match:  
 - Substore name  
-- Dropbox folder name  
+- Cadify Cloud workspace name  
 
 Represents the client and controls permissions.
 
@@ -192,7 +192,7 @@ Steps:
 2. Assign Store role  
 3. Customer becomes client admin
 
-They can manage products and sync Dropbox data.
+They can manage products and sync Cadify Cloud data.
 
 ---
 
@@ -206,7 +206,7 @@ Store Role → Products (1:N)
 Ensures isolation between clients.
 
 ### 8.3 Cadify Structure  
-Store is the central object mapping customers, products, and Dropbox folders.
+Store is the central object mapping customers, products, and Cadify Cloud workspaces.
 
 ---
 

@@ -51,7 +51,7 @@ Allows the user to specify a worksheet and range to define a printable area for 
 
 #### Publish (Product Release)
 - AddIn generates all report PDFs.
-- Files are stored in the **published** folder on Dropbox.
+- Files are stored in the **published** folder on Cadify Cloud.
 - nopCommerce imports and displays these PDFs on the product page.
 - These become the product’s **default published PDF outputs**.
 
@@ -72,7 +72,7 @@ Allows the user to specify a worksheet and range to define a printable area for 
 
 ## 2. PDF Brochure (`ProxyBrochure`)
 
-Set up downloadable PDF files for products. The files are stored next to the workbook (e.g., on Dropbox) and published with a download link.
+Set up downloadable PDF files for products. The files are stored next to the workbook (e.g., on Cadify Cloud) and published with a download link.
 
 | Field             | Example Value                              | Description                                             |
 |-------------------|--------------------------------------------|---------------------------------------------------------|
@@ -90,7 +90,7 @@ Set up downloadable PDF files for products. The files are stored next to the wor
 - Always included when the product is published.
 
 #### File-Based Brochures
-- Source file stored in the **raw** Dropbox folder.
+- Source file stored in the **raw** Cadify Cloud folder.
 - At Publish:
   - Copied to the **published** folder.
   - nopCommerce receives and hosts the published version.
@@ -134,7 +134,7 @@ Users can assign images as product pictures or connect them to Cadify Controls (
 - Available only in the raw Excel file until Publish.
 
 #### File-Based Pictures
-- Stored in the **raw** folder on Dropbox.
+- Stored in the **raw** folder on Cadify Cloud.
 - Displayed inside the AddIn.
 
 #### Publish Behavior
@@ -144,7 +144,7 @@ During Publish:
 
 - nopCommerce becomes the **hosting source** for images.
 
-- Dropbox picture files are no longer used on the live site.
+- Cadify Cloud picture files are no longer used on the live site.
 
 ### Storage Summary
 | State | Embedded | File-Based |

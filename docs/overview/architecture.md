@@ -69,9 +69,9 @@ Authentication is handled through nopCommerce accounts or guest sessions. Roles 
 
 ## 5. Cadify Service
 
-Cadify Service manages communication between Desktop, Web, and Dropbox cloud storage. It is implemented in .NET Framework (WPF).
+Cadify Service manages communication between Desktop, Web, and Cadify Cloud. It is implemented in .NET Framework (WPF).
 
-- **Signal mechanism:** Listens for changes in Dropbox cloud folders.  
+- **Signal mechanism:** Listens for changes in Cadify Cloud workspaces.  
 - **Processing cycle:**  
   1. Detect change in cloud folder  
   2. Download JSON and Excel input files  
@@ -82,17 +82,17 @@ Cadify Service manages communication between Desktop, Web, and Dropbox cloud sto
   7. Upload updated workbook, 3MF, and SLDPRT files  
 
 - **Error handling:** Uses timeout and retry logic. Failed jobs require manual re-publishing.  
-- **Observability:** No structured logs or metrics beyond Dropbox metadata. Traceability is maintained at the file and instance level using the (Store, User/Guest, Timestamp) identifier.
+- **Observability:** No structured logs or metrics beyond Cadify Cloud metadata. Traceability is maintained at the file and instance level using the (Store, User/Guest, Timestamp) identifier.
 
 ---
 
 ## 6. Storage and Sync
 
-Cadify uses Dropbox APPs for secure storage and synchronization:
+Cadify uses Cadify Cloud workspaces for secure storage and synchronization:
 
-- Each client location is assigned a dedicated Dropbox APP.  
+- Each client location is assigned a dedicated Cadify Cloud workspace.  
 - Product RAW folders, published folders, workbooks, and generated files are stored in these spaces.  
-- Tenant isolation is enforced by Dropbox’s strict authorization rules.
+- Tenant isolation is enforced by Cadify Cloud's strict authorization rules.
 
 ---
 
@@ -119,8 +119,8 @@ Cadify provides the full production package, while execution stays in ERP/MES.
 
 Cadify enforces security through:  
 
-- **Storage isolation:** Dedicated Dropbox APPs per client location.  
-- **Authentication:** Managed via nopCommerce (users/guests) and Dropbox authorization for file sync.  
+- **Storage isolation:** Dedicated Cadify Cloud workspaces per client location.  
+- **Authentication:** Managed via nopCommerce (users/guests) and Cadify Cloud authorization for file sync.  
 - **Compliance:** All data handling complies with GDPR requirements.
 
 ---
@@ -131,6 +131,6 @@ Every configured instance is traceable through its identifier triple (Store, Use
 
 - Store records  
 - Uploaded files  
-- Dropbox metadata  
+- Cadify Cloud metadata  
 
 Traceability extends to the document and file level, ensuring any production artifact can be linked back to the instance that generated it.

@@ -11,7 +11,7 @@ Folder name: `cadify textures`
 
 - Created automatically during Cadify installation.
 - Do not rename this folder, as SolidWorks expects this folder name to locate appearance resources.
-- Files placed here are automatically synchronized to Dropbox and other synced machines when a sync agent is active.
+- Files placed here are automatically synchronized to Cadify Cloud and other synced machines when a sync agent is active.
 
 ## Typical file types
 

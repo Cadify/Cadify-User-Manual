@@ -1,26 +1,26 @@
 # Cadify Library
 
-This page explains, in simple terms, how Cadify keeps library files synchronized between the local machine and the cloud (Dropbox), what is required for synchronization to run, and basic user guidance.
+This page explains, in simple terms, how Cadify keeps library files synchronized between the local machine and Cadify Cloud, what is required for synchronization to run, and basic user guidance.
 
 ## What Cadify Library Sync does
 
-- Keeps files and folders in the local Cadify library folder in sync with the Cadify library stored in Dropbox.
+- Keeps files and folders in the local Cadify library folder in sync with the Cadify library stored in Cadify Cloud.
 - Sync is two way:
-  - Files and folders added or changed locally are uploaded to Dropbox.
-  - Files and folders added or changed on Dropbox are downloaded to the local library.
+  - Files and folders added or changed locally are uploaded to Cadify Cloud.
+  - Files and folders added or changed on Cadify Cloud are downloaded to the local library.
 - Folder structure is preserved. Files are compared by content, so unchanged files are not re uploaded.
 
-## Where files live in Dropbox
+## Where files live in Cadify Cloud
 
-Cadify connects the local library for each nopCommerce store to a matching **Dropbox app folder**.
+Cadify connects the local library for each nopCommerce store to a matching **Cadify Cloud client workspace**.
 
-- Each store gets its own app folder under the Dropbox `Apps` folder.  
-- The folder name is based on the store name or URL.
+- Each store gets its own client workspace.  
+- The workspace's name is based on the store name or URL.
 
 Example:
 
 - Store: `cadify.gratis`  
-- Dropbox app folder: `Apps\Cadify.Gratis\Library\`
+- Cadify Cloud workspace: `Apps\Cadify.Gratis\Library\`
 - Local folder: `C:\Cadify\Library\Cadify.Gratis\`
 
 Inside that app folder, Cadify expects the same library structure as on the local machine (for example `cadify textures`, `weldments`, `parts`, and any subfolders you create).  
@@ -44,13 +44,13 @@ On status bar you can see the state of syncing.
 ## How local changes are handled
 
 - Cadify watches the local library folder for file and folder events: create, change, rename, delete.
-- When a file is created or changed, Cadify computes a content hash and uploads the file to Dropbox if the content is new or changed.
+- When a file is created or changed, Cadify computes a content hash and uploads the file to Cadify Cloud if the content is new or changed.
 - When a file or folder is renamed or deleted locally, Cadify updates the cloud copy in the app folder accordingly.
 - Temporary OS or editor files (paths containing `~`) are ignored to avoid uploading incomplete files.
 
-## How Dropbox (cloud) changes are handled
+## How Cadify Cloud changes are handled
 
-- Cadify keeps a continuous connection to Dropbox (long poll). When Dropbox reports changes in the relevant app folder, those updates are applied to the local library.
+- Cadify keeps a continuous connection to Cadify Cloud. When Cadify Cloud reports changes in the relevant app folder, those updates are applied to the local library.
 - On startup Cadify performs an initial sync and downloads files that are new or newer than the local copy.
 
 ## Base folders created at installation
@@ -63,21 +63,21 @@ During installation Cadify creates three base folders inside the local library r
 
 Important: `cadify textures` and `weldments` are special folders used by SolidWorks for specific file types and must not be renamed. Renaming them can break SolidWorks ability to find those resources.
 
-The same folder names and structure are mirrored under the store specific Dropbox app folder, for example:
+The same folder names and structure are mirrored under the store specific Cadify Cloud workspace, for example:
 
 - Local: `C:\Cadify\Library\Store.Name\cadify textures`  
-- Dropbox: `Apps\Cadify.Gratis\cadify textures`
+- Cadify Cloud: `Apps\Cadify.Gratis\cadify textures`
 
 ## Common tasks and workflows
 
-- To add textures or weldment profiles, place the files into `cadify textures` or `weldments`. If sync is active, the files will be uploaded to the Dropbox app folder and distributed to other machines.
+- To add textures or weldment profiles, place the files into `cadify textures` or `weldments`. If sync is active, the files will be uploaded to the Cadify Cloud workspace and distributed to other machines.
 - To add parts, place files into `parts` (or subfolders). These will sync like any other files.
 - To force a sync, open SolidWorks (with Cadify AddIn), or start the Cadify Service, or open Excel with the Cadify Task Pane.
 
 ## Troubleshooting (quick checks)
 
 - Ensure one of the required sync agents is running (SolidWorks with Cadify AddIn, Cadify Service, or Excel Task Pane).
-- Confirm internet connectivity and that the Dropbox account or developer token is valid.
+- Confirm internet connectivity.
 - Verify the local Cadify library path exists and is accessible.
 - Avoid editing the same file simultaneously on multiple machines, this reduces conflicts.
 - If files do not appear, restart SolidWorks, Excel with the Task Pane, or the Cadify Service to trigger the sync agent.
@@ -91,4 +91,4 @@ The same folder names and structure are mirrored under the store specific Dropbo
   - `cadify.gratis` → `Apps\Cadify.Gratis\Library\`
   - `store.example.com` → `Apps\Store.Example.Com\Library\`
 
-For additional assistance or details about Cadify behavior, consult the help pages provided with the installation or contact the administrator managing the Cadify Dropbox store.
+For additional assistance or details about Cadify behavior, consult the help pages provided with the installation or contact the administrator managing the Cadify Cloud store.

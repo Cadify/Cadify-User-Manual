@@ -11,7 +11,7 @@ Folder name: `weldments`
 
 - Created automatically during Cadify installation.
 - Do not rename this folder, as SolidWorks expects this name to locate weldment profiles.
-- Files placed here are synchronized to Dropbox and other synced machines when a sync agent is active.
+- Files placed here are synchronized to Cadify Cloud and other synced machines when a sync agent is active.
 
 ## Typical file types
 

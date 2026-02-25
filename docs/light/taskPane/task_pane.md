@@ -43,7 +43,7 @@ The Cadify Light Task Pane is your central workspace for configuring product con
 
 - <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/excel.png" alt="Excel status" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"> **Excel Table** integrity. Turns red if issues detected (best practice: reopen product).
 - <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/library.png" alt="Library status" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"> **Library** sync status. Spinner shows syncing; hover for file count.
-- <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/dropbox.png" alt="Dropbox status" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"> **Dropbox** connection: Blue (stable), Yellow (slow), Red (unavailable).
+- <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/dropbox.png" alt="Cadify Cloud status" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"> **Cadify Cloud** connection: Blue (stable), Yellow (slow), Red (unavailable).
 - <img src="https://raw.githubusercontent.com/Cadify/Cadify-User-Manual/main/docs/light/taskPane/images/nopC.png" alt="NopC status" style="vertical-align: middle;max-width:100%; height:auto; border:1px solid #ccc; border-radius:6px;"> **NopCommerce** connection: Blue (available), yellow (slow), red (unreachable).
 
 ---

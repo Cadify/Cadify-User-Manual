@@ -9,7 +9,7 @@ A nopCommerce-based store where customers configure products. Each configured in
 ## Cadify Service
 Coordinates updates between Desktop, Web, and cloud storage. It tracks changes, updates models, regenerates drawings, exports 3D formats, and uploads results.
 
-## Dropbox Cloud
+## Cadify Cloud
 Secure storage provided per client location. Ensures tenant isolation and reliable synchronization.
 
 ## ERP / MES / PLM

@@ -22,7 +22,7 @@ The reason behind the **Timeout** parameter is that neither SolidWorks nor Micro
 
 ### Connection timeout
 
-**Connection timeout** defines how much time Cadify Service waits for Cadify Cloud if it cannot estabilish a connection. Typical reasons behind the unability to connect is Dropbox downtime or local Internet connection issues. Until the **Connection timeout** threshold value is reached, Cadify Service cannot time out a job in the file upload phase.
+**Connection timeout** defines how much time Cadify Service waits for Cadify Cloud if it cannot estabilish a connection. Typical reasons behind the unability to connect is Cadify Cloud downtime or local Internet connection issues. Until the **Connection timeout** threshold value is reached, Cadify Service cannot time out a job in the file upload phase.
 
 The **Connection timeout** value is expressed in seconds.
 
@@ -34,15 +34,15 @@ Cadify Service is prepared to run multiple jobs in parallel to speed up generati
 
 Until all third-party integrations support parallel processing in a feasible way for Cadify, the **Parallel processes** option is locked to **1**.
 
-### Dropbox maintenance frequency
+### Cadify Cloud maintenance frequency
 
-Cadify Cloud uses Dropbox to store and serve Cadify files, including job requests and generation results. Due to implementation details in Dropbox APIs, some reqests can go undetected in certain circumstances.
+Cadify Cloud uses cloud vendors to store and serve Cadify files, including job requests and generation results. Due to implementation details in service provider APIs, some reqests can go undetected in certain circumstances.
 
-To avoid losing generation requests, Cadify Service scans Cadify Cloud for any undetected job requests in intervals defined by the **Dropbox maintenance frequency** option. The lower it is, the more often Cadify Service does extra scans to Dropbox.
+To avoid losing generation requests, Cadify Service scans Cadify Cloud for any undetected job requests in intervals defined by the **Cadify Cloud maintenance frequency** option. The lower it is, the more often Cadify Service does extra scans to Cadify Cloud.
 
-The **Dropbox maintenance frequency** value is expressed in seconds.
+The **Cadify Cloud maintenance frequency** value is expressed in seconds.
 
-> It is recommended to keep **Dropbox maintenance frequency** above 30, as too frequent scanning can result in rate limiting by Dropbox and slowing down Cadify Service.
+> It is recommended to keep **Cadify Cloud maintenance frequency** above 30, as too frequent scanning can result in rate limiting by the service provider and slowing down Cadify Service.
 
 ### Block screen
 
